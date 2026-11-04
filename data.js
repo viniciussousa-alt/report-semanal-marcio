@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-03T15:45";
-const TODAY = "2026-11-03";
+const SNAPSHOT = "2026-11-04T15:35";
+const TODAY = "2026-11-04";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-13",
+ "fim": "2026-11-18",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -13,19 +13,30 @@ const DATA = {
    "key": "BI-68",
    "board": "BI",
    "frente": "jelou",
-   "titulo": "Jelou · aviso quando contatos da campanha já estão em fila com outro atendente",
-   "status": "todo",
+   "titulo": "Jelou · aviso de campanhas repetidas para o mesmo motorista",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-11-03",
-   "since": "2026-11-03",
-   "updated": "2026-11-03",
-   "horas": 0,
+   "since": "2026-11-04",
+   "updated": "2026-11-04",
+   "horas": 0.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Aberto pelo Lucas Colhado em 03/11, ainda sem responsável no Jira.",
-   "next": "",
-   "updates": [],
+   "ctx": "Assumido pelo Vinicius. A Jelou confirmou que não há bloqueio nem aviso antes do disparo; 285 das 314 falhas da campanha de 02/11 foram limite de marketing do WhatsApp.",
+   "next": "decidir com Operações entre controle interno (calendário único de disparos) ou pedir desenvolvimento pago à Jelou",
+   "updates": [
+    {
+     "d": "2026-11-04",
+     "h": "15:15",
+     "t": "Proposta a Operações: calendário único de disparos entre canais, limpar listas, reenviar só após 24h e usar templates de utilidade para avisos de rota."
+    },
+    {
+     "d": "2026-11-04",
+     "h": "09:44",
+     "t": "Pergunta enviada à Jelou (chamado 22628) sobre bloqueio ou alerta de campanha repetida para o mesmo número."
+    }
+   ],
    "info": "Evitar que dois atendentes falem com o mesmo motorista ao mesmo tempo: o Jelou avisaria se um contato da campanha já está em fila com outra pessoa."
   },
   {
@@ -77,18 +88,24 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard Faturamento Consolidado (SFS + EDSP) no Claude",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-10-27",
-   "since": "2026-10-27",
-   "updated": "2026-10-28",
+   "since": "2026-11-04",
+   "updated": "2026-11-04",
    "horas": 0.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Aguardando 6 respostas da Yara sobre regras de faturamento.",
-   "next": "montar a v1 assim que a Yara responder",
-   "updates": [],
+   "ctx": "Pausado até alinhar com a Yara se SFS e EDSP podem ficar num único BI, já que as duas bases têm estruturas diferentes.",
+   "next": "reunião BI · Financeiro em 06/11",
+   "updates": [
+    {
+     "d": "2026-11-04",
+     "h": "09:30",
+     "t": "Desenvolvimento pausado até o alinhamento com a Yara sobre consolidar as duas bases num único BI."
+    }
+   ],
    "info": "Painel que junta o faturamento do Ship from Store e da operação EDSP numa visão única, para o Financeiro acompanhar a receita total do mês sem cruzar planilhas."
   },
   {
@@ -100,14 +117,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-27",
    "since": "2026-10-27",
-   "updated": "2026-11-03",
+   "updated": "2026-11-04",
    "horas": 3,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Nova regra de OTD da Cobasi validada (95,2% em 410 pedidos). O KAM confirmou a origem da divergência.",
-   "next": "levar a nova regra ao dashboard principal",
+   "next": "reunião BI · KAM em 10/11: ajustes do painel e OTD da PetLove",
    "updates": [
+    {
+     "d": "2026-11-04",
+     "h": "09:34",
+     "t": "Agenda marcada com o Lucas para alinhar pontos do dashboard e montar os indicadores de OTD da PetLove."
+    },
     {
      "d": "2026-11-03",
      "h": "12:14",
@@ -227,17 +249,17 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "BI Marketplace 2.0",
-   "status": "todo",
+   "status": "blocked",
    "prio": "Low",
    "created": "2026-08-10",
-   "since": "2026-10-05",
-   "updated": "2026-10-05",
+   "since": "2026-11-04",
+   "updated": "2026-11-04",
    "horas": 28.5,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pausado a pedido do time de Marketplace (alinhado em 09/10).",
-   "next": "",
+   "ctx": "Reunião com o time de Marketplace em 09/11 para decidir se o BI segue sendo feito internamente ou se a Venddor já atende o que eles precisam.",
+   "next": "decidir na reunião BI · Marketplace (09/11)",
    "updates": [],
    "info": "Nova versão do BI do Marketplace (sellers, pedidos e receita) com modelagem refeita."
   },
@@ -284,16 +306,16 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · atendimento do RH: construir, testar e publicar o fluxo",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-10-28",
-   "since": "2026-11-03",
-   "updated": "2026-11-03",
+   "since": "2026-11-04",
+   "updated": "2026-11-04",
    "horas": 2,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Fluxos do RH finalizados; dúvidas a alinhar com a Fernanda esta semana.",
+   "ctx": "Fluxos do RH finalizados; status passou a bloqueado em 04/11, após a conversa com a Fernanda sobre as dúvidas dos fluxos.",
    "next": "alinhar as dúvidas com a Fernanda e publicar o fluxo",
    "updates": [],
    "info": "Fluxo de atendimento do RH no Jelou: colaboradores falam com o RH pelo WhatsApp oficial, com filas e respostas organizadas."
@@ -381,13 +403,13 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-09-15",
-   "updated": "2026-10-30",
-   "horas": 6,
+   "updated": "2026-11-04",
+   "horas": 6.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "CSAT básico já grava; faltam o campo Comentário e os campos canal/agente (Ticket #22000). Tema da Sesión 5 (04/11).",
-   "next": "",
+   "ctx": "CSAT básico já grava. A Jelou informou em 04/11 que hoje não é possível enviar variáveis ao fechar o chat; para concluir será preciso pedir esse desenvolvimento.",
+   "next": "pedir à Jelou o desenvolvimento da variável no fechamento do chat",
    "updates": [
     {
      "d": "2026-10-30",
@@ -402,16 +424,16 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou Marketplace · atendimento com IA + integração API Venddor",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Low",
    "created": "2026-09-22",
-   "since": "2026-09-22",
-   "updated": "2026-10-30",
+   "since": "2026-11-04",
+   "updated": "2026-11-04",
    "horas": 1.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Integração com a API Venddor ainda falha. Tema API entra na Sesión 5 (04/11).",
+   "ctx": "Integração com a API Venddor ainda falha. Tema levado à Sesión 5 com a Jelou (04/11); status passou a bloqueado.",
    "next": "rodar os testes da integração com Denny e Patrick",
    "updates": [
     {
@@ -1033,7 +1055,7 @@ const DATA = {
   {
    "d": "2026-11-04",
    "s": "16:00",
-   "e": "17:30",
+   "e": "17:00",
    "t": "Weekly Product Meeting",
    "fr": "ops",
    "com": "Márcio + produto",
@@ -1057,7 +1079,7 @@ const DATA = {
   {
    "d": "2026-11-05",
    "s": "11:30",
-   "e": "12:15",
+   "e": "12:00",
    "t": "Jelou · revisão da proposta comercial",
    "fr": "jelou",
    "com": "Angela (Jelou), Márcio",
@@ -1155,7 +1177,7 @@ const DATA = {
   {
    "d": "2026-11-11",
    "s": "16:00",
-   "e": "17:30",
+   "e": "17:00",
    "t": "Weekly Product Meeting",
    "fr": "ops",
    "com": "Márcio + produto",
@@ -1203,35 +1225,6 @@ const DATA = {
    ]
   },
   {
-   "d": "2026-11-05",
-   "s": "10:00",
-   "e": "10:30",
-   "t": "BI · Financeiro",
-   "fr": "dash",
-   "com": "Financeiro",
-   "marcio": false,
-   "destaque": true,
-   "info": "Sessão de trabalho com o Financeiro sobre os dashboards de faturamento (EDSP e consolidado).",
-   "rel": [
-    "BI-61",
-    "BI-64"
-   ]
-  },
-  {
-   "d": "2026-11-09",
-   "s": "11:00",
-   "e": "12:00",
-   "t": "BI · KAM",
-   "fr": "dash",
-   "com": "KAM",
-   "marcio": false,
-   "destaque": true,
-   "info": "Sessão com o KAM para levar a nova regra de OTD da Cobasi ao dashboard principal.",
-   "rel": [
-    "BI-63"
-   ]
-  },
-  {
    "d": "2026-11-09",
    "s": "14:00",
    "e": "15:00",
@@ -1240,10 +1233,135 @@ const DATA = {
    "com": "Marketplace",
    "marcio": false,
    "destaque": true,
-   "info": "Retomada do BI do Marketplace com o time da área.",
+   "info": "Decidir com o time de Marketplace se o BI segue sendo feito internamente ou se a Venddor já atende o que eles precisam.",
    "rel": [
     "BI-46"
    ]
+  },
+  {
+   "d": "2026-11-06",
+   "s": "13:30",
+   "e": "14:00",
+   "t": "BI · Financeiro",
+   "fr": "dash",
+   "com": "Financeiro",
+   "marcio": false,
+   "destaque": true,
+   "info": "Remarcada de 05/11: alinhar com o Financeiro se o faturamento SFS e EDSP pode ficar num único BI.",
+   "rel": [
+    "BI-61",
+    "BI-64"
+   ]
+  },
+  {
+   "d": "2026-11-10",
+   "s": "11:00",
+   "e": "12:00",
+   "t": "BI · KAM",
+   "fr": "dash",
+   "com": "KAM",
+   "marcio": false,
+   "destaque": true,
+   "info": "Remarcada de 09/11: ajustes no painel de OTD da Cobasi e início dos indicadores de OTD da PetLove.",
+   "rel": [
+    "BI-63"
+   ]
+  },
+  {
+   "d": "2026-11-04",
+   "s": "15:30",
+   "e": "16:00",
+   "t": "Gabriel / Vinicius",
+   "fr": "ops",
+   "com": "Gabriel Goldner",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento de trabalho com o Gabriel Goldner.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-05",
+   "s": "14:00",
+   "e": "15:00",
+   "t": "Vinicius / Gustavo",
+   "fr": "ops",
+   "com": "Gustavo Dias",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento de trabalho com o Gustavo Dias.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-05",
+   "s": "15:00",
+   "e": "15:30",
+   "t": "Dúvidas Jelou",
+   "fr": "jelou",
+   "com": "Beatriz",
+   "marcio": false,
+   "destaque": false,
+   "info": "Sessão para tirar dúvidas de uso do Jelou com a Beatriz.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-16",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-17",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-18",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-16",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-18",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
   }
  ],
  "comms": [
@@ -1954,6 +2072,138 @@ const DATA = {
    "marcio": false,
    "link": "https://mail.google.com/mail/u/0/#all/1a182cddd542af3b",
    "info": "Chamado formal para liberar os usuários da Torre de Controle."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "09:44",
+   "src": "email",
+   "t": "Pedido à Jelou: bloqueio de campanhas repetidas",
+   "det": "Chamado 22628 aberto pedindo bloqueio ou alerta de envio repetido para o mesmo número. Márcio em cópia (BI-68).",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a69282dcd1948",
+   "info": "Muitos motoristas não recebem as mensagens porque o WhatsApp barra quem recebe campanhas demais."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "12:00",
+   "src": "email",
+   "t": "Jelou: não existe bloqueio prévio de campanha repetida",
+   "det": "Das 314 falhas da campanha de 02/11, 285 foram limite de marketing do WhatsApp; esses motoristas receberam outras 7 campanhas em 3 dias. Alternativa: usar a URL de notificação para controlar quem já recebeu.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a69282dcd1948",
+   "info": "O limite é da Meta e soma todos os nossos canais; o controle precisa ser feito por nós ou pago como desenvolvimento à Jelou."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "15:15",
+   "src": "slack",
+   "t": "Proposta de calendário único de disparos de WhatsApp",
+   "det": "Enviada a Operações: um calendário entre Marketing, Marketplace, Reclame Aqui e SFS, limpeza de listas, reenvio só após 24h e templates de utilidade para avisos de rota.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Aguarda Operações decidir se o controle será interno ou se será pedido desenvolvimento pago à Jelou."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "13:42",
+   "src": "slack",
+   "t": "CSAT: Jelou não envia variáveis ao fechar o chat",
+   "det": "A Jelou confirmou que hoje isso não é possível; para seguir com o CSAT será preciso pedir esse desenvolvimento (PROD-261).",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Sem essa variável a pesquisa de satisfação não fica ligada ao atendimento que acabou de ser encerrado."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "13:48",
+   "src": "slack",
+   "t": "Jelou indica ajuste no nó de API do fluxo do Patrick",
+   "det": "Correção sem custo: mudar a variável da URL do nó de API. O Patrick testou às 15:22 e o valor ainda vem errado.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Erro de configuração no fluxo, não da plataforma; segue em teste com a Jelou."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "13:50",
+   "src": "slack",
+   "t": "Jelou pede para refazer a verificação das contas de WhatsApp",
+   "det": "Todas as contas da Shippify precisam refazer o onboarding com código por SMS; a Jelou quer combinar dia e horário.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Cada número de WhatsApp terá de ser verificado de novo; precisa ser planejado para não parar o atendimento."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "14:58",
+   "src": "slack",
+   "t": "Proposta comercial da Jelou: comparativo de custos a caminho",
+   "det": "Angela vai enviar o que é cobrado hoje (SKUs e tarifas) e um comparativo com a nova proposta, para a reunião de 05/11 com o Márcio.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Base para entender usuários, workflows e campanhas cobrados antes de decidir a proposta."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "09:34",
+   "src": "slack",
+   "t": "BI Marketplace: seguir internamente ou usar a Venddor",
+   "det": "Reunião marcada com o time de Marketplace para decidir o caminho do BI (BI-46).",
+   "tag": "Decisão",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Evita construir um BI que a ferramenta da Venddor talvez já entregue."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "13:54",
+   "src": "slack",
+   "t": "BI · Financeiro remarcada para 06/11",
+   "det": "A Yara teve outra agenda; a conversa sobre os dashboards de faturamento passou para sexta às 13:30.",
+   "tag": "Info",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Os dashboards BI-61 e BI-64 seguem parados até essa conversa."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "14:58",
+   "src": "email",
+   "t": "Jelou: webhooks do widget não aceitam chave de segurança",
+   "det": "Não é possível adicionar o header de autenticação; alternativas são um parâmetro secreto na URL ou liberar só os IPs da Jelou.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a18424590fc2449",
+   "info": "Afeta o reforço de segurança da API da Shippify pedido pelo time técnico."
+  },
+  {
+   "d": "2026-11-03",
+   "h": "16:45",
+   "src": "email",
+   "t": "Chamado TEC-2667 (dúvidas do Jelou) escalado",
+   "det": "Chamado aberto com Operações, escalado para a equipe técnica e marcado como muito importante.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
+   "info": "Dúvidas de Operações sobre o Jelou aguardando retorno da equipe técnica."
   }
  ],
  "riscos": [
