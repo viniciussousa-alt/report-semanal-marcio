@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-05T07:32";
+const SNAPSHOT = "2026-11-05T15:33";
 const TODAY = "2026-11-05";
 const DATA = {
  "inicio": "2026-09-28",
@@ -18,14 +18,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-03",
    "since": "2026-11-04",
-   "updated": "2026-11-04",
+   "updated": "2026-11-05",
    "horas": 0.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Assumido pelo Vinicius. A Jelou confirmou que não há bloqueio nem aviso antes do disparo; 285 das 314 falhas da campanha de 02/11 foram limite de marketing do WhatsApp.",
-   "next": "decidir com Operações entre controle interno (calendário único de disparos) ou pedir desenvolvimento pago à Jelou",
+   "ctx": "Decidido controlar os disparos internamente, sem custo de desenvolvimento na Jelou. A Jelou confirmou que não há bloqueio nem aviso antes do disparo; 285 das 314 falhas da campanha de 02/11 foram limite de marketing do WhatsApp.",
+   "next": "levantar na campanha de 02/11 se os reenvios foram só para quem falhou e quantas mensagens cada motorista bloqueado recebeu",
    "updates": [
+    {
+     "d": "2026-11-05",
+     "h": "09:55",
+     "t": "Decisão: por enquanto sem desenvolvimento pago na Jelou; controle de disparos será feito internamente entre os times. Chamado 22628 encerrado."
+    },
     {
      "d": "2026-11-04",
      "h": "15:15",
@@ -53,8 +58,8 @@ const DATA = {
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Falha de 21,13% nas campanhas de outubro. Pedido à Jelou para incluir o código de erro da Meta e controlar contatos impactados em 24h.",
-   "next": "",
+   "ctx": "A Jelou respondeu (05/11): o código de erro já vem na coluna \"Comentário\" da exportação; não há filtro nativo para quem recebeu mensagem nas últimas 24h, só solução manual ou via script/API.",
+   "next": "usar a coluna \"Comentário\" nas análises de falha e decidir entre limpeza manual da base ou automação via API",
    "updates": [
     {
      "d": "2026-10-30",
@@ -215,14 +220,20 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-25",
    "since": "2026-09-28",
-   "updated": "2026-10-06",
+   "updated": "2026-11-05",
    "horas": 0,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Depende de funcionalidade da plataforma Jelou.",
-   "next": "",
-   "updates": [],
+   "next": "receber a estimativa de horas da Jelou e decidir se vale contratar",
+   "updates": [
+    {
+     "d": "2026-11-05",
+     "h": "10:35",
+     "t": "A Jelou confirmou que o filtro de não lidas não existe e não está no roadmap; vai estimar as horas de desenvolvimento."
+    }
+   ],
    "info": "Filtro no Jelou para os atendentes verem só as conversas com mensagens não lidas, evitando motorista sem resposta."
   },
   {
@@ -310,14 +321,20 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-28",
    "since": "2026-11-04",
-   "updated": "2026-11-04",
+   "updated": "2026-11-05",
    "horas": 2,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Fluxos do RH finalizados; status passou a bloqueado em 04/11, após a conversa com a Fernanda sobre as dúvidas dos fluxos.",
-   "next": "alinhar as dúvidas com a Fernanda e publicar o fluxo",
-   "updates": [],
+   "next": "receber os fluxos restantes do RH, montar no Jelou e seguir para testes internos",
+   "updates": [
+    {
+     "d": "2026-11-05",
+     "h": "10:22",
+     "t": "Reunião de alinhamento com o RH feita; aguardando o RH terminar os fluxos restantes (motivos de contato, opções de menu e textos padrão)."
+    }
+   ],
    "info": "Fluxo de atendimento do RH no Jelou: colaboradores falam com o RH pelo WhatsApp oficial, com filas e respostas organizadas."
   },
   {
@@ -428,14 +445,19 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-22",
    "since": "2026-11-04",
-   "updated": "2026-11-04",
+   "updated": "2026-11-05",
    "horas": 1.25,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Integração com a API Venddor ainda falha. Tema levado à Sesión 5 com a Jelou (04/11); status passou a bloqueado.",
-   "next": "rodar os testes da integração com Denny e Patrick",
+   "next": "aguardar resposta da Venddor sobre a consulta de pedidos e testar de novo o fluxo no Jelou",
    "updates": [
+    {
+     "d": "2026-11-05",
+     "h": "10:09",
+     "t": "A API da Venddor devolve sempre o pedido 7714, qualquer que seja o número enviado; dúvida levada à Venddor pelo time de Marketplace, que vai abrir chamado."
+    },
     {
      "d": "2026-10-30",
      "h": "10:18",
@@ -1268,15 +1290,15 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-05",
-   "s": "15:00",
-   "e": "15:30",
+   "d": "2026-11-09",
+   "s": "11:30",
+   "e": "12:00",
    "t": "Dúvidas Jelou",
    "fr": "jelou",
    "com": "Beatriz",
    "marcio": false,
    "destaque": false,
-   "info": "Sessão para tirar dúvidas de uso do Jelou com a Beatriz.",
+   "info": "Sessão para tirar dúvidas de uso do Jelou com a Beatriz (remarcada de 05/11 para 09/11).",
    "rel": []
   },
   {
@@ -1349,6 +1371,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-09",
+   "s": "15:00",
+   "e": "16:00",
+   "t": "Alinhamento de cronograma",
+   "fr": "ops",
+   "com": "Gustavo",
+   "marcio": false,
+   "destaque": false,
+   "info": "Reunião para alinhar prazos e ordem das próximas entregas.",
    "rel": []
   }
  ],
@@ -2240,6 +2274,126 @@ const DATA = {
    "marcio": false,
    "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
    "info": "Dúvidas de Operações sobre o Jelou aguardando retorno da equipe técnica."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "22:59",
+   "src": "email",
+   "t": "Jelou envia o modelo de faturamento atual",
+   "det": "Base para comparar o custo atual com a nova proposta comercial (a partir da página 6).",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a96ede657970b",
+   "info": "Com esse documento dá para comparar quanto pagamos hoje com o que a Jelou está propondo."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "09:37",
+   "src": "slack",
+   "t": "Spike: chat da Jelou no app para tirar o suporte do WhatsApp",
+   "det": "Card AE-867 criado pelo time de produto: mapear a integração atual da Jelou no app do motorista e o caminho para o chat do app virar o canal principal de suporte.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "O custo do WhatsApp subiu mais de 100%; levar o suporte para o chat do app pode reduzir esse gasto."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "09:52",
+   "src": "slack",
+   "t": "Dashboard KAM: preparar regra de SLA da PetLove",
+   "det": "Combinado com o time de KAM montar a explicação de como funciona o SLA da PetLove antes da reunião BI · KAM.",
+   "tag": "Pendência",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Com a regra de SLA escrita, o painel da PetLove pode ser ajustado e testado na reunião de 10/11."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "09:55",
+   "src": "slack",
+   "t": "Campanhas repetidas: controle interno, sem desenvolvimento na Jelou",
+   "det": "Decisão de não pagar desenvolvimento agora; times vão coordenar disparos. Pedido ao Vinicius: levantar reenvios da campanha de 02/11.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Não haverá custo extra com a Jelou agora; o controle de quem recebe campanha fica com os próprios times."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "10:06",
+   "src": "slack",
+   "t": "Venddor: API sempre devolve o mesmo pedido",
+   "det": "Pedido ao time de Marketplace para levar à Venddor; às 14:38 confirmaram que vão abrir chamado.",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "O atendimento com IA do Marketplace não consegue consultar pedidos até a Venddor corrigir ou explicar a API."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "10:12",
+   "src": "slack",
+   "t": "Márcio pede a proposta comercial da Jelou",
+   "det": "Pedido antes da reunião de revisão da proposta (11:30).",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "O Márcio precisa do documento da proposta para avaliar o novo custo da Jelou."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "10:17",
+   "src": "slack",
+   "t": "Cobrança à Jelou: respostas formais pendentes",
+   "det": "Pedidas por e-mail as respostas sobre o filtro de não lidas e o relatório de erros da Meta; a Jelou disse que ambos estão escalados.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "As áreas internas aguardam essas respostas; a cobrança acelerou o retorno da Jelou no mesmo dia."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "10:25",
+   "src": "email",
+   "t": "Jelou: filtro de não lidas não existe e não está no roadmap",
+   "det": "A Jelou vai estimar as horas de desenvolvimento para decidirmos se seguimos.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a0e81f9580a7a68",
+   "info": "Ter o filtro de mensagens não lidas vai depender de desenvolvimento pago; a decisão vem depois da estimativa."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "10:42",
+   "src": "email",
+   "t": "Pedido à Jelou: enviar variáveis ao fechar o chat (CSAT)",
+   "det": "Solicitação formal de desenvolvimento para a pesquisa de satisfação funcionar no fim do atendimento.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1abf0bb15bbfa9",
+   "info": "Sem isso a pesquisa de satisfação não consegue saber qual atendimento está sendo avaliado."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "14:53",
+   "src": "email",
+   "t": "Jelou responde sobre relatório de campanhas",
+   "det": "Código de erro já vem na coluna \"Comentário\"; não há filtro nativo de 24h — sugerem limpeza manual, script via API ou melhoria futura.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a18dd8b9febad4c",
+   "info": "Já dá para analisar os motivos de falha das campanhas; evitar mensagens repetidas continua sendo trabalho nosso."
   }
  ],
  "riscos": [
