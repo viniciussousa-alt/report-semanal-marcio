@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-04T15:35";
-const TODAY = "2026-11-04";
+const SNAPSHOT = "2026-11-05T07:32";
+const TODAY = "2026-11-05";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-18",
+ "fim": "2026-11-19",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -1066,18 +1066,6 @@ const DATA = {
   },
   {
    "d": "2026-11-05",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-05",
    "s": "11:30",
    "e": "12:00",
    "t": "Jelou · revisão da proposta comercial",
@@ -1281,18 +1269,6 @@ const DATA = {
   },
   {
    "d": "2026-11-05",
-   "s": "14:00",
-   "e": "15:00",
-   "t": "Vinicius / Gustavo",
-   "fr": "ops",
-   "com": "Gustavo Dias",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento de trabalho com o Gustavo Dias.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-05",
    "s": "15:00",
    "e": "15:30",
    "t": "Dúvidas Jelou",
@@ -1362,9 +1338,69 @@ const DATA = {
    "destaque": false,
    "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
    "rel": []
+  },
+  {
+   "d": "2026-11-19",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
   }
  ],
  "comms": [
+  {
+   "d": "2026-11-04",
+   "h": "17:21",
+   "src": "slack",
+   "t": "BI · KAM (10/11): incluir link do Meet e nova participante",
+   "det": "O time de KAM pediu para adicionar o link da chamada no convite, pois mais uma pessoa da área vai participar.",
+   "tag": "Pedido",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Ajuste simples no convite para a reunião de validação do dashboard de KAM."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "16:24",
+   "src": "slack",
+   "t": "CSAT: abrir chamado para registrar atendente e canal",
+   "det": "Próximo passo do CSAT: pedir ao desenvolvimento que grave quem atendeu e por qual canal ao fechar o chat.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Sem esse registro a pesquisa de satisfação não consegue medir a nota por atendente e canal (PROD-261)."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "16:58",
+   "src": "slack",
+   "t": "Fila de SFS no Jelou: acesso ajustado para atendente",
+   "det": "Uma atendente não via a fila de SFS (só a de Food); o acesso foi corrigido para o número de Operações e validado.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "A atendente passa a responder os motoristas de SFS pelo canal certo."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "22:59",
+   "src": "email",
+   "t": "Jelou envia o modelo de cobrança atual para comparação",
+   "det": "A Jelou mandou o documento com a forma de cobrança vigente, para comparar com o novo esquema antes da reunião de 05/11.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a96ede657970b",
+   "info": "Base para avaliar se a nova proposta comercial da Jelou reduz ou aumenta o custo mensal."
+  },
   {
    "d": "2026-10-02",
    "h": "10:11",
