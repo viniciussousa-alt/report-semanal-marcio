@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-05T15:33";
-const TODAY = "2026-11-05";
+const SNAPSHOT = "2026-11-06T07:33";
+const TODAY = "2026-11-06";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-19",
+ "fim": "2026-11-20",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -28,6 +28,11 @@ const DATA = {
    "updates": [
     {
      "d": "2026-11-05",
+     "h": "20:10",
+     "t": "Operações informou que, com o código de erro do relatório, vai sanear a base de contatos antes dos próximos disparos."
+    },
+    {
+     "d": "2026-11-05",
      "h": "09:55",
      "t": "Decisão: por enquanto sem desenvolvimento pago na Jelou; controle de disparos será feito internamente entre os times. Chamado 22628 encerrado."
     },
@@ -49,18 +54,23 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Relatório de campanhas do Jelou: código de erro e controle de envios em 24h",
-   "status": "blocked",
+   "status": "done",
    "prio": "High",
    "created": "2026-10-30",
-   "since": "2026-10-30",
-   "updated": "2026-10-30",
+   "since": "2026-11-05",
+   "updated": "2026-11-05",
    "horas": 0,
-   "done": null,
-   "proxy": false,
+   "done": "2026-11-05",
+   "proxy": true,
    "due": null,
-   "ctx": "A Jelou respondeu (05/11): o código de erro já vem na coluna \"Comentário\" da exportação; não há filtro nativo para quem recebeu mensagem nas últimas 24h, só solução manual ou via script/API.",
-   "next": "usar a coluna \"Comentário\" nas análises de falha e decidir entre limpeza manual da base ou automação via API",
+   "ctx": "Sem personalização: o código de erro da Meta já aparece na coluna \"Comentário\" do relatório de cada campanha. Operações testou e vai limpar a base antes de novos envios.",
+   "next": "acompanhar se a limpeza da base reduz a taxa de falha das próximas campanhas",
    "updates": [
+    {
+     "d": "2026-11-05",
+     "h": "15:49",
+     "t": "Orientação repassada a Operações: baixar o relatório da campanha, ver o erro na coluna \"Comentário\" e retirar esses números antes do próximo envio. Chamado encerrado."
+    },
     {
      "d": "2026-10-30",
      "h": "14:28",
@@ -216,18 +226,23 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Filtro para visualizar mensagens não lidas no Jelou",
-   "status": "blocked",
+   "status": "done",
    "prio": "Low",
    "created": "2026-09-25",
-   "since": "2026-09-28",
+   "since": "2026-11-05",
    "updated": "2026-11-05",
    "horas": 0,
-   "done": null,
-   "proxy": false,
+   "done": "2026-11-05",
+   "proxy": true,
    "due": null,
-   "ctx": "Depende de funcionalidade da plataforma Jelou.",
-   "next": "receber a estimativa de horas da Jelou e decidir se vale contratar",
+   "ctx": "A Jelou confirmou que o filtro \"Não lidos\" já está em produção no Painel Multiagente, sem custo nem desenvolvimento.",
+   "next": "nenhum — operadores já usam o filtro",
    "updates": [
+    {
+     "d": "2026-11-05",
+     "h": "15:37",
+     "t": "Filtro \"Não lidos\" já disponível no Painel Multiagente; solicitante avisado e chamado encerrado."
+    },
     {
      "d": "2026-11-05",
      "h": "10:35",
@@ -1384,6 +1399,18 @@ const DATA = {
    "destaque": false,
    "info": "Reunião para alinhar prazos e ordem das próximas entregas.",
    "rel": []
+  },
+  {
+   "d": "2026-11-20",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
   }
  ],
  "comms": [
@@ -2394,6 +2421,42 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a18dd8b9febad4c",
    "info": "Já dá para analisar os motivos de falha das campanhas; evitar mensagens repetidas continua sendo trabalho nosso."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "15:37",
+   "src": "slack",
+   "t": "Filtro \"Não lidos\" do Jelou já está funcionando",
+   "det": "A Jelou confirmou que a funcionalidade já estava em produção; time de atendimento avisado e chamado encerrado sem custo.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Os atendentes já conseguem ver só as conversas sem resposta, reduzindo motorista esperando no WhatsApp."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "15:49",
+   "src": "slack",
+   "t": "Operações orientado a usar o código de erro das campanhas",
+   "det": "Relatório de cada campanha traz o erro da Meta na coluna \"Comentário\"; o time deve retirar esses números antes do próximo envio.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Com a base limpa antes de cada disparo, menos mensagens falham e menos motoristas são bloqueados por excesso."
+  },
+  {
+   "d": "2026-11-05",
+   "h": "20:10",
+   "src": "email",
+   "t": "Operações vai sanear a base antes dos próximos disparos",
+   "det": "Após o retorno sobre o código de falha, Operações testou o relatório e vai limpar os contatos com erro antes de novas campanhas.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
+   "info": "O controle de envios repetidos passa a ser feito pelo próprio time, sem custo de desenvolvimento na Jelou."
   }
  ],
  "riscos": [
