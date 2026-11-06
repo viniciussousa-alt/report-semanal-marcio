@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-06T07:33";
+const SNAPSHOT = "2026-11-06T15:32";
 const TODAY = "2026-11-06";
 const DATA = {
  "inicio": "2026-09-28",
@@ -14,18 +14,23 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Jelou · aviso de campanhas repetidas para o mesmo motorista",
-   "status": "blocked",
+   "status": "done",
    "prio": "Medium",
    "created": "2026-11-03",
-   "since": "2026-11-04",
-   "updated": "2026-11-05",
+   "since": "2026-11-06",
+   "updated": "2026-11-06",
    "horas": 0.25,
-   "done": null,
-   "proxy": false,
+   "done": "2026-11-06",
+   "proxy": true,
    "due": null,
-   "ctx": "Decidido controlar os disparos internamente, sem custo de desenvolvimento na Jelou. A Jelou confirmou que não há bloqueio nem aviso antes do disparo; 285 das 314 falhas da campanha de 02/11 foram limite de marketing do WhatsApp.",
-   "next": "levantar na campanha de 02/11 se os reenvios foram só para quem falhou e quantas mensagens cada motorista bloqueado recebeu",
+   "ctx": "Controle de envios repetidos fica com os próprios times, sem desenvolvimento na Jelou. O relatório de cada campanha traz o código de erro da Meta, usado para limpar a base antes de novos disparos.",
+   "next": "",
    "updates": [
+    {
+     "d": "2026-11-06",
+     "h": "10:30",
+     "t": "Card concluído: Jelou mostrou onde ver o código de erro no relatório e Operações confirmou a limpeza da base antes das próximas campanhas."
+    },
     {
      "d": "2026-11-05",
      "h": "20:10",
@@ -1272,7 +1277,7 @@ const DATA = {
    "com": "Financeiro",
    "marcio": false,
    "destaque": true,
-   "info": "Remarcada de 05/11: alinhar com o Financeiro se o faturamento SFS e EDSP pode ficar num único BI.",
+   "info": "Adiada a pedido do Vinicius para segunda (09/11), presencial; objetivo segue sendo ver se o faturamento SFS e EDSP cabe num único BI.",
    "rel": [
     "BI-61",
     "BI-64"
@@ -2457,6 +2462,54 @@ const DATA = {
    "marcio": false,
    "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
    "info": "O controle de envios repetidos passa a ser feito pelo próprio time, sem custo de desenvolvimento na Jelou."
+  },
+  {
+   "d": "2026-11-06",
+   "h": "10:58",
+   "src": "email",
+   "t": "Jelou orienta como a IA passa o atendimento para um humano",
+   "det": "Pedido enviado às 10:38. A Jelou revisou o fluxo \"Atendimento com IA\" e indicou ajustes: definir quando a IA deve transferir, mandar para uma equipe (não para uma pessoa), tratar as saídas de erro e testar pelo WhatsApp.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b11218fd70472",
+   "info": "Sem esses ajustes, o motorista com dúvida não resolvida pode ficar preso na IA sem chegar a um atendente."
+  },
+  {
+   "d": "2026-11-06",
+   "h": "11:43",
+   "src": "email",
+   "t": "Chamadas de voz pelo WhatsApp: Jelou detalha regras e pede volume",
+   "det": "Dá para pedir permissão de ligação em campanha e o atendente ligar pelo navegador, mas exige desenvolvimento. Limite de 100 chamadas por dia por número; a Jelou pede o volume estimado de ligações para enviar a proposta.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "info": "Para receber o preço, a Shippify precisa informar quantas ligações por mês pretende fazer e confirmar o fluxo desejado."
+  },
+  {
+   "d": "2026-11-06",
+   "h": "13:07",
+   "src": "email",
+   "t": "Chamado do relatório de campanhas da Jelou encerrado",
+   "det": "Tecnologia finalizou o chamado TEC-2655 depois da orientação sobre o código de erro nos relatórios.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a18dc6975057557",
+   "info": "O assunto dos disparos repetidos está fechado; o controle agora é feito pelos próprios times."
+  },
+  {
+   "d": "2026-11-06",
+   "h": "13:20",
+   "src": "slack",
+   "t": "Reunião BI Financeiro adiada para segunda",
+   "det": "Combinado com o Financeiro fazer a conversa na segunda-feira, presencialmente.",
+   "tag": "Info",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "A definição do BI de faturamento SFS + EDSP fica para a próxima semana."
   }
  ],
  "riscos": [
