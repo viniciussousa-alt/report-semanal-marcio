@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-09T08:35";
+const SNAPSHOT = "2026-11-09T15:33";
 const TODAY = "2026-11-09";
 const DATA = {
  "inicio": "2026-09-28",
@@ -112,14 +112,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-27",
    "since": "2026-11-04",
-   "updated": "2026-11-04",
-   "horas": 0.25,
+   "updated": "2026-11-09",
+   "horas": 1,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pausado até alinhar com a Yara se SFS e EDSP podem ficar num único BI, já que as duas bases têm estruturas diferentes.",
-   "next": "reunião BI · Financeiro em 06/11",
+   "ctx": "Combinado com a Yara em 09/11: em vez de três painéis, um único painel com botões para SFS, EDSP e Consolidado. O card segue marcado como bloqueado no Jira.",
+   "next": "montar o painel único e testar junto com a Yara",
    "updates": [
+    {
+     "d": "2026-11-09",
+     "h": "09:37",
+     "t": "Proposta aceita pela Yara: um só painel com três botões (SFS, EDSP e Consolidado), todos com acesso às três telas. Desenvolvimento retomado; testes serão feitos em conjunto."
+    },
     {
      "d": "2026-11-04",
      "h": "09:30",
@@ -280,18 +285,24 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "BI Marketplace 2.0",
-   "status": "blocked",
+   "status": "done",
    "prio": "Low",
    "created": "2026-08-10",
-   "since": "2026-11-04",
-   "updated": "2026-11-04",
+   "since": "2026-11-09",
+   "updated": "2026-11-09",
    "horas": 28.5,
-   "done": null,
-   "proxy": false,
+   "done": "2026-11-09",
+   "proxy": true,
    "due": null,
-   "ctx": "Reunião com o time de Marketplace em 09/11 para decidir se o BI segue sendo feito internamente ou se a Venddor já atende o que eles precisam.",
-   "next": "decidir na reunião BI · Marketplace (09/11)",
-   "updates": [],
+   "ctx": "O time de Marketplace decidiu usar o painel que a Venddor já oferece para acompanhar as métricas; o BI interno deixou de ser necessário.",
+   "next": "",
+   "updates": [
+    {
+     "d": "2026-11-09",
+     "h": "14:16",
+     "t": "Card encerrado: o Marketplace vai usar o painel da Venddor, então o BI Marketplace 2.0 em Power BI não será desenvolvido."
+    }
+   ],
    "info": "Nova versão do BI do Marketplace (sellers, pedidos e receita) com modelagem refeita."
   },
   {
@@ -362,18 +373,28 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · reestruturação de fluxos (fase 2): limpeza, estrutura e testes com IA",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-10-05",
-   "since": "2026-10-05",
-   "updated": "2026-10-30",
-   "horas": 8.25,
+   "since": "2026-11-09",
+   "updated": "2026-11-09",
+   "horas": 9.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "",
-   "next": "sessão com o Denny para definir os casos de uso de IA nos fluxos",
+   "ctx": "Atendimento com IA para motoristas funcionando, inclusive a passagem para um atendente humano (ajuste feito pela Jelou no chamado 22714). Falta o Marketing validar o tom das respostas.",
+   "next": "ajustar os prompts com o retorno do Marketing",
    "updates": [
+    {
+     "d": "2026-11-09",
+     "h": "14:30",
+     "t": "Teste aprovado: a IA encerra o atendimento e transfere para o time humano. Card aguarda o Marketing testar a linguagem usada com os motoristas."
+    },
+    {
+     "d": "2026-11-09",
+     "h": "09:28",
+     "t": "Diagnóstico: a IA não encerrava a conversa nem passava para um humano. Prompt reescrito (v2) com regras claras de quando transferir e para qual fila."
+    },
     {
      "d": "2026-10-30",
      "h": "10:15",
@@ -391,14 +412,19 @@ const DATA = {
    "prio": "High",
    "created": "2026-08-11",
    "since": "2026-08-25",
-   "updated": "2026-10-30",
+   "updated": "2026-11-09",
    "horas": 6,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "14 chips vão para o B2B2C; +5 aparelhos incluídos. Compra aguarda aprovação da Naiara e do Hector.",
-   "next": "",
+   "ctx": "Pedido de compra dos aparelhos (nº 001545) travado por erro de aprovação no TOTVS. Cadastro do aprovador está correto; caso foi levado aos consultores externos do TOTVS.",
+   "next": "acompanhar o chamado do TOTVS; depois da aprovação, comprar e entregar aparelhos e chips ao B2B2C",
    "updates": [
+    {
+     "d": "2026-11-09",
+     "h": "11:03",
+     "t": "Aprovação da compra dos aparelhos travada por erro no TOTVS. Financeiro confirmou que o cadastro está certo e vai acionar os consultores externos."
+    },
     {
      "d": "2026-10-27",
      "h": "08:56",
@@ -440,14 +466,19 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-09-15",
-   "updated": "2026-11-04",
+   "updated": "2026-11-09",
    "horas": 6.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "CSAT básico já grava. A Jelou informou em 04/11 que hoje não é possível enviar variáveis ao fechar o chat; para concluir será preciso pedir esse desenvolvimento.",
-   "next": "pedir à Jelou o desenvolvimento da variável no fechamento do chat",
+   "ctx": "CSAT básico já grava. Para associar a nota ao atendente e ao canal, a Jelou precisa desenvolver o envio de variáveis no fechamento do chat; pedido formal enviado em 05/11.",
+   "next": "cobrar da Jelou viabilidade, prazo e custo do desenvolvimento",
    "updates": [
+    {
+     "d": "2026-11-09",
+     "h": "14:20",
+     "t": "Pedido de desenvolvimento enviado à Jelou (viabilidade, prazo e custo) para gravar atendente e canal no fechamento do chat. Segue bloqueado aguardando resposta."
+    },
     {
      "d": "2026-10-30",
      "h": "10:10",
@@ -1263,7 +1294,7 @@ const DATA = {
    "com": "Marketplace",
    "marcio": false,
    "destaque": true,
-   "info": "Decidir com o time de Marketplace se o BI segue sendo feito internamente ou se a Venddor já atende o que eles precisam.",
+   "info": "Reunião com o Marketplace que definiu usar o painel da Venddor; com isso o BI Marketplace 2.0 foi encerrado.",
    "rel": [
     "BI-46"
    ]
@@ -2558,6 +2589,78 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1b11218fd70472",
    "info": "A Jelou já deu a orientação; agora cabe a nós ajustar e testar o fluxo para o motorista conseguir falar com um humano."
+  },
+  {
+   "d": "2026-11-09",
+   "h": "09:37",
+   "src": "slack",
+   "t": "Faturamento: um painel único com botões SFS, EDSP e Consolidado",
+   "det": "Proposta feita à Yara e aceita: em vez de três BIs separados, uma tela só com três botões. Testes serão feitos em conjunto quando estiver pronto.",
+   "tag": "Decisão",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Simplifica a entrega do Financeiro: um único link para ver cada operação e o total (BI-64)."
+  },
+  {
+   "d": "2026-11-09",
+   "h": "11:07",
+   "src": "slack",
+   "t": "Pedido de reunião com a Jelou sobre chamadas de voz",
+   "det": "Pedido à Jelou uma sessão para entender na prática as ligações pelo WhatsApp; a Jelou vai reunir o Denny e a equipe de implantação.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Antes de pedir proposta, precisamos entender como as ligações funcionariam e o que muda nos nossos números."
+  },
+  {
+   "d": "2026-11-09",
+   "h": "11:20",
+   "src": "email",
+   "t": "Jelou: limite de 1.000 mensagens vale para Operações e Sprint juntos",
+   "det": "No chamado TEC-2667, a liderança reforçou que o limite é compartilhado entre os dois times e que cada um precisa ajustar os disparos ao tamanho da operação.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
+   "info": "Os times precisam planejar melhor as campanhas para não estourar o limite diário de envios."
+  },
+  {
+   "d": "2026-11-09",
+   "h": "11:30",
+   "src": "email",
+   "t": "Atendimento com IA passa corretamente para um humano",
+   "det": "Depois do ajuste da Jelou, os testes confirmaram que a IA encerra a conversa e transfere o motorista para o atendente. Falta o Marketing validar a linguagem.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b11218fd70472",
+   "info": "O motorista não fica mais preso no robô: quando precisa, é transferido para uma pessoa (PROD-273)."
+  },
+  {
+   "d": "2026-11-09",
+   "h": "13:10",
+   "src": "slack",
+   "t": "Pedido para antecipar a compra dos aparelhos do B2B2C",
+   "det": "No canal de suporte do TOTVS, pedido a Compras para seguir com a compra mesmo com a aprovação travada no sistema.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Sem os aparelhos, a entrega dos chips corporativos ao time B2B2C continua parada (PROD-238)."
+  },
+  {
+   "d": "2026-11-09",
+   "h": "14:38",
+   "src": "email",
+   "t": "Chamadas de voz: lista de dúvidas enviada à Jelou",
+   "det": "Enviadas perguntas sobre números, funcionamento, gravação/LGPD, cobrança e prazo, incluindo pedido de piloto com um número e uma equipe. Márcio em cópia.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "info": "As respostas vão definir se as ligações pelo WhatsApp valem a pena e quanto vão custar."
   }
  ],
  "riscos": [
