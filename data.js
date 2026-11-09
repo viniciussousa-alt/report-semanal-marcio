@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-06T15:32";
-const TODAY = "2026-11-06";
+const SNAPSHOT = "2026-11-09T08:35";
+const TODAY = "2026-11-09";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-20",
+ "fim": "2026-11-23",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -1416,6 +1416,30 @@ const DATA = {
    "destaque": false,
    "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
    "rel": []
+  },
+  {
+   "d": "2026-11-23",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-23",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
   }
  ],
  "comms": [
@@ -2510,6 +2534,30 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "A definição do BI de faturamento SFS + EDSP fica para a próxima semana."
+  },
+  {
+   "d": "2026-11-06",
+   "h": "16:26",
+   "src": "slack",
+   "t": "Operações ainda não limpa a base antes das campanhas",
+   "det": "Vinicius alertou que o time segue disparando sem retirar os contatos com erro; a dúvida levantada é se os envios continuam indo para as mesmas bases mesmo com taxa alta de falha.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Enquanto a base não for limpa, as campanhas continuam falhando e gastando mensagens com números que não recebem."
+  },
+  {
+   "d": "2026-11-06",
+   "h": "18:45",
+   "src": "email",
+   "t": "Jelou encerra chamado sobre a passagem da IA para atendente",
+   "det": "Sem novos comentários nossos, a Jelou fechou o chamado 22684; os ajustes indicados no fluxo \"Atendimento com IA\" ficam com a Shippify.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b11218fd70472",
+   "info": "A Jelou já deu a orientação; agora cabe a nós ajustar e testar o fluxo para o motorista conseguir falar com um humano."
   }
  ],
  "riscos": [
