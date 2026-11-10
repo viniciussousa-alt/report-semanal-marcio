@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-09T15:33";
-const TODAY = "2026-11-09";
+const SNAPSHOT = "2026-11-10T07:33";
+const TODAY = "2026-11-10";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-11-23",
@@ -1200,15 +1200,15 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-09",
-   "s": "17:00",
-   "e": "17:45",
+   "d": "2026-11-11",
+   "s": "09:00",
+   "e": "09:45",
    "t": "Weekly BI Meeting",
    "fr": "dash",
    "com": "Márcio",
    "marcio": true,
    "destaque": false,
-   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
+   "info": "Remarcada de 09/11 (17h) para 11/11 às 9h: reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
    "rel": []
   },
   {
@@ -1470,6 +1470,18 @@ const DATA = {
    "marcio": true,
    "destaque": false,
    "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-11",
+   "s": "10:00",
+   "e": "11:00",
+   "t": "SRG · Dados",
+   "fr": "dash",
+   "com": "Time SRG (suporte e infraestrutura)",
+   "marcio": false,
+   "destaque": false,
+   "info": "Reunião com o time SRG para entender quais dados e indicadores eles precisam acompanhar no BI.",
    "rel": []
   }
  ],
