@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-10T07:33";
+const SNAPSHOT = "2026-11-10T15:38";
 const TODAY = "2026-11-10";
 const DATA = {
  "inicio": "2026-09-28",
@@ -142,14 +142,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-27",
    "since": "2026-10-27",
-   "updated": "2026-11-04",
-   "horas": 3,
+   "updated": "2026-11-10",
+   "horas": 5.5,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Nova regra de OTD da Cobasi validada (95,2% em 410 pedidos). O KAM confirmou a origem da divergência.",
-   "next": "reunião BI · KAM em 10/11: ajustes do painel e OTD da PetLove",
+   "ctx": "Dashboard novo com base automática: relatório \"Claude KAM\" atualiza todo dia uma planilha única de Cobasi e PetLove. OTD de 01 a 10/11: Cobasi 92,6% e PetLove 96,3%.",
+   "next": "coluna Source no relatório (TEC-2695, com o time técnico) para tirar entregas clonadas da PetLove; confirmar regras pendentes com o KAM",
    "updates": [
+    {
+     "d": "2026-11-10",
+     "h": "10:55",
+     "t": "Dashboard OTD Cobasi e PetLove agora lê uma base que se atualiza sozinha todo dia (27 mil pedidos do último mês). Upload de arquivo removido; nova regra da PetLove com corte por loja própria e franquia."
+    },
     {
      "d": "2026-11-04",
      "h": "09:34",
@@ -377,7 +382,7 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-05",
    "since": "2026-11-09",
-   "updated": "2026-11-09",
+   "updated": "2026-11-10",
    "horas": 9.25,
    "done": null,
    "proxy": false,
@@ -1482,6 +1487,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Reunião com o time SRG para entender quais dados e indicadores eles precisam acompanhar no BI.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-10",
+   "s": "14:00",
+   "e": "14:30",
+   "t": "Shippify WhatsApp · Jelou",
+   "fr": "jelou",
+   "com": "Jelou",
+   "marcio": false,
+   "destaque": true,
+   "info": "Reunião com a Jelou sobre a migração das contas do WhatsApp do cartão de crédito para linha de crédito, e como fazer isso sem parar o atendimento.",
    "rel": []
   }
  ],
@@ -2673,6 +2690,42 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
    "info": "As respostas vão definir se as ligações pelo WhatsApp valem a pena e quanto vão custar."
+  },
+  {
+   "d": "2026-11-10",
+   "h": "10:27",
+   "src": "email",
+   "t": "Jelou confirma que o canal \"Tracking Shippify Brasil\" está ativo",
+   "det": "Pedido de verificação enviado à Jelou; o suporte confirmou que o projeto está em uso e conectado a um canal web (widget). Márcio em cópia.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1c562af6188225",
+   "info": "Esse canal não pode ser apagado na limpeza: ele ainda atende quem acompanha entregas pelo site."
+  },
+  {
+   "d": "2026-11-10",
+   "h": "14:17",
+   "src": "slack",
+   "t": "Pedido ao time técnico: coluna Source no relatório \"Claude KAM\"",
+   "det": "Aberto o chamado TEC-2695 para incluir no relatório as colunas do relatório de chaves CTe; o KAM sugeriu pedir só a coluna Source. Chamado já foi passado ao time técnico.",
+   "tag": "Pedido",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Com essa coluna, o OTD da PetLove pode excluir entregas clonadas e refeitas, deixando o indicador mais justo (BI-63)."
+  },
+  {
+   "d": "2026-11-10",
+   "h": "14:20",
+   "src": "email",
+   "t": "Jelou: contas do WhatsApp vão migrar para linha de crédito",
+   "det": "Resumo da reunião: cada conta precisa refazer a validação por código no chip do número, os templates serão sincronizados de novo e a migração deve ser feita fora do horário de operação, em um dia ou escalonada.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1c67a3492c22ce",
+   "info": "Precisamos combinar com os times donos de cada número um horário calmo para a troca, para não interromper campanhas e atendimentos."
   }
  ],
  "riscos": [
