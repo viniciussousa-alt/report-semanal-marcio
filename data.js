@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-10T15:38";
-const TODAY = "2026-11-10";
+const SNAPSHOT = "2026-11-11T07:32";
+const TODAY = "2026-11-11";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-23",
+ "fim": "2026-11-25",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -1500,6 +1500,18 @@ const DATA = {
    "destaque": true,
    "info": "Reunião com a Jelou sobre a migração das contas do WhatsApp do cartão de crédito para linha de crédito, e como fazer isso sem parar o atendimento.",
    "rel": []
+  },
+  {
+   "d": "2026-11-25",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
   }
  ],
  "comms": [
@@ -2726,6 +2738,18 @@ const DATA = {
    "marcio": false,
    "link": "https://mail.google.com/mail/u/0/#all/1a1c67a3492c22ce",
    "info": "Precisamos combinar com os times donos de cada número um horário calmo para a troca, para não interromper campanhas e atendimentos."
+  },
+  {
+   "d": "2026-11-10",
+   "h": "16:17",
+   "src": "slack",
+   "t": "Dúvida: enviar vídeo junto da campanha do Jelou para entregadores do Meli",
+   "det": "O time de comunidade montou um modelo de mensagem em massa pedindo que entregadores do Meli concluam um curso obrigatório e perguntou se dá para anexar um vídeo explicativo. Orientação dada: o modelo aprovado aceita só texto e imagem; o vídeo precisa ser enviado individualmente.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "A campanha sai só com texto e imagem; quem quiser mandar o vídeo terá que enviá-lo motorista por motorista, o que dá mais trabalho manual."
   }
  ],
  "riscos": [
