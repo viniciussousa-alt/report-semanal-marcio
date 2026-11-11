@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-11T07:32";
+const SNAPSHOT = "2026-11-11T15:35";
 const TODAY = "2026-11-11";
 const DATA = {
  "inicio": "2026-09-28",
@@ -108,18 +108,23 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard Faturamento Consolidado (SFS + EDSP) no Claude",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Medium",
    "created": "2026-10-27",
-   "since": "2026-11-04",
-   "updated": "2026-11-09",
+   "since": "2026-11-11",
+   "updated": "2026-11-11",
    "horas": 1,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Combinado com a Yara em 09/11: em vez de três painéis, um único painel com botões para SFS, EDSP e Consolidado. O card segue marcado como bloqueado no Jira.",
+   "ctx": "Combinado com a Yara em 09/11: um único painel com botões para SFS, EDSP e Consolidado. Em 11/11 o card saiu de Bloqueado e voltou para Em andamento no Jira.",
    "next": "montar o painel único e testar junto com a Yara",
    "updates": [
+    {
+     "d": "2026-11-11",
+     "h": "10:24",
+     "t": "Card saiu de Bloqueado e voltou para Em andamento: desenvolvimento do painel único retomado."
+    },
     {
      "d": "2026-11-09",
      "h": "09:37",
@@ -197,18 +202,23 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard Faturamento e Recebíveis · Operação EDSP",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Medium",
    "created": "2026-09-28",
-   "since": "2026-10-07",
-   "updated": "2026-10-30",
+   "since": "2026-11-11",
+   "updated": "2026-11-11",
    "horas": 0.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "A Yara pediu conversa sobre o EDSP; reunião Dashboard EDSP em 03/11 às 16h.",
-   "next": "",
+   "ctx": "Card saiu de Bloqueado e voltou para Em andamento em 11/11; a visão do EDSP passa a fazer parte do painel único de faturamento combinado com a Yara.",
+   "next": "ajustar a visão EDSP dentro do painel único de faturamento",
    "updates": [
+    {
+     "d": "2026-11-11",
+     "h": "10:24",
+     "t": "Card saiu de Bloqueado e voltou para Em andamento no Jira."
+    },
     {
      "d": "2026-10-30",
      "h": "10:21",
@@ -1253,30 +1263,6 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-12",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-13",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
    "d": "2026-11-04",
    "s": "11:00",
    "e": "11:30",
@@ -1359,42 +1345,6 @@ const DATA = {
   },
   {
    "d": "2026-11-16",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-17",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-18",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-16",
    "s": "17:00",
    "e": "17:45",
    "t": "Weekly BI Meeting",
@@ -1418,18 +1368,6 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-19",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
    "d": "2026-11-09",
    "s": "15:00",
    "e": "16:00",
@@ -1439,30 +1377,6 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Reunião para alinhar prazos e ordem das próximas entregas.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-20",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-23",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
    "rel": []
   },
   {
@@ -1511,6 +1425,18 @@ const DATA = {
    "marcio": true,
    "destaque": false,
    "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-11",
+   "s": "15:00",
+   "e": "16:00",
+   "t": "Vinicius / Gustavo",
+   "fr": "ops",
+   "com": "Gustavo",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa individual com o Gustavo, marcada no mesmo dia, para alinhar andamento e próximos passos das entregas.",
    "rel": []
   }
  ],
@@ -2750,6 +2676,66 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "A campanha sai só com texto e imagem; quem quiser mandar o vídeo terá que enviá-lo motorista por motorista, o que dá mais trabalho manual."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "09:13",
+   "src": "email",
+   "t": "Márcio compartilhou as notas do Roadmap 2027 com o time de Produto",
+   "det": "Documento \"Notes - Roadmap 2027\" enviado ao grupo de Produto com permissão de edição.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1ca86f6caf0c47",
+   "info": "O planejamento de 2027 começou a ser montado e o time de Produto pode contribuir direto no documento."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "09:14",
+   "src": "slack",
+   "t": "Financeiro vai enviar a lista do que quer ver no BI fiscal",
+   "det": "A Yara perguntou se existe um checklist para listar e explicar os pontos que quer acompanhar no BI fiscal.",
+   "tag": "Pedido",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Com essa lista, o painel de faturamento passa a ter os requisitos definidos pelo próprio Financeiro, o que reduz retrabalho."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "12:27",
+   "src": "slack",
+   "t": "Comercial: cliente Webcontinental quer receber o link de rastreio por WhatsApp",
+   "det": "O time comercial pediu os custos de envio da mensagem de rastreio e das respostas do cliente final. O Vinicius assumiu o tema e pediu mais detalhes sobre o uso esperado.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Pode virar um novo serviço cobrado do cliente; para dar preço é preciso estimar o volume de mensagens e o custo da Meta por envio."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "13:28",
+   "src": "slack",
+   "t": "Operações pediu 3 chips corporativos para o time de Middle Mile",
+   "det": "O time já tem aparelhos, mas precisa de chips; um dos usuários fica em Belo Horizonte, então a entrega precisa ser combinada.",
+   "tag": "Pedido",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Sem os chips, esses colaboradores não conseguem usar números corporativos no atendimento; falta definir como fazer a entrega fora de São Paulo."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "15:26",
+   "src": "email",
+   "t": "Jelou: proposta das chamadas de voz deve chegar até o fim da semana",
+   "det": "A Jelou informou que está fechando a proposta comercial e que vários times estão respondendo à lista de dúvidas enviada em 09/11 (números, funcionamento, gravação, cobrança e prazo).",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "info": "A decisão sobre ligar para motoristas pelo WhatsApp depende dessa proposta, que trará custos e prazo de desenvolvimento."
   }
  ],
  "riscos": [
