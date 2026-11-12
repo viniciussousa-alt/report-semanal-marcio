@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-11T15:35";
-const TODAY = "2026-11-11";
+const SNAPSHOT = "2026-11-12T07:33";
+const TODAY = "2026-11-12";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-11-25",
@@ -117,9 +117,14 @@ const DATA = {
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Combinado com a Yara em 09/11: um único painel com botões para SFS, EDSP e Consolidado. Em 11/11 o card saiu de Bloqueado e voltou para Em andamento no Jira.",
+   "ctx": "Combinado com a Yara em 09/11: um único painel com botões para SFS, EDSP e Consolidado. Desde 11/11 o BI-64 também absorve o escopo do antigo painel EDSP (BI-61).",
    "next": "montar o painel único e testar junto com a Yara",
    "updates": [
+    {
+     "d": "2026-11-11",
+     "h": "17:36",
+     "t": "O BI-61 (painel EDSP) foi unificado neste card; todo o acompanhamento do faturamento SFS + EDSP segue aqui."
+    },
     {
      "d": "2026-11-11",
      "h": "10:24",
@@ -202,18 +207,23 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard Faturamento e Recebíveis · Operação EDSP",
-   "status": "doing",
+   "status": "done",
    "prio": "Medium",
    "created": "2026-09-28",
    "since": "2026-11-11",
    "updated": "2026-11-11",
    "horas": 0.75,
-   "done": null,
+   "done": "2026-11-11",
    "proxy": false,
    "due": null,
-   "ctx": "Card saiu de Bloqueado e voltou para Em andamento em 11/11; a visão do EDSP passa a fazer parte do painel único de faturamento combinado com a Yara.",
-   "next": "ajustar a visão EDSP dentro do painel único de faturamento",
+   "ctx": "Card encerrado em 11/11: o escopo do EDSP foi absorvido pelo painel único de faturamento (BI-64), que passa a concentrar todo o acompanhamento.",
+   "next": "",
    "updates": [
+    {
+     "d": "2026-11-11",
+     "h": "17:35",
+     "t": "Card concluído e marcado como duplicado do BI-64: a visão EDSP passa a ser entregue dentro do painel único de faturamento."
+    },
     {
      "d": "2026-11-11",
      "h": "10:24",
@@ -1437,6 +1447,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Conversa individual com o Gustavo, marcada no mesmo dia, para alinhar andamento e próximos passos das entregas.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-19",
+   "s": "16:00",
+   "e": "18:00",
+   "t": "Apresentação Datadog",
+   "fr": "ops",
+   "com": "Tech, QA e Datadog",
+   "marcio": false,
+   "destaque": false,
+   "info": "Apresentação da ferramenta de monitoramento Datadog para o time de tecnologia, para avaliar se ela ajuda a acompanhar falhas e desempenho dos sistemas.",
    "rel": []
   }
  ],
@@ -2718,7 +2740,7 @@ const DATA = {
    "h": "13:28",
    "src": "slack",
    "t": "Operações pediu 3 chips corporativos para o time de Middle Mile",
-   "det": "O time já tem aparelhos, mas precisa de chips; um dos usuários fica em Belo Horizonte, então a entrega precisa ser combinada.",
+   "det": "O time já tem os 3 aparelhos corporativos e precisa só dos chips; o Vinicius pediu os nomes completos dos usuários. Um deles fica em Belo Horizonte, então a entrega precisa ser combinada.",
    "tag": "Pedido",
    "fr": "ops",
    "marcio": false,
@@ -2736,6 +2758,42 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
    "info": "A decisão sobre ligar para motoristas pelo WhatsApp depende dessa proposta, que trará custos e prazo de desenvolvimento."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "16:59",
+   "src": "slack",
+   "t": "Jelou: removida configuração de envio que apontava para um canal excluído",
+   "det": "A Jelou alertou erros no redirecionamento porque uma opção de envio ainda apontava para o canal \"Widget Brasil - CXTeam\", já excluído. O Vinicius removeu a configuração e a Jelou confirmou que está tudo certo.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Elimina um erro recorrente no Jelou e evita que atendimentos sejam direcionados para um canal que não existe mais."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "16:09",
+   "src": "slack",
+   "t": "Vinicius vai preparar documentação e cronograma para o projeto com a Giovanna",
+   "det": "Combinado que ele monta a documentação e os cronogramas e compartilha; ela retoma o assunto quando voltar, em 30/11.",
+   "tag": "Pendência",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Há prazo até o fim do mês para deixar a documentação pronta, sem bloquear outras entregas desta semana."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "16:55",
+   "src": "slack",
+   "t": "Tech Support: automação dos valores dos entregadores MELI será validada em 13/11",
+   "det": "Resumo recebido: o repasse dos valores das entregas MELI para a carteira do entregador dependia de etapas manuais; foi criada uma automação que será validada na sexta (13/11) antes de ir para produção.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Se aprovada, os entregadores da MELI passam a ver os valores na carteira mais rápido, reduzindo chamados no atendimento."
   }
  ],
  "riscos": [
