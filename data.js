@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-12T07:33";
+const SNAPSHOT = "2026-11-12T15:32";
 const TODAY = "2026-11-12";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-25",
+ "fim": "2026-11-26",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -1460,6 +1460,42 @@ const DATA = {
    "destaque": false,
    "info": "Apresentação da ferramenta de monitoramento Datadog para o time de tecnologia, para avaliar se ela ajuda a acompanhar falhas e desempenho dos sistemas.",
    "rel": []
+  },
+  {
+   "d": "2026-11-12",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Planejamento Estratégico Ops",
+   "fr": "ops",
+   "com": "Líderes de cada área",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-19",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Planejamento Estratégico Ops",
+   "fr": "ops",
+   "com": "Líderes de cada área",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-26",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Planejamento Estratégico Ops",
+   "fr": "ops",
+   "com": "Líderes de cada área",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
+   "rel": []
   }
  ],
  "comms": [
@@ -2794,6 +2830,78 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Se aprovada, os entregadores da MELI passam a ver os valores na carteira mais rápido, reduzindo chamados no atendimento."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "13:57",
+   "src": "email",
+   "t": "Márcio questiona fatura de outubro da Jelou: mensagens de marketing subiram para US$ 11 mil",
+   "det": "Foram 173.220 mensagens de marketing no mês, muito acima do esperado para 2 a 3 mil entregadores ativos; as novas mensagens de serviço da Meta somaram US$ 1,4 mil e a fatura total chegou a cerca de R$ 82 mil. Márcio pediu reunião na sexta (13/11) às 9h30 e o Vinicius confirmou presença para buscar formas de reduzir o custo.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "O custo do Jelou saiu do controle em outubro; a reunião de sexta vai definir o que cortar ou ajustar nos disparos para baixar a fatura."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "14:00",
+   "src": "slack",
+   "t": "Operações pediu levantamento de dados dos disparos do Jelou para a reunião com o Márcio",
+   "det": "Pedido: quanto foi enviado por cada número, qual o percentual de mensagens de marketing, quanto foi disparo de campanha e quanto foi resposta de conversa, e se houve aumento em relação aos meses anteriores. O Vinicius vai levantar os números antes da reunião.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Com esses dados dá para descobrir qual time ou campanha puxou o custo para cima e propor um plano de redução com base em fatos."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "14:43",
+   "src": "slack",
+   "t": "Jelou explicou como a Meta classifica e cobra as mensagens",
+   "det": "O tipo de cada campanha (utilidade ou marketing) é definido pela Meta a partir do texto do modelo enviado, e a cobrança é feita por modelo disparado. Quando o motorista responde, a conversa seguinte é cobrada como serviço.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Mensagens com tom promocional viram marketing, que é mais caro; revisar o texto dos modelos pode reduzir o custo sem cortar comunicações."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "11:52",
+   "src": "slack",
+   "t": "SRG: criado o primeiro card do levantamento de ferramentas usadas pelos times",
+   "det": "O Vinicius foi incluído no novo projeto do SRG no Jira. O primeiro card trata de um aplicativo de alerta de e-mails urgentes usado pelo time de Cobrança; as 127 contas de WhatsApp terão um card próprio, com os times envolvidos.",
+   "tag": "Pedido",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Para cada ferramenta o Vinicius vai entender por que é usada, se é autorizada e se existe substituta, para decidir o que manter ou desligar."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "12:13",
+   "src": "slack",
+   "t": "Datadog: envio de logs ainda não evoluiu",
+   "det": "O time de tecnologia ainda não conseguiu mandar ao Datadog só os logs necessários; mandar todos sairia muito caro. Pediu mais um prazo, pois isso também ajudará no desligamento de plataformas antigas.",
+   "tag": "Bloqueio",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Os dados de monitoramento que o Vinicius precisa analisar continuam sem previsão até esse ajuste ser resolvido."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "09:25",
+   "src": "slack",
+   "t": "Chips corporativos do Middle Mile: Vinicius vai confirmar o envio com o RH",
+   "det": "Resposta ao pedido de Operações de 3 chips para o time de Middle Mile: o Vinicius vai checar com o RH a entrega e retornar.",
+   "tag": "Pendência",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Sem os chips, o time de Middle Mile segue sem números próprios para o atendimento."
   }
  ],
  "riscos": [
