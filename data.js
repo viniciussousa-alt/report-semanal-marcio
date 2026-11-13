@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-12T15:32";
-const TODAY = "2026-11-12";
+const SNAPSHOT = "2026-11-13T07:32";
+const TODAY = "2026-11-13";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-11-26",
@@ -496,8 +496,8 @@ const DATA = {
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "CSAT básico já grava. Para associar a nota ao atendente e ao canal, a Jelou precisa desenvolver o envio de variáveis no fechamento do chat; pedido formal enviado em 05/11.",
-   "next": "cobrar da Jelou viabilidade, prazo e custo do desenvolvimento",
+   "ctx": "CSAT básico já grava. A Jelou respondeu em 12/11 que associar a nota ao atendente e ao canal não exige desenvolvimento: basta corrigir o campo lido no fluxo. Faltam definições da Shippify sobre escopo, conceito de canal e destino dos dados.",
+   "next": "responder à Jelou quais linhas terão CSAT, o que é 'canal' e para onde vão os dados",
    "updates": [
     {
      "d": "2026-11-09",
@@ -1496,6 +1496,21 @@ const DATA = {
    "destaque": false,
    "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
    "rel": []
+  },
+  {
+   "d": "2026-11-13",
+   "s": "09:30",
+   "e": "10:15",
+   "t": "Jelou · Plano de Ação",
+   "fr": "jelou",
+   "com": "Márcio, Operações, Comunidade",
+   "marcio": true,
+   "destaque": true,
+   "info": "Reunião convocada pelo Márcio para definir ações que reduzam a fatura do Jelou depois do salto das mensagens de marketing em outubro.",
+   "rel": [
+    "BI-67",
+    "BI-68"
+   ]
   }
  ],
  "comms": [
@@ -2902,6 +2917,54 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Sem os chips, o time de Middle Mile segue sem números próprios para o atendimento."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "15:51",
+   "src": "slack",
+   "t": "Planejamento Ops: app corrigiu push duplicado e caso da carteira MELI foi encerrado",
+   "det": "O time do app publicou a correção dos disparos múltiplos de push (principalmente iOS) e das Smart Notifications; sem deploy previsto nesta semana. O atraso dos valores na carteira dos entregadores MELI não foi falha de sistema, e sim importação manual feita depois do previsto; a automação da importação está em validação.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Os motoristas param de receber notificações repetidas, e a automação vai evitar que valores da MELI atrasem por depender de alguém importar o arquivo."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "16:04",
+   "src": "slack",
+   "t": "Operações finalizou o plano de redução de custos do Jelou",
+   "det": "Plano preparado junto com o Vinicius para levar à reunião com o Márcio na sexta (13/11).",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "A reunião de sexta já parte de uma proposta concreta para baixar a fatura do Jelou, e não só do diagnóstico."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "18:30",
+   "src": "slack",
+   "t": "Datadog: Vinicius recebeu acesso e dois painéis básicos foram montados",
+   "det": "Tecnologia liberou o acesso e criou painéis sobre uso do app do motorista (dispositivos e push) e sobre entregas, motoristas e servidor web. Ainda há ajuste de permissões a fazer, previsto para 13/11; o Vinicius vai dar feedback para evoluir os painéis.",
+   "tag": "Entrega",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "O Vinicius já consegue começar a analisar dados de monitoramento do app, mesmo com o envio completo de logs ainda pendente."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "18:56",
+   "src": "email",
+   "t": "Jelou: CSAT com atendente e canal não precisa de desenvolvimento, só ajuste no fluxo",
+   "det": "A plataforma já grava o atendente ao encerrar o chat; o fluxo de teste lia o campo errado, por isso o operador veio vazio. A Jelou pediu três definições: em quais linhas de atendimento aplicar o CSAT, se 'canal' é o tipo (WhatsApp, Instagram) ou a linha (Comunidade, Food etc.) e para onde enviar os dados.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1abf0bb15bbfa9",
+   "info": "O CSAT deixa de depender de desenvolvimento pago da Jelou; basta o Vinicius responder às três perguntas para destravar a pesquisa."
   }
  ],
  "riscos": [
