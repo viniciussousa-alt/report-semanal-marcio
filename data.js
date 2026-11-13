@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-13T07:32";
+const SNAPSHOT = "2026-11-13T15:33";
 const TODAY = "2026-11-13";
 const DATA = {
  "inicio": "2026-09-28",
@@ -487,11 +487,11 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Estruturar CSAT no atendimento do Jelou",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Low",
    "created": "2026-09-14",
-   "since": "2026-09-15",
-   "updated": "2026-11-09",
+   "since": "2026-11-13",
+   "updated": "2026-11-13",
    "horas": 6.25,
    "done": null,
    "proxy": false,
@@ -499,6 +499,11 @@ const DATA = {
    "ctx": "CSAT básico já grava. A Jelou respondeu em 12/11 que associar a nota ao atendente e ao canal não exige desenvolvimento: basta corrigir o campo lido no fluxo. Faltam definições da Shippify sobre escopo, conceito de canal e destino dos dados.",
    "next": "responder à Jelou quais linhas terão CSAT, o que é 'canal' e para onde vão os dados",
    "updates": [
+    {
+     "d": "2026-11-13",
+     "h": "11:23",
+     "t": "Card saiu de bloqueado e voltou para andamento, depois que a Jelou confirmou que basta ajustar o fluxo, sem desenvolvimento."
+    },
     {
      "d": "2026-11-09",
      "h": "14:20",
@@ -1510,6 +1515,20 @@ const DATA = {
    "rel": [
     "BI-67",
     "BI-68"
+   ]
+  },
+  {
+   "d": "2026-11-16",
+   "s": "15:00",
+   "e": "16:00",
+   "t": "Estrutura de atendimento com IA",
+   "fr": "jelou",
+   "com": "Operações, times de atendimento",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro presencial marcado pelo Vinicius para revisar como o atendimento com IA vai funcionar dentro do Jelou.",
+   "rel": [
+    "PROD-273"
    ]
   }
  ],
@@ -2965,6 +2984,138 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1abf0bb15bbfa9",
    "info": "O CSAT deixa de depender de desenvolvimento pago da Jelou; basta o Vinicius responder às três perguntas para destravar a pesquisa."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "10:00",
+   "src": "slack",
+   "t": "Plano de ação do Jelou: próximos passos definidos",
+   "det": "Após a reunião com o Márcio: confirmar se são mesmo 27 operadores pagos, criar boas práticas para mensagens de serviço, listar os templates mais e menos usados e colocar uma trava para aprovar os templates criados pelos times. Foi criado um grupo no Slack para centralizar o plano.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "A redução de custo do Jelou passa a ter ações concretas e um canal único de acompanhamento com o Márcio e Operações."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "10:22",
+   "src": "slack",
+   "t": "Márcio pediu a divisão dos disparos do Jelou por número/time",
+   "det": "Marketing de outubro, marketing de novembro até 12/11 e mensagens de serviço de outubro, separados por número e time, para hoje.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "O Márcio quer saber quais times geram a maior parte do custo de mensagens do Jelou."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "10:44",
+   "src": "slack",
+   "t": "Jelou enviou as faturas mensais de junho a outubro",
+   "det": "Pedido feito pelo Vinicius para comparar o que foi cobrado com o consumo real de cada mês.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Com as faturas em mãos dá para conferir mês a mês se a cobrança do Jelou bate com o uso."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "11:07",
+   "src": "slack",
+   "t": "Análise de erros de cada time no Jelou entregue a Operações",
+   "det": "Análise detalhada, feita com a IA do próprio Jelou, apontando os problemas de cada time (inclusive erros de português nas mensagens). Operações já começou a montar um cronograma de correções a partir dela.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Os times passam a ter uma lista clara do que corrigir nas suas mensagens e fluxos do Jelou."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "11:12",
+   "src": "slack",
+   "t": "Dúvidas de cobrança enviadas à Jelou",
+   "det": "Perguntas sobre como são cobradas as \"sessões Jelou\" e se \"operadores\" são cobrados por usuário ativo. A Jelou também perguntou como ficou a proposta de renovação do contrato.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Entender a regra de cobrança é o que permite cortar itens pagos sem uso na fatura."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "12:58",
+   "src": "email",
+   "t": "Jelou enviou relatórios de campanhas separados por marketing e serviço",
+   "det": "O relatório da plataforma não filtra por categoria (a Jelou diz que vai incluir esse filtro no futuro); por isso o Vinicius pediu os dados de outubro e de novembro por linha de atendimento e a Jelou enviou à parte.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1d51dff694cdca",
+   "info": "Base que faltava para separar quanto do custo vem de mensagens de marketing e quanto de serviço."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "13:20",
+   "src": "email",
+   "t": "Datadog: alerta de consumo de logs acima do contratado",
+   "det": "O resumo diário de 12/11 trouxe um alerta de cobrança: o volume de logs enviados ficou acima do compromisso diário do contrato.",
+   "tag": "Custo",
+   "fr": "ops",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1d5b5beaf96038",
+   "info": "Se o volume continuar alto, o Datadog pode gerar cobrança extra além do contratado."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "13:21",
+   "src": "slack",
+   "t": "Análise de disparos de marketing e serviço entregue ao Márcio",
+   "det": "Divisão dos disparos por número/time, conforme pedido pela manhã.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "O Márcio já tem a visão de quais times mais disparam mensagens no Jelou."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "13:41",
+   "src": "slack",
+   "t": "Tecnologia achou custo de SMS de token de acesso",
+   "det": "Ao revisar despesas, Tecnologia encontrou cobrança de SMS que envia token de acesso. O Vinicius confirmou com Comunidade que o acesso dos motoristas é por e-mail; Tecnologia vai investigar.",
+   "tag": "Custo",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Pode ser um gasto sem uso real, já que o SMS é o canal mais caro."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "13:56",
+   "src": "slack",
+   "t": "Márcio aprovou acompanhar os custos do Jelou em dashboard",
+   "det": "O Vinicius propôs entregar a visão pedida em formato de dashboard para incluir os próximos meses; o Márcio concordou.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "Os custos do Jelou passarão a ser acompanhados mês a mês num painel, em vez de análises avulsas."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "14:10",
+   "src": "slack",
+   "t": "Números do relatório não batem com a fatura do Jelou",
+   "det": "O Márcio apontou diferença entre relatório e fatura (marketing: 173 mil na fatura x 212 mil no relatório; serviço: 199 mil cobrados x 242 mil). O relatório inclui as falhas; o Vinicius vai cobrar a explicação da Jelou.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "É preciso entender a diferença para saber se a Shippify está pagando certo pelas mensagens."
   }
  ],
  "riscos": [
