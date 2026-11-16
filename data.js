@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-13T15:33";
-const TODAY = "2026-11-13";
+const SNAPSHOT = "2026-11-16T07:33";
+const TODAY = "2026-11-16";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-11-26",
@@ -9,6 +9,36 @@ const DATA = {
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "PROD-291",
+   "board": "PROD",
+   "frente": "jelou",
+   "titulo": "Jelou · relatórios de campanhas por categoria (marketing x serviço) e conferência da fatura de outubro",
+   "status": "blocked",
+   "prio": "Medium",
+   "created": "2026-11-13",
+   "since": "2026-11-13",
+   "updated": "2026-11-13",
+   "horas": 0.75,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (ex.: serviço 242 mil no relatório x 199 mil cobrados). Chamado 22821 aberto.",
+   "next": "aguardar a revisão interna da Jelou sobre a diferença entre relatório e fatura",
+   "updates": [
+    {
+     "d": "2026-11-13",
+     "h": "23:47",
+     "t": "Jelou informou que vai revisar internamente a fatura e os dados para validar as diferenças apontadas."
+    },
+    {
+     "d": "2026-11-13",
+     "h": "15:53",
+     "t": "Diferença entre relatório e fatura enviada formalmente à Jelou, com a soma por canal para conferência."
+    }
+   ],
+   "info": "Card que acompanha a conferência da conta do Jelou: separar quanto custou marketing e quanto custou serviço e confirmar se a cobrança de outubro está correta."
+  },
   {
    "key": "BI-68",
    "board": "BI",
@@ -377,7 +407,7 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-28",
    "since": "2026-11-04",
-   "updated": "2026-11-05",
+   "updated": "2026-11-13",
    "horas": 2,
    "done": null,
    "proxy": false,
@@ -487,7 +517,7 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Estruturar CSAT no atendimento do Jelou",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-11-13",
@@ -496,9 +526,14 @@ const DATA = {
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "CSAT básico já grava. A Jelou respondeu em 12/11 que associar a nota ao atendente e ao canal não exige desenvolvimento: basta corrigir o campo lido no fluxo. Faltam definições da Shippify sobre escopo, conceito de canal e destino dos dados.",
-   "next": "responder à Jelou quais linhas terão CSAT, o que é 'canal' e para onde vão os dados",
+   "ctx": "CSAT básico já grava. A Jelou confirmou que não precisa de desenvolvimento, só ajuste no fluxo. Em 13/11 a Shippify respondeu: mesmo CSAT para todas as áreas de atendimento, gravando a área e o atendente na tabela CSAT, para alimentar o dashboard de satisfação.",
+   "next": "aguardar a Jelou confirmar e aplicar o ajuste nos fluxos; depois testar e montar o dashboard de CSAT",
    "updates": [
+    {
+     "d": "2026-11-13",
+     "h": "16:03",
+     "t": "Respostas enviadas à Jelou: CSAT igual para Comunidade, Food, Ship From Store, Marketplace, Backoffice, RH e Reclame Aqui, gravando área e atendente. Card voltou a bloqueado aguardando a Jelou aplicar o ajuste."
+    },
     {
      "d": "2026-11-13",
      "h": "11:23",
@@ -3116,6 +3151,66 @@ const DATA = {
    "marcio": true,
    "link": "",
    "info": "É preciso entender a diferença para saber se a Shippify está pagando certo pelas mensagens."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "16:03",
+   "src": "email",
+   "t": "CSAT: Shippify respondeu à Jelou o escopo e o destino dos dados",
+   "det": "Mesmo fluxo de CSAT para Comunidade, Food, Ship From Store, Marketplace, Backoffice, RH e Reclame Aqui; por enquanto gravar só a área e o atendente na tabela CSAT existente. A Jelou precisa confirmar e aplicar o ajuste nos fluxos.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1abf0bb15bbfa9",
+   "info": "Com essa resposta, a pesquisa de satisfação passa a identificar qual área e qual atendente foram avaliados, base do futuro dashboard de CSAT."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "16:11",
+   "src": "slack",
+   "t": "SRG: mapeados os usuários da conta de e-mail da Cobrança",
+   "det": "O Vinicius levantou quem usa a conta compartilhada de e-mail da Cobrança e registrou no card do levantamento de ferramentas.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Saber quem usa cada conta compartilhada ajuda a decidir o que manter, ajustar ou desligar no levantamento de ferramentas."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "16:40",
+   "src": "slack",
+   "t": "Atendimento com IA: fornecedor diz que a API funciona e o erro deve estar do lado da Shippify",
+   "det": "O fornecedor da API de atendimento com IA testou e não encontrou erro. A dúvida pode ser tratada direto no canal entre os times de tecnologia, sem chamado; o Vinicius vai verificar com Tecnologia.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "A integração do atendimento com IA ainda não funciona; o próximo passo é achar o que está configurado errado do nosso lado."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "16:53",
+   "src": "slack",
+   "t": "Jelou: número de Comunidade passou do limite diário de envios",
+   "det": "Disparos de outro time foram feitos pelo número de Comunidade por falta de opção de retorno no número deles. Combinado que esse envio passa a sair pelo número de Food; o Vinicius vai comunicar no canal na segunda (16/11) e verificar com a Jelou uma trava de limite.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Estourar o limite pode bloquear ou encarecer o número de Comunidade; separar os envios por número e criar uma trava evita que isso se repita."
+  },
+  {
+   "d": "2026-11-13",
+   "h": "23:47",
+   "src": "email",
+   "t": "Jelou vai revisar a fatura de outubro após a divergência apontada",
+   "det": "O Vinicius enviou a soma por canal mostrando que o relatório não bate com a fatura; a Jelou respondeu que fará uma revisão interna e retornará.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1d51dff694cdca",
+   "info": "Se a diferença se confirmar, a Shippify pode ter sido cobrada a mais pelas mensagens de outubro."
   }
  ],
  "riscos": [
