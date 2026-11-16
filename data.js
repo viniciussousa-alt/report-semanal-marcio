@@ -1,14 +1,39 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-16T07:33";
+const SNAPSHOT = "2026-11-16T12:05";
 const TODAY = "2026-11-16";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-26",
+ "fim": "2026-11-30",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "PROD-293",
+   "board": "PROD",
+   "frente": "jelou",
+   "titulo": "Jelou · ligações de WhatsApp entre atendente e motorista (análise da proposta)",
+   "status": "doing",
+   "prio": "Medium",
+   "created": "2026-11-16",
+   "since": "2026-11-16",
+   "updated": "2026-11-16",
+   "horas": 1,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "A Jelou respondeu as dúvidas e enviou a proposta: usa os números atuais, o motorista precisa autorizar as ligações, até 100 ligações atendidas por dia por motorista, funciona só no navegador. Custo: implantação única de US$ 1.600 + US$ 0,028 por minuto; prazo de cerca de 1 mês e meio após o aceite; dá para fazer piloto com um número e um time.",
+   "next": "analisar a proposta com o Márcio e decidir se segue para piloto",
+   "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "09:00",
+     "t": "Jelou enviou respostas técnicas, custos (US$ 1.600 de implantação + US$ 0,028/min) e prazo (~1,5 mês após aceite)."
+    }
+   ],
+   "info": "Avalia a proposta para o atendimento ligar para o motorista pelo próprio WhatsApp, sem usar telefone pessoal; o card registra custos e regras antes de decidir."
+  },
   {
    "key": "PROD-291",
    "board": "PROD",
@@ -18,14 +43,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-13",
    "since": "2026-11-13",
-   "updated": "2026-11-13",
+   "updated": "2026-11-16",
    "horas": 0.75,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (ex.: serviço 242 mil no relatório x 199 mil cobrados). Chamado 22821 aberto.",
-   "next": "aguardar a revisão interna da Jelou sobre a diferença entre relatório e fatura",
+   "next": "cobrar a Jelou até 18/11, pedir explicação também da diferença de marketing e montar o dashboard de envios por número/time para o Márcio",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "10:47",
+     "t": "Resumo da conferência registrado: além da diferença em serviço, o Márcio apontou diferença em marketing (fatura ~173 mil x relatório ~212 mil). Cobrar a Jelou se não houver retorno até 18/11."
+    },
     {
      "d": "2026-11-13",
      "h": "23:47",
@@ -520,15 +550,25 @@ const DATA = {
    "status": "blocked",
    "prio": "Low",
    "created": "2026-09-14",
-   "since": "2026-11-13",
-   "updated": "2026-11-13",
-   "horas": 6.25,
+   "since": "2026-11-16",
+   "updated": "2026-11-16",
+   "horas": 7.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "CSAT básico já grava. A Jelou confirmou que não precisa de desenvolvimento, só ajuste no fluxo. Em 13/11 a Shippify respondeu: mesmo CSAT para todas as áreas de atendimento, gravando a área e o atendente na tabela CSAT, para alimentar o dashboard de satisfação.",
-   "next": "aguardar a Jelou confirmar e aplicar o ajuste nos fluxos; depois testar e montar o dashboard de CSAT",
+   "ctx": "A Jelou confirmou que dá para replicar o CSAT em todas as áreas de atendimento, só com ajuste de fluxo (sem desenvolvimento). Em 16/11 a Shippify fechou o escopo: área = número/projeto + equipe/fila; áreas Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Brasil CX Team (com Facebook e Instagram); mesmas perguntas; incluir ID do operador, equipe e identificador da conversa; descartar os 8 registros de teste.",
+   "next": "aguardar a Jelou alinhar prazo e criar os fluxos de CSAT em cada área; depois testar e montar o dashboard de satisfação",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "11:12",
+     "t": "Respostas de escopo enviadas à Jelou: áreas definidas (sem RH e Marketplace por ora, com Brasil CX Team), mesmo questionário, colunas extras e descarte dos registros de teste. Card volta a aguardar a Jelou."
+    },
+    {
+     "d": "2026-11-16",
+     "h": "10:44",
+     "t": "Jelou confirmou que pode replicar o CSAT nas áreas pedidas, sem desenvolvimento, e mandou 5 perguntas para fechar o escopo."
+    },
     {
      "d": "2026-11-13",
      "h": "16:03",
@@ -557,18 +597,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou Marketplace · atendimento com IA + integração API Venddor",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Low",
    "created": "2026-09-22",
-   "since": "2026-11-04",
-   "updated": "2026-11-05",
+   "since": "2026-11-16",
+   "updated": "2026-11-16",
    "horas": 1.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Integração com a API Venddor ainda falha. Tema levado à Sesión 5 com a Jelou (04/11); status passou a bloqueado.",
-   "next": "aguardar resposta da Venddor sobre a consulta de pedidos e testar de novo o fluxo no Jelou",
+   "ctx": "Integração com a API Venddor ainda falha (a API devolve sempre o mesmo pedido). Em 16/11 o card voltou para andamento: a Venddor vai documentar o que é possível fazer, e o time está avaliando se segue desenvolvendo no Jelou ou espera a solução da Venddor, já que o Jelou tem custo por mensagem.",
+   "next": "decidir com o Marketplace se continua o desenvolvimento no Jelou ou aguarda a Venddor; reunião sobre atendimento com IA hoje às 15h",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "11:14",
+     "t": "Card voltou para andamento. Marketplace informou que a Venddor vai documentar o que dá ou não para fazer; decisão sobre seguir no Jelou ou aguardar a Venddor ficou para alinhar com a liderança de Marketplace."
+    },
     {
      "d": "2026-11-05",
      "h": "10:09",
@@ -1563,18 +1608,6 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-19",
-   "s": "17:00",
-   "e": "17:45",
-   "t": "Planejamento Estratégico Ops",
-   "fr": "ops",
-   "com": "Líderes de cada área",
-   "marcio": false,
-   "destaque": false,
-   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
-   "rel": []
-  },
-  {
    "d": "2026-11-26",
    "s": "17:00",
    "e": "17:45",
@@ -1612,8 +1645,21 @@ const DATA = {
    "destaque": false,
    "info": "Encontro presencial marcado pelo Vinicius para revisar como o atendimento com IA vai funcionar dentro do Jelou.",
    "rel": [
-    "PROD-273"
+    "PROD-273",
+    "PROD-268"
    ]
+  },
+  {
+   "d": "2026-11-30",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
   }
  ],
  "comms": [
@@ -3260,6 +3306,78 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1d51dff694cdca",
    "info": "Se a diferença se confirmar, a Shippify pode ter sido cobrada a mais pelas mensagens de outubro."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "09:00",
+   "src": "email",
+   "t": "Jelou enviou proposta de ligações via WhatsApp",
+   "det": "Respostas técnicas e custos: implantação única de US$ 1.600, US$ 0,028 por minuto e prazo de cerca de 1 mês e meio após o aceite. Permite piloto com um número e um time.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "info": "Define quanto custaria o atendimento ligar para o motorista pelo WhatsApp; falta decidir se vale fazer um piloto."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "10:17",
+   "src": "slack",
+   "t": "Resumo semanal de envios do Jelou por time",
+   "det": "Análise das últimas duas semanas de disparos separados por time enviada à liderança. O resumo passa a sair toda segunda-feira.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "Acompanhamento semanal de quanto cada time dispara no Jelou, para controlar o custo das mensagens."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "10:21",
+   "src": "slack",
+   "t": "Jelou: cada time vai usar um número fixo para disparos",
+   "det": "Para não estourar o limite diário do número de Comunidade, ficou definido que cada time usa um número só para envio e avisa antes de passar do limite.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Evita que um único número seja sobrecarregado e gere bloqueio ou custo extra nos disparos."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "10:48",
+   "src": "slack",
+   "t": "Plano de contenção de gastos do Jelou alinhado com Operações",
+   "det": "Operações confirmou à liderança que já alinhou com o Vinicius um plano para evitar gastos excessivos de disparos daqui para frente.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "Operações e BI combinaram regras para reduzir o custo dos disparos do Jelou."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "11:12",
+   "src": "email",
+   "t": "CSAT: escopo final enviado à Jelou",
+   "det": "Definidas as áreas que terão pesquisa de satisfação, os nomes das áreas, o mesmo questionário e as colunas extras para o dashboard.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1abf0bb15bbfa9",
+   "info": "Com o escopo fechado, a Jelou pode criar a pesquisa de satisfação em cada área de atendimento."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "11:14",
+   "src": "slack",
+   "t": "Atendimento com IA do Marketplace: seguir no Jelou ou aguardar a Venddor?",
+   "det": "A Venddor vai documentar o que dá para fazer; a decisão sobre continuar o desenvolvimento no Jelou foi levada à liderança de Marketplace, considerando o custo de mensagens.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Evita gastar horas de desenvolvimento e custo de mensagens se o fornecedor já for oferecer a solução."
   }
  ],
  "riscos": [
