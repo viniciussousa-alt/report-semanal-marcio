@@ -638,6 +638,55 @@ const DATA = {
    "next": "",
    "updates": [],
    "info": "Criação da fila de atendimento do time de Backoffice (BKO) no Jelou."
+  },
+  {
+   "key": "SRGDT-1",
+   "board": "SRGDT",
+   "frente": "seg",
+   "titulo": "SRG · app de alerta de e-mails urgentes (conta da Cobrança)",
+   "status": "doing",
+   "prio": "Medium",
+   "created": "2026-11-12",
+   "since": "2026-11-12",
+   "updated": "2026-11-13",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "Primeiro card do levantamento de ferramentas usadas pelos times: um aplicativo que avisa sobre e-mails urgentes, ligado à conta compartilhada de e-mail da Cobrança. Os usuários dessa conta já foram identificados.",
+   "next": "avaliar se o aplicativo é autorizado, se é necessário e se existe alternativa oficial",
+   "updates": [
+    {
+     "d": "2026-11-13",
+     "h": "16:11",
+     "t": "Mapeado quem usa a conta compartilhada de e-mail da Cobrança (3 pessoas do time financeiro)."
+    },
+    {
+     "d": "2026-11-12",
+     "h": "11:55",
+     "t": "Card aberto: descobrir quais times usam a conta de e-mail da Cobrança ligada ao aplicativo."
+    }
+   ],
+   "info": "Verifica se uma ferramenta usada pela Cobrança é segura e autorizada, para decidir se continua, troca ou é desligada."
+  },
+  {
+   "key": "SRGDT-2",
+   "board": "SRGDT",
+   "frente": "seg",
+   "titulo": "SRG · uso do WhatsApp Messenger pelos times",
+   "status": "todo",
+   "prio": "Medium",
+   "created": "2026-11-12",
+   "since": "2026-11-12",
+   "updated": "2026-11-12",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "Card para mapear as contas de WhatsApp usadas pelos times: Comercial, Comunicação, Facilities, Financeiro, Jurídico, Middle Mile, Operações B2B2C e Operações EDSP.",
+   "next": "levantar com cada time quais números usam e para quê",
+   "updates": [],
+   "info": "Mapeia os vários números de WhatsApp espalhados pela empresa, para controlar acessos e reduzir riscos de segurança e custo."
   }
  ],
  "agenda": [
@@ -2943,7 +2992,7 @@ const DATA = {
    "t": "SRG: criado o primeiro card do levantamento de ferramentas usadas pelos times",
    "det": "O Vinicius foi incluído no novo projeto do SRG no Jira. O primeiro card trata de um aplicativo de alerta de e-mails urgentes usado pelo time de Cobrança; as 127 contas de WhatsApp terão um card próprio, com os times envolvidos.",
    "tag": "Pedido",
-   "fr": "ops",
+   "fr": "seg",
    "marcio": false,
    "link": "",
    "info": "Para cada ferramenta o Vinicius vai entender por que é usada, se é autorizada e se existe substituta, para decidir o que manter ou desligar."
@@ -3171,7 +3220,7 @@ const DATA = {
    "t": "SRG: mapeados os usuários da conta de e-mail da Cobrança",
    "det": "O Vinicius levantou quem usa a conta compartilhada de e-mail da Cobrança e registrou no card do levantamento de ferramentas.",
    "tag": "Info",
-   "fr": "ops",
+   "fr": "seg",
    "marcio": false,
    "link": "",
    "info": "Saber quem usa cada conta compartilhada ajuda a decidir o que manter, ajustar ou desligar no levantamento de ferramentas."
