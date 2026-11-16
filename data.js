@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-16T12:05";
+const SNAPSHOT = "2026-11-16T15:33";
 const TODAY = "2026-11-16";
 const DATA = {
  "inicio": "2026-09-28",
@@ -9,6 +9,36 @@ const DATA = {
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "PROD-294",
+   "board": "PROD",
+   "frente": "jelou",
+   "titulo": "Jelou · permissões separadas para modelos e campanhas + limite diário de envios",
+   "status": "doing",
+   "prio": "High",
+   "created": "2026-11-16",
+   "since": "2026-11-16",
+   "updated": "2026-11-16",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou já criou os perfis 'Criador de modelos' e 'Criador de campanhas'; o limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
+   "next": "configurar os novos perfis nos usuários e detalhar o limite diário com a gerente de conta da Jelou",
+   "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "15:28",
+     "t": "Jelou criou dois perfis novos (criador de modelos e criador de campanhas); o limite diário é requisito novo e deve ser tratado com a gerente de conta."
+    },
+    {
+     "d": "2026-11-16",
+     "h": "14:26",
+     "t": "Pedido enviado à Jelou (chamado #22874): separar permissões de modelos e campanhas e criar trava de limite diário de envios."
+    }
+   ],
+   "info": "Dá controle sobre o que é enviado no WhatsApp e ajuda a conter o custo do Jelou, evitando que um time dispare além do combinado."
+  },
   {
    "key": "PROD-293",
    "board": "PROD",
@@ -458,18 +488,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · reestruturação de fluxos (fase 2): limpeza, estrutura e testes com IA",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Medium",
    "created": "2026-10-05",
-   "since": "2026-11-09",
-   "updated": "2026-11-10",
+   "since": "2026-11-16",
+   "updated": "2026-11-16",
    "horas": 9.25,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Atendimento com IA para motoristas funcionando, inclusive a passagem para um atendente humano (ajuste feito pela Jelou no chamado 22714). Falta o Marketing validar o tom das respostas.",
-   "next": "ajustar os prompts com o retorno do Marketing",
+   "next": "definir na reunião de hoje como seguir com o atendimento com IA e ajustar os prompts",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "15:05",
+     "t": "Card voltou para em andamento; reunião presencial sobre a estrutura de atendimento com IA no Jelou às 15h."
+    },
     {
      "d": "2026-11-09",
      "h": "14:30",
@@ -557,8 +592,13 @@ const DATA = {
    "proxy": false,
    "due": null,
    "ctx": "A Jelou confirmou que dá para replicar o CSAT em todas as áreas de atendimento, só com ajuste de fluxo (sem desenvolvimento). Em 16/11 a Shippify fechou o escopo: área = número/projeto + equipe/fila; áreas Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Brasil CX Team (com Facebook e Instagram); mesmas perguntas; incluir ID do operador, equipe e identificador da conversa; descartar os 8 registros de teste.",
-   "next": "aguardar a Jelou alinhar prazo e criar os fluxos de CSAT em cada área; depois testar e montar o dashboard de satisfação",
+   "next": "Jelou confirmar a data do teste e a opção de enviar/não enviar; líderes indicarem um representante por time até 17/11",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "14:47",
+     "t": "Escopo final confirmado com a Jelou: CSAT em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, usuário, nota, resolução e comentário. Novo pedido: o atendente escolhe se envia ou não a pesquisa."
+    },
     {
      "d": "2026-11-16",
      "h": "11:12",
@@ -693,14 +733,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-12",
    "since": "2026-11-12",
-   "updated": "2026-11-13",
+   "updated": "2026-11-16",
    "horas": 0,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Primeiro card do levantamento de ferramentas usadas pelos times: um aplicativo que avisa sobre e-mails urgentes, ligado à conta compartilhada de e-mail da Cobrança. Os usuários dessa conta já foram identificados.",
-   "next": "avaliar se o aplicativo é autorizado, se é necessário e se existe alternativa oficial",
+   "ctx": "Primeiro card do levantamento de ferramentas usadas pelos times: um assistente de IA ligado à conta compartilhada de e-mail da Cobrança, usado para acompanhar pendências e guardar o histórico. Tesouraria e Fiscal usam o mesmo esquema.",
+   "next": "avaliar com Segurança se o uso é autorizado e que ferramenta oficial pode substituir, inclusive para Tesouraria e Fiscal",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "15:14",
+     "t": "Levantado o uso: a conta da Cobrança tem um assistente de IA conectado para acompanhar e-mails pendentes e manter o histórico quando alguém entra ou sai do time; as contas da Tesouraria e do Fiscal usam o mesmo esquema."
+    },
     {
      "d": "2026-11-13",
      "h": "16:11",
@@ -3378,6 +3423,90 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Evita gastar horas de desenvolvimento e custo de mensagens se o fornecedor já for oferecer a solução."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "12:23",
+   "src": "email",
+   "t": "Filtro de mensagens não lidas no Jelou concluído",
+   "det": "O time de Tecnologia finalizou o chamado TEC-2551, que cria o filtro para ver mensagens não lidas no Jelou.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a0d8f43d85bffa9",
+   "info": "Os atendentes passam a achar com facilidade as conversas que ainda não foram respondidas."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "12:34",
+   "src": "slack",
+   "t": "Custo do Jelou: trazer prévia da fatura em R$",
+   "det": "Pedido para mostrar o gasto de envios em reais (considerando o envio de marketing, o mais caro) e fechar até amanhã o teto mensal de envios de Marketing e Marketplace.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "",
+   "info": "Permite enxergar antes do fechamento quanto a fatura do Jelou vai custar e limitar os envios dos times mais caros."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "14:32",
+   "src": "slack",
+   "t": "Segurança: mapear por que os times usam ferramentas próprias",
+   "det": "Combinado mapear o motivo do uso pela Cobrança e pelos times que usam WhatsApp, e propor uma ferramenta ou ajuste oficial para cada caso.",
+   "tag": "Decisão",
+   "fr": "seg",
+   "marcio": false,
+   "link": "",
+   "info": "Em vez de só bloquear, a ideia é entender a necessidade de cada time e oferecer uma alternativa segura."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "14:46",
+   "src": "email",
+   "t": "CSAT: escopo final com a Jelou e novo pedido",
+   "det": "Respondido o número do time de Atendimento e pedido que o canal Web também receba a pesquisa; incluído o requisito do atendente escolher se envia ou não a pesquisa. Aguardando data do teste.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "info": "Fecha o que a pesquisa de satisfação vai medir em cada time antes da Jelou começar a configurar."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "14:51",
+   "src": "slack",
+   "t": "Painel de Faturamento: pedido de filtros com várias opções",
+   "det": "O Financeiro pediu para poder selecionar mais de uma opção nos filtros (ex.: referência de janeiro a junho).",
+   "tag": "Pedido",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Melhoria no painel para o Financeiro comparar vários meses ao mesmo tempo."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "14:58",
+   "src": "slack",
+   "t": "CSAT: líderes devem indicar representante para o teste até 17/11",
+   "det": "Pedido aos líderes de Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento para indicar quem fará o teste da pesquisa.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Sem um representante de cada time não dá para validar o envio da pesquisa quando a Jelou marcar o teste."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "15:28",
+   "src": "email",
+   "t": "Jelou criou perfis separados para modelos e campanhas",
+   "det": "Novos perfis 'Criador de modelos' e 'Criador de campanhas'. O limite diário de envios é requisito novo e deve ser tratado com a gerente de conta.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Já dá para deixar alguns usuários só disparando campanhas, sem poder criar ou alterar mensagens."
   }
  ],
  "riscos": [
