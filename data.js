@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-17T11:35";
+const SNAPSHOT = "2026-11-17T15:35";
 const TODAY = "2026-11-17";
 const DATA = {
  "inicio": "2026-09-28",
@@ -3666,6 +3666,54 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
    "info": "Precisa de aprovação do custo para a pesquisa de satisfação seguir nos 6 times de atendimento."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "11:48",
+   "src": "email",
+   "t": "Ligações via WhatsApp: Jelou pede reunião para alinhar escopo",
+   "det": "Depois das dúvidas enviadas de manhã, a gerente de conta entendeu que surgiu um novo caso de uso e propôs uma reunião no dia 19, às 11h, para esclarecer condições e escopo.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "info": "A aprovação das ligações fica para depois dessa conversa, que vai definir o que a Jelou entrega e quanto custa."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "12:00",
+   "src": "email",
+   "t": "Jelou promete hoje a atualização dos relatórios de Marketing",
+   "det": "O suporte da Jelou respondeu à cobrança e disse que a atualização sobre os relatórios de campanhas por categoria sai ainda hoje.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1d51dff694cdca",
+   "info": "Se a resposta chegar, a conferência da fatura de outubro pode avançar."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "14:00",
+   "src": "slack",
+   "t": "Webcontinental Reversa: cliente definiu a resposta automática",
+   "det": "Quando alguém responder à mensagem de rastreio, o WhatsApp vai avisar que aquele número não é canal de atendimento e orientar a procurar a empresa.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Evita que clientes finais fiquem sem resposta ou caiam no atendimento da Shippify por engano."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "15:31",
+   "src": "slack",
+   "t": "Pedido de bloqueio de 6 usuários no monitor",
+   "det": "Operações enviou a lista de usuários que devem perder o acesso ao monitor.",
+   "tag": "Pedido",
+   "fr": "seg",
+   "marcio": false,
+   "link": "",
+   "info": "Tirar acessos de quem não precisa mais reduz o risco de uso indevido dos dados da operação."
   }
  ],
  "riscos": [
