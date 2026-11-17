@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-17T07:33";
+const SNAPSHOT = "2026-11-17T11:35";
 const TODAY = "2026-11-17";
 const DATA = {
  "inicio": "2026-09-28",
@@ -14,18 +14,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · permissões separadas para modelos e campanhas + limite diário de envios",
-   "status": "doing",
+   "status": "blocked",
    "prio": "High",
    "created": "2026-11-16",
-   "since": "2026-11-16",
-   "updated": "2026-11-16",
+   "since": "2026-11-17",
+   "updated": "2026-11-17",
    "horas": 0,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou criou os perfis 'Criador de modelos' e 'Criador de campanhas', mas no teste nenhuma combinação separou as duas coisas; a Jelou está revisando. O limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
-   "next": "aguardar a correção dos perfis pela Jelou, testar de novo e enviar à gerente de conta o detalhamento do limite diário",
+   "next": "aguardar a correção dos perfis pela Jelou e alinhar amanhã (18/11) com os responsáveis de cada time quem vai criar modelos; depois, detalhar o limite diário com a gerente de conta",
    "updates": [
+    {
+     "d": "2026-11-17",
+     "h": "08:44",
+     "t": "Jelou recebeu o resultado do teste e vai revisar os perfis de acesso; card bloqueado até a resposta, sem prazo informado."
+    },
     {
      "d": "2026-11-16",
      "h": "16:55",
@@ -54,18 +59,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · ligações de WhatsApp entre atendente e motorista (análise da proposta)",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-11-16",
-   "since": "2026-11-16",
-   "updated": "2026-11-16",
-   "horas": 1,
+   "since": "2026-11-17",
+   "updated": "2026-11-17",
+   "horas": 1.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "A Jelou respondeu as dúvidas e enviou a proposta: usa os números atuais, o motorista precisa autorizar as ligações, até 100 ligações atendidas por dia por motorista, funciona só no navegador. Custo: implantação única de US$ 1.600 + US$ 0,028 por minuto; prazo de cerca de 1 mês e meio após o aceite; dá para fazer piloto com um número e um time.",
-   "next": "analisar a proposta com o Márcio e decidir se segue para piloto",
+   "ctx": "A Jelou respondeu as dúvidas e enviou a proposta: usa os números atuais, o motorista precisa autorizar as ligações, até 100 ligações atendidas por dia por motorista, funciona só no navegador. Custo: implantação única de US$ 1.600 + US$ 0,028 por minuto; prazo de cerca de 1 mês e meio após o aceite; dá para fazer piloto com um número e um time. Em 17/11 foram enviadas dúvidas sobre custo, limites, ligações recebidas e gravações; o card aguarda a resposta da Jelou.",
+   "next": "aguardar as respostas da Jelou e levar a proposta ao Márcio para decidir sobre o piloto",
    "updates": [
+    {
+     "d": "2026-11-17",
+     "h": "09:36",
+     "t": "Dúvidas enviadas à Jelou antes da aprovação comercial: como o motorista autoriza as ligações, composição do custo (campanha + US$ 0,028/min, taxa de US$ 1.600), limites diários, ligações recebidas e tempo de guarda das gravações."
+    },
     {
      "d": "2026-11-16",
      "h": "09:00",
@@ -596,14 +606,24 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-11-16",
-   "updated": "2026-11-16",
-   "horas": 7.25,
+   "updated": "2026-11-17",
+   "horas": 7.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "A Jelou confirmou que dá para replicar o CSAT em todas as áreas de atendimento, só com ajuste de fluxo (sem desenvolvimento). Em 16/11 a Shippify fechou o escopo: área = número/projeto + equipe/fila; áreas Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Brasil CX Team (com Facebook e Instagram); mesmas perguntas; incluir ID do operador, equipe e identificador da conversa; descartar os 8 registros de teste.",
-   "next": "Jelou confirmar a data do teste e a opção de enviar/não enviar; líderes indicarem um representante por time até 17/11",
+   "ctx": "A Jelou confirmou que dá para replicar o CSAT em todas as áreas de atendimento, só com ajuste de fluxo (sem desenvolvimento). Em 16/11 a Shippify fechou o escopo: área = número/projeto + equipe/fila; áreas Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Brasil CX Team (com Facebook e Instagram); mesmas perguntas; incluir ID do operador, equipe e identificador da conversa; descartar os 8 registros de teste. Em 17/11 os 6 operadores de teste foram definidos e a Jelou orçou o desenvolvimento em 12 h (US$ 960, pagamento único).",
+   "next": "decidir com o Márcio se aprova o custo de US$ 960; Jelou confirmar a data do teste e a opção de enviar/não enviar a pesquisa",
    "updates": [
+    {
+     "d": "2026-11-17",
+     "h": "11:19",
+     "t": "Jelou orçou o pedido em 12 horas de desenvolvimento, custo único de US$ 960, e pediu aprovação para seguir."
+    },
+    {
+     "d": "2026-11-17",
+     "h": "10:37",
+     "t": "Operadores de teste definidos (um por time: Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento) e cobrança enviada à Jelou pela data do teste."
+    },
     {
      "d": "2026-11-16",
      "h": "14:47",
@@ -647,18 +667,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou Marketplace · atendimento com IA + integração API Venddor",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Low",
    "created": "2026-09-22",
-   "since": "2026-11-16",
-   "updated": "2026-11-16",
+   "since": "2026-11-17",
+   "updated": "2026-11-17",
    "horas": 1.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Integração com a API Venddor ainda falha (a API devolve sempre o mesmo pedido). Em 16/11 o card voltou para andamento: a Venddor vai documentar o que é possível fazer, e o time está avaliando se segue desenvolvendo no Jelou ou espera a solução da Venddor, já que o Jelou tem custo por mensagem.",
-   "next": "decidir com o Marketplace se continua o desenvolvimento no Jelou ou aguarda a Venddor; reunião sobre atendimento com IA hoje às 15h",
+   "ctx": "Integração com a API Venddor ainda falha (a API devolve sempre o mesmo pedido). A Venddor pode lançar um atendimento com IA dentro da própria plataforma, então o projeto está parado até o Marketplace decidir se segue no Jelou ou aguarda a Venddor.",
+   "next": "aguardar a decisão do Marketplace após a reunião com a Venddor; se seguir no Jelou, retomar os testes da API",
    "updates": [
+    {
+     "d": "2026-11-17",
+     "h": "11:11",
+     "t": "Card bloqueado: a Venddor tem no radar um atendimento com IA dentro da própria plataforma. Pergunta enviada à liderança do Marketplace (seguir no Jelou ou esperar a Venddor); ela vai conversar com a Venddor hoje."
+    },
     {
      "d": "2026-11-16",
      "h": "11:14",
@@ -1715,6 +1740,46 @@ const DATA = {
    "destaque": false,
    "info": "Conversa sobre quem controla e acompanha as linhas e contas de telefonia da Claro usadas pela empresa.",
    "rel": []
+  },
+  {
+   "d": "2026-11-17",
+   "s": "15:30",
+   "e": "16:00",
+   "t": "Ajuste workflow Jelou",
+   "fr": "jelou",
+   "com": "Atendimento",
+   "marcio": false,
+   "destaque": false,
+   "info": "Sessão marcada pelo Vinicius com o time de atendimento para ajustar um fluxo de trabalho dentro do Jelou.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-18",
+   "s": "11:00",
+   "e": "11:30",
+   "t": "Criação de modelos Jelou - Responsáveis",
+   "fr": "jelou",
+   "com": "Responsáveis de cada time",
+   "marcio": false,
+   "destaque": true,
+   "info": "Alinhamento com as pessoas escolhidas para criar modelos de mensagem no Jelou; depois disso, os demais só poderão disparar campanhas com modelos prontos.",
+   "rel": [
+    "PROD-294"
+   ]
+  },
+  {
+   "d": "2026-11-25",
+   "s": "15:00",
+   "e": "15:45",
+   "t": "Extensão e-mail cobranca@shippify.co",
+   "fr": "seg",
+   "com": "Financeiro, Tecnologia",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa sobre a extensão criada pelo Financeiro para alertar e-mails urgentes da conta de Cobrança, para ver como torná-la segura e oficial.",
+   "rel": [
+    "SRGDT-1"
+   ]
   }
  ],
  "comms": [
@@ -3541,6 +3606,66 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
    "info": "A pendência das permissões está com a Jelou; o próximo passo é testar de novo quando eles responderem."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "09:36",
+   "src": "email",
+   "t": "Ligações via WhatsApp: dúvidas enviadas à Jelou antes da aprovação",
+   "det": "Perguntas sobre autorização do motorista, composição do custo, limites diários, ligações recebidas e gravações.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "info": "A decisão de contratar as ligações depende dessas respostas, porque elas definem o custo real."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "10:31",
+   "src": "email",
+   "t": "Cobrança à Jelou: relatórios de campanhas de Marketing",
+   "det": "Pedido de atualização sobre os relatórios de campanhas por categoria, ainda sem resposta.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1d51dff694cdca",
+   "info": "Sem esses relatórios não dá para conferir quanto de cada campanha entra como marketing na fatura."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "10:52",
+   "src": "slack",
+   "t": "Só os responsáveis de cada time vão criar modelos no Jelou",
+   "det": "Todos continuam podendo enviar campanhas, mas a criação de modelos ficará com uma pessoa por time; reunião com os responsáveis marcada para 18/11.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Reduz modelos duplicados ou mal escritos e ajuda a controlar o que é disparado no WhatsApp."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "11:08",
+   "src": "slack",
+   "t": "Marketplace: seguir com IA no Jelou ou esperar a Venddor?",
+   "det": "Pergunta enviada à liderança do Marketplace; ela vai se reunir com a Venddor hoje e retorna.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Evita gastar horas desenvolvendo no Jelou algo que a Venddor pode entregar dentro da própria plataforma."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "11:19",
+   "src": "email",
+   "t": "CSAT: Jelou orçou o desenvolvimento em US$ 960",
+   "det": "A gerente de conta informou 12 horas de desenvolvimento, custo único de US$ 960, e pediu aprovação para seguir.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "info": "Precisa de aprovação do custo para a pesquisa de satisfação seguir nos 6 times de atendimento."
   }
  ],
  "riscos": [
