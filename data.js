@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-16T15:33";
-const TODAY = "2026-11-16";
+const SNAPSHOT = "2026-11-17T07:33";
+const TODAY = "2026-11-17";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-11-30",
@@ -23,9 +23,19 @@ const DATA = {
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou já criou os perfis 'Criador de modelos' e 'Criador de campanhas'; o limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
-   "next": "configurar os novos perfis nos usuários e detalhar o limite diário com a gerente de conta da Jelou",
+   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou criou os perfis 'Criador de modelos' e 'Criador de campanhas', mas no teste nenhuma combinação separou as duas coisas; a Jelou está revisando. O limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
+   "next": "aguardar a correção dos perfis pela Jelou, testar de novo e enviar à gerente de conta o detalhamento do limite diário",
    "updates": [
+    {
+     "d": "2026-11-16",
+     "h": "16:55",
+     "t": "Teste dos novos perfis falhou: com 'Gerente de campanhas' o usuário ainda vê modelos e campanhas; só com 'Criação de campanhas' não vê nenhum dos dois. Retorno enviado à Jelou."
+    },
+    {
+     "d": "2026-11-16",
+     "h": "16:44",
+     "t": "Primeiros passos feitos: perfis definidos por usuário e aplicados na plataforma para teste."
+    },
     {
      "d": "2026-11-16",
      "h": "15:28",
@@ -1533,18 +1543,6 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-16",
-   "s": "17:00",
-   "e": "17:45",
-   "t": "Weekly BI Meeting",
-   "fr": "dash",
-   "com": "Márcio",
-   "marcio": true,
-   "destaque": false,
-   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
-   "rel": []
-  },
-  {
    "d": "2026-11-18",
    "s": "16:00",
    "e": "17:00",
@@ -1566,18 +1564,6 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Reunião para alinhar prazos e ordem das próximas entregas.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-23",
-   "s": "17:00",
-   "e": "17:45",
-   "t": "Weekly BI Meeting",
-   "fr": "dash",
-   "com": "Márcio",
-   "marcio": true,
-   "destaque": false,
-   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
    "rel": []
   },
   {
@@ -1695,15 +1681,39 @@ const DATA = {
    ]
   },
   {
-   "d": "2026-11-30",
-   "s": "17:00",
-   "e": "17:45",
+   "d": "2026-11-17",
+   "s": "14:00",
+   "e": "14:45",
    "t": "Weekly BI Meeting",
    "fr": "dash",
    "com": "Márcio",
    "marcio": true,
    "destaque": false,
-   "info": "Reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
+   "info": "Remarcada de segunda (16/11, 17h) para terça às 14h; a reunião semanal com o Márcio passa a ser às terças, para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-17",
+   "s": "11:15",
+   "e": "11:45",
+   "t": "Envio WhatsApp - Webcontinental Reversa",
+   "fr": "jelou",
+   "com": "Comercial",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento com o Comercial sobre o envio de mensagens de WhatsApp pelo Jelou para a operação de reversa (devoluções) da Webcontinental.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-17",
+   "s": "15:00",
+   "e": "15:30",
+   "t": "Gestão das Contas Claro",
+   "fr": "ops",
+   "com": "Times internos",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa sobre quem controla e acompanha as linhas e contas de telefonia da Claro usadas pela empresa.",
    "rel": []
   }
  ],
@@ -3507,6 +3517,30 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
    "info": "Já dá para deixar alguns usuários só disparando campanhas, sem poder criar ou alterar mensagens."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "16:54",
+   "src": "email",
+   "t": "Perfis novos do Jelou não separaram modelos e campanhas",
+   "det": "No teste, o perfil de campanhas continuou dando acesso a modelos, e o perfil só de criação de campanhas não mostrou nada. Retorno enviado à Jelou com print, Márcio em cópia.",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Ainda não dá para deixar alguém só disparando campanhas sem poder mexer nas mensagens; depende de ajuste da Jelou."
+  },
+  {
+   "d": "2026-11-16",
+   "h": "18:32",
+   "src": "email",
+   "t": "Jelou vai revisar os perfis de acesso de modelos e campanhas",
+   "det": "O suporte da Jelou confirmou que vai analisar o comportamento dos perfis e retornar com a correção.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "A pendência das permissões está com a Jelou; o próximo passo é testar de novo quando eles responderem."
   }
  ],
  "riscos": [
