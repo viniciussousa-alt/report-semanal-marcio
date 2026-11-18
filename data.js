@@ -1,14 +1,33 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-17T15:35";
-const TODAY = "2026-11-17";
+const SNAPSHOT = "2026-11-18T07:33";
+const TODAY = "2026-11-18";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-11-30",
+ "fim": "2026-12-02",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "BI-69",
+   "board": "BI",
+   "frente": "jelou",
+   "titulo": "Jelou · unificar filas de SFS e restringir acesso ao monitor",
+   "status": "todo",
+   "prio": "Medium",
+   "created": "2026-11-17",
+   "since": "2026-11-17",
+   "updated": "2026-11-17",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "Pedido de Operações SFS para juntar as filas 'Quero Rotas' e 'Alocação de SFS' em uma só dentro do Jelou e deixar o monitor visível apenas para analistas e gestão.",
+   "next": "avaliar a junção das filas no Jelou e ajustar os perfis de acesso ao monitor",
+   "updates": [],
+   "info": "Simplifica o atendimento de SFS em uma fila única e reduz quem enxerga o monitor, protegendo os dados da operação."
+  },
   {
    "key": "PROD-294",
    "board": "PROD",
@@ -24,7 +43,7 @@ const DATA = {
    "proxy": false,
    "due": null,
    "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou criou os perfis 'Criador de modelos' e 'Criador de campanhas', mas no teste nenhuma combinação separou as duas coisas; a Jelou está revisando. O limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
-   "next": "aguardar a correção dos perfis pela Jelou e alinhar amanhã (18/11) com os responsáveis de cada time quem vai criar modelos; depois, detalhar o limite diário com a gerente de conta",
+   "next": "aguardar a análise do time responsável da Jelou sobre os perfis; fechar com os líderes a divisão do limite diário (proposta: SFS 1.500, Food 250, Comunidade 250) e então ajustar na plataforma",
    "updates": [
     {
      "d": "2026-11-17",
@@ -99,7 +118,7 @@ const DATA = {
    "proxy": false,
    "due": null,
    "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (ex.: serviço 242 mil no relatório x 199 mil cobrados). Chamado 22821 aberto.",
-   "next": "cobrar a Jelou até 18/11, pedir explicação também da diferença de marketing e montar o dashboard de envios por número/time para o Márcio",
+   "next": "conferir a explicação da Jelou (fatura inclui cobrança por usuário além das mensagens) contra a fatura de outubro e montar o dashboard de envios por número/time para o Márcio",
    "updates": [
     {
      "d": "2026-11-16",
@@ -1780,6 +1799,33 @@ const DATA = {
    "rel": [
     "SRGDT-1"
    ]
+  },
+  {
+   "d": "2026-11-19",
+   "s": "09:00",
+   "e": "11:00",
+   "t": "Alinhamentos numeros e Jelou",
+   "fr": "jelou",
+   "com": "Operações SFS",
+   "marcio": false,
+   "destaque": true,
+   "info": "Sessão marcada pelo Vinicius com a liderança de Operações SFS para revisar os números de WhatsApp e o uso do Jelou, incluindo a divisão do limite diário de envios.",
+   "rel": [
+    "PROD-294",
+    "SRGDT-2"
+   ]
+  },
+  {
+   "d": "2026-12-02",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
   }
  ],
  "comms": [
@@ -3714,6 +3760,54 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Tirar acessos de quem não precisa mais reduz o risco de uso indevido dos dados da operação."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "16:20",
+   "src": "email",
+   "t": "Jelou confirma que a cobrança de mensagens de outubro está correta",
+   "det": "Após revisão, a Jelou disse que não há mensagens duplicadas e que a diferença vista vem de outros itens da fatura, como o valor por usuário da plataforma; o chamado foi encerrado.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1d51dff694cdca",
+   "info": "A conferência da fatura de outubro pode ser fechada, desde que os números batam separando mensagens e licenças."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "16:44",
+   "src": "slack",
+   "t": "Proposta de divisão do limite diário de WhatsApp entre times",
+   "det": "Não haverá número exclusivo para Pilotos; a proposta é Operações SFS com 1.500 mensagens/dia, Food e Comunidade com 250 cada, aguardando o OK dos líderes.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Segura o custo com disparos: qualquer aumento para um time sai da cota de outro, sem limite extra."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "16:48",
+   "src": "slack",
+   "t": "Ata da reunião sobre os números de telefone enviada",
+   "det": "Vinicius compartilhou com os líderes envolvidos a ata da reunião sobre as linhas e números usados pelos times.",
+   "tag": "Entrega",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Deixa registrado o que foi combinado sobre quem usa cada número e os próximos passos."
+  },
+  {
+   "d": "2026-11-17",
+   "h": "19:22",
+   "src": "email",
+   "t": "Jelou escala a falha nos perfis de modelos x campanhas",
+   "det": "O suporte passou o caso para a equipe responsável, que está investigando por que os novos perfis não separam as permissões.",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Enquanto não houver correção, não dá para limitar quem cria modelos de mensagem; o card segue bloqueado."
   }
  ],
  "riscos": [
