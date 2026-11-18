@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-18T07:33";
+const SNAPSHOT = "2026-11-18T15:34";
 const TODAY = "2026-11-18";
 const DATA = {
  "inicio": "2026-09-28",
@@ -14,19 +14,25 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Jelou · unificar filas de SFS e restringir acesso ao monitor",
-   "status": "todo",
+   "status": "done",
    "prio": "Medium",
    "created": "2026-11-17",
-   "since": "2026-11-17",
-   "updated": "2026-11-17",
-   "horas": 0,
-   "done": null,
+   "since": "2026-11-18",
+   "updated": "2026-11-18",
+   "horas": 0.25,
+   "done": "2026-11-18",
    "proxy": false,
    "due": null,
    "ctx": "Pedido de Operações SFS para juntar as filas 'Quero Rotas' e 'Alocação de SFS' em uma só dentro do Jelou e deixar o monitor visível apenas para analistas e gestão.",
-   "next": "avaliar a junção das filas no Jelou e ajustar os perfis de acesso ao monitor",
-   "updates": [],
-   "info": "Simplifica o atendimento de SFS em uma fila única e reduz quem enxerga o monitor, protegendo os dados da operação."
+   "next": "concluído",
+   "updates": [
+    {
+     "d": "2026-11-18",
+     "h": "09:17",
+     "t": "Concluído: 6 usuários removidos do monitor e filas 'Quero Rotas' e 'Alocação de SFS' unificadas em 'Alocações SFS'; retorno dado a Operações."
+    }
+   ],
+   "info": "O atendimento de SFS passou a ter uma fila única e o monitor ficou visível só para analistas e gestão, protegendo os dados da operação."
   },
   {
    "key": "PROD-294",
@@ -112,14 +118,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-13",
    "since": "2026-11-13",
-   "updated": "2026-11-16",
+   "updated": "2026-11-18",
    "horas": 0.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (ex.: serviço 242 mil no relatório x 199 mil cobrados). Chamado 22821 aberto.",
-   "next": "conferir a explicação da Jelou (fatura inclui cobrança por usuário além das mensagens) contra a fatura de outubro e montar o dashboard de envios por número/time para o Márcio",
+   "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (serviço 242 mil no relatório x 199 mil cobrados; marketing ~212 mil x ~173 mil). A Jelou disse que a cobrança está correta e fechou o chamado 22821 sem explicar a diferença de volume.",
+   "next": "pedir à Jelou a conferência linha a linha da fatura de outubro (volume por categoria, regra de contagem, mensagens com falha e franquia gratuita), escalar com a gerente de conta se necessário e montar o dashboard de envios por número/time para o Márcio",
    "updates": [
+    {
+     "d": "2026-11-18",
+     "h": "09:45",
+     "t": "A resposta da Jelou não explica a diferença: o problema é de volume (242 mil mensagens de serviço no relatório x 199 mil na fatura), e a cobrança por usuário não muda essa contagem; a diferença de marketing também ficou sem resposta. Card segue bloqueado."
+    },
     {
      "d": "2026-11-16",
      "h": "10:47",
@@ -1798,21 +1809,6 @@ const DATA = {
    "info": "Conversa sobre a extensão criada pelo Financeiro para alertar e-mails urgentes da conta de Cobrança, para ver como torná-la segura e oficial.",
    "rel": [
     "SRGDT-1"
-   ]
-  },
-  {
-   "d": "2026-11-19",
-   "s": "09:00",
-   "e": "11:00",
-   "t": "Alinhamentos numeros e Jelou",
-   "fr": "jelou",
-   "com": "Operações SFS",
-   "marcio": false,
-   "destaque": true,
-   "info": "Sessão marcada pelo Vinicius com a liderança de Operações SFS para revisar os números de WhatsApp e o uso do Jelou, incluindo a divisão do limite diário de envios.",
-   "rel": [
-    "PROD-294",
-    "SRGDT-2"
    ]
   },
   {
@@ -3808,6 +3804,90 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
    "info": "Enquanto não houver correção, não dá para limitar quem cria modelos de mensagem; o card segue bloqueado."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "09:10",
+   "src": "slack",
+   "t": "Aviso de \"pedido saiu para entrega\" do novo cliente depende da forma de cobrança",
+   "det": "Antes de ativar, Comercial e Financeiro precisam definir como cobrar esses envios; preços por mensagem já definidos com o Márcio (marketing R$ 1,00, utilidade e serviço R$ 0,11). Os envios sairão de um número exclusivo para poder separar o custo.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Sem a regra de cobrança definida, a Shippify pagaria as mensagens sem repassar o custo ao cliente."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "09:16",
+   "src": "slack",
+   "t": "Filas de SFS unificadas e acessos ao monitor removidos",
+   "det": "Os 6 usuários pedidos perderam acesso ao monitor e as filas de SFS viraram uma só, \"Alocações SFS\" (BI-69).",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Pedido de Operações atendido em menos de um dia: atendimento mais simples e menos gente vendo dados da operação."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "10:04",
+   "src": "slack",
+   "t": "Inventário dos chips corporativos: números sem dono serão cancelados",
+   "det": "A pedido do Financeiro, foi disparada uma mensagem para cada número pedindo que o responsável se identifique; ao longo do dia vários números foram confirmados com os times. Os que não responderem terão o plano cancelado.",
+   "tag": "Decisão",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Corta o custo de linhas sem uso e deixa claro quem é responsável por cada número da empresa."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "10:58",
+   "src": "slack",
+   "t": "Pedido de aparelhos saiu da fila de aprovação",
+   "det": "A aprovadora informou que o pedido dos aparelhos não está mais com ela; foi pedido ao Compras que verifique o que aconteceu.",
+   "tag": "Pendência",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Se o pedido travou no sistema, a entrega dos aparelhos aos times atrasa."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "14:29",
+   "src": "email",
+   "t": "Nova cobrança à Jelou sobre os perfis de modelos x campanhas",
+   "det": "Pedido de atualização sobre a correção dos perfis de acesso, que seguem sem separar quem cria modelos de quem só envia campanhas.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Enquanto a Jelou não corrigir, não dá para travar a criação de modelos só nos responsáveis."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "14:59",
+   "src": "slack",
+   "t": "Jelou explica como cobra \"Sessões\" e \"Operadores\"",
+   "det": "Sessões medem os usuários finais que conversam com o assistente pelo WhatsApp (não logins na plataforma); Operadores são cobrados só pelas licenças que fizeram login no período, não pelo total cadastrado.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Ajuda a conferir a fatura e mostra que desligar acessos sem uso reduz o custo com operadores."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "15:18",
+   "src": "slack",
+   "t": "Criadores de modelos definidos por time no Jelou",
+   "det": "SFS, Food e Comunidade têm cada um uma responsável pela criação de modelos; o disparo de campanhas fica com cada time, dentro do seu limite diário. A retirada do acesso dos demais aguarda o time de tecnologia.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Cada time passa a controlar seus próprios modelos e cota de envios, sem consumir o limite dos outros."
   }
  ],
  "riscos": [
