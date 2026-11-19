@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-19T07:33";
+const SNAPSHOT = "2026-11-19T15:34";
 const TODAY = "2026-11-19";
 const DATA = {
  "inicio": "2026-09-28",
@@ -14,18 +14,24 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Jelou · menu exclusivo para Boticário e Autoglass na fila de Alocação SFS",
-   "status": "todo",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-11-18",
-   "since": "2026-11-18",
-   "updated": "2026-11-18",
-   "horas": 0,
+   "since": "2026-11-19",
+   "updated": "2026-11-19",
+   "horas": 0.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pedido de Operações SFS para criar, dentro da fila de Alocação SFS no Jelou, um menu que reúna só as operações de Boticário e Autoglass.",
-   "next": "desenhar o menu no fluxo da fila de Alocação SFS, testar e publicar",
-   "updates": [],
+   "ctx": "Opções O Boticário e Autoglass incluídas no menu de WhatsApp da fila de Alocação SFS, com uma equipe própria (\"Pilotos\") para atender essas operações.",
+   "next": "receber de Operações SFS o horário de atendimento dessas operações, configurar na equipe e testar o menu",
+   "updates": [
+    {
+     "d": "2026-11-19",
+     "h": "09:33",
+     "t": "Menu com O Boticário e Autoglass criado e equipe \"Pilotos\" configurada; falta Operações informar o horário de atendimento para o fluxo funcionar 100%."
+    }
+   ],
    "info": "Facilita o acompanhamento das operações de Boticário e Autoglass, separando esses atendimentos dentro da fila de SFS."
   },
   {
@@ -62,14 +68,24 @@ const DATA = {
    "prio": "High",
    "created": "2026-11-16",
    "since": "2026-11-17",
-   "updated": "2026-11-17",
-   "horas": 0,
+   "updated": "2026-11-19",
+   "horas": 0.5,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou criou os perfis 'Criador de modelos' e 'Criador de campanhas', mas no teste nenhuma combinação separou as duas coisas; a Jelou está revisando. O limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
-   "next": "refazer o teste dos perfis com um usuário sem Super Admin/Admin, como a Jelou recomendou; fechar com os líderes a divisão do limite diário (proposta: SFS 1.500, Food 250, Comunidade 250) e então ajustar na plataforma",
+   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time. A Jelou criou os perfis \"Criador de modelos\" e \"Criador de campanhas\", mas o teste falhou tanto com usuário administrador quanto com usuário comum. Enquanto a trava não funciona, a regra vale por combinado entre os times.",
+   "next": "repetir o teste deixando a usuária de teste só com o perfil \"Criador de campanhas\", como a Jelou apontou; fechar com os líderes a divisão do limite diário e tratar a trava com a gerente de conta",
    "updates": [
+    {
+     "d": "2026-11-19",
+     "h": "14:31",
+     "t": "Jelou verificou que a usuária de teste estava com os dois perfis novos ao mesmo tempo (criador de modelos e de campanhas), o que explica ela ainda ver os dois módulos."
+    },
+    {
+     "d": "2026-11-19",
+     "h": "08:31",
+     "t": "Novo teste com uma usuária sem perfil de administrador: o erro continua (ainda vê modelos e campanhas). Retorno enviado à Jelou."
+    },
     {
      "d": "2026-11-17",
      "h": "08:44",
@@ -107,14 +123,24 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-16",
    "since": "2026-11-17",
-   "updated": "2026-11-17",
+   "updated": "2026-11-19",
    "horas": 1.75,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "A Jelou respondeu as dúvidas e enviou a proposta: usa os números atuais, o motorista precisa autorizar as ligações, até 100 ligações atendidas por dia por motorista, funciona só no navegador. Custo: implantação única de US$ 1.600 + US$ 0,028 por minuto; prazo de cerca de 1 mês e meio após o aceite; dá para fazer piloto com um número e um time. Em 17/11 foram enviadas dúvidas sobre custo, limites, ligações recebidas e gravações; o card aguarda a resposta da Jelou.",
-   "next": "aguardar as respostas da Jelou e levar a proposta ao Márcio para decidir sobre o piloto",
+   "next": "escolher uma das datas propostas pela Jelou (23/11 às 11h30 ou 15h, ou 24/11 às 15h), confirmar com o Márcio e levar as dúvidas de custo e limites para a reunião",
    "updates": [
+    {
+     "d": "2026-11-19",
+     "h": "14:06",
+     "t": "Jelou propôs datas para a reunião de escopo: segunda 23/11 (11h30 ou 15h) ou terça 24/11 (15h)."
+    },
+    {
+     "d": "2026-11-19",
+     "h": "10:13",
+     "t": "Respondido à Jelou com disponibilidade para a próxima semana para a reunião de escopo das ligações."
+    },
     {
      "d": "2026-11-17",
      "h": "09:36",
@@ -137,14 +163,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-13",
    "since": "2026-11-13",
-   "updated": "2026-11-18",
-   "horas": 0.75,
+   "updated": "2026-11-19",
+   "horas": 1.25,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (serviço 242 mil no relatório x 199 mil cobrados; marketing ~212 mil x ~173 mil). A Jelou disse que a cobrança está correta e fechou o chamado 22821 sem explicar a diferença de volume.",
-   "next": "pedir à Jelou a conferência linha a linha da fatura de outubro (volume por categoria, regra de contagem, mensagens com falha e franquia gratuita), escalar com a gerente de conta se necessário e montar o dashboard de envios por número/time para o Márcio",
+   "next": "aguardar o retorno do faturamento da Jelou sobre a diferença de volume de outubro e montar o dashboard de envios por número/time para o Márcio",
    "updates": [
+    {
+     "d": "2026-11-19",
+     "h": "11:00",
+     "t": "Gerente de conta da Jelou levou a diferença ao time de faturamento deles (relatório soma 242.716 mensagens de serviço x 199.356 na fatura)."
+    },
     {
      "d": "2026-11-18",
      "h": "09:45",
@@ -267,18 +298,23 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard Faturamento Consolidado (SFS + EDSP) no Claude",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-10-27",
-   "since": "2026-11-11",
-   "updated": "2026-11-11",
-   "horas": 1,
+   "since": "2026-11-19",
+   "updated": "2026-11-19",
+   "horas": 1.25,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Combinado com a Yara em 09/11: um único painel com botões para SFS, EDSP e Consolidado. Desde 11/11 o BI-64 também absorve o escopo do antigo painel EDSP (BI-61).",
-   "next": "montar o painel único e testar junto com a Yara",
+   "ctx": "Painel único de faturamento (SFS, EDSP e Consolidado) pronto e publicado, lendo as planilhas do Financeiro em tempo real, com filtros, indicadores de faturado, recebido, em aberto e vencido e lista de notas em atraso. Regras de negócio confirmadas com a Yara. Faturado de dez/25 a out/26 para conferência: R$ 158,6 milhões no consolidado.",
+   "next": "receber a validação da Yara (números e layout), ajustar o filtro para permitir escolher mais de uma opção e corrigir na origem as semanas de dez/25 lançadas como 2026",
    "updates": [
+    {
+     "d": "2026-11-19",
+     "h": "10:44",
+     "t": "Primeira versão do painel único enviada à Yara para validar números e layout; card bloqueado até o retorno. Yara já pediu filtro com seleção de várias opções."
+    },
     {
      "d": "2026-11-11",
      "h": "17:36",
@@ -655,14 +691,24 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-11-16",
-   "updated": "2026-11-17",
+   "updated": "2026-11-19",
    "horas": 7.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "A Jelou confirmou que dá para replicar o CSAT em todas as áreas de atendimento, só com ajuste de fluxo (sem desenvolvimento). Em 16/11 a Shippify fechou o escopo: área = número/projeto + equipe/fila; áreas Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Brasil CX Team (com Facebook e Instagram); mesmas perguntas; incluir ID do operador, equipe e identificador da conversa; descartar os 8 registros de teste. Em 17/11 os 6 operadores de teste foram definidos e a Jelou orçou o desenvolvimento em 12 h (US$ 960, pagamento único).",
-   "next": "decidir com o Márcio se aprova o custo de US$ 960; Jelou confirmar a data do teste e a opção de enviar/não enviar a pesquisa",
+   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960; a Shippify pediu US$ 400 e a Jelou aceitou esse valor em 19/11.",
+   "next": "Márcio dar o OK final para os US$ 400 e combinar com a Jelou as datas dos testes com os 6 operadores",
    "updates": [
+    {
+     "d": "2026-11-19",
+     "h": "12:53",
+     "t": "Jelou aceitou a condição especial de US$ 400 (valor único) para o desenvolvimento; resposta dada de que o OK final vem após confirmar com o Márcio."
+    },
+    {
+     "d": "2026-11-19",
+     "h": "09:12",
+     "t": "Contraproposta enviada à Jelou: seguir com o desenvolvimento por US$ 400, valor aprovado internamente (orçamento original de US$ 960)."
+    },
     {
      "d": "2026-11-17",
      "h": "11:19",
@@ -1791,6 +1837,32 @@ const DATA = {
    "destaque": false,
    "info": "Apresentação da ferramenta de monitoramento Datadog para o time de tecnologia, para avaliar se ela ajuda a acompanhar falhas e desempenho dos sistemas.",
    "rel": []
+  },
+  {
+   "d": "2026-11-23",
+   "s": "11:00",
+   "e": "12:00",
+   "t": "Gustavo / Vinicius",
+   "fr": "ops",
+   "com": "Gustavo (Tecnologia)",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento individual marcado pelo Vinicius com o Gustavo, do time de Tecnologia.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-24",
+   "s": "10:00",
+   "e": "11:00",
+   "t": "2ª rodada · validação do atendimento com IA",
+   "fr": "jelou",
+   "com": "Marketing e Comunidade",
+   "marcio": false,
+   "destaque": true,
+   "info": "Segunda rodada de testes para validar os ajustes feitos no atendimento com IA para motoristas antes de liberar para todos.",
+   "rel": [
+    "PROD-273"
+   ]
   },
   {
    "d": "2026-11-24",
@@ -3991,6 +4063,186 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Verifica se a Shippify consegue atender pedidos de exclusão de dados de usuários no Jelou, um ponto de privacidade (LGPD)."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "h": "08:31",
+   "src": "email",
+   "t": "Teste dos perfis com usuária comum também falhou",
+   "det": "Mesmo sem perfil de administrador, a usuária de teste continuou vendo modelos e campanhas; pedido enviado para a Jelou verificar.",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "A separação entre quem cria modelos e quem só envia campanhas ainda não funciona no Jelou."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "08:50",
+   "src": "slack",
+   "t": "Previsão de campanhas de Marketing para dezembro pedida",
+   "det": "A pedido do Márcio, foi solicitada ao Marketing uma estimativa de quantas campanhas serão enviadas em dezembro.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Serve para prever o custo de mensagens do Jelou em dezembro e definir os limites de envio."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "08:55",
+   "src": "slack",
+   "t": "Modelos mais enviados em outubro entregues ao Márcio",
+   "det": "Documento com os modelos de mensagem mais usados em outubro por Comunidade e Operações Ship From Store.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Mostra quais mensagens mais pesam no custo do Jelou, base para decidir onde cortar ou reformular."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "h": "09:12",
+   "src": "email",
+   "t": "Contraproposta de US$ 400 para o CSAT",
+   "det": "A Shippify pediu à Jelou para fazer o desenvolvimento do CSAT por US$ 400 em vez dos US$ 960 orçados.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Negociação para reduzir em mais da metade o custo da pesquisa de satisfação no Jelou."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "09:33",
+   "src": "slack",
+   "t": "Menu de O Boticário e Autoglass criado na fila de SFS",
+   "det": "Opções incluídas no WhatsApp e equipe \"Pilotos\" criada; falta Operações informar o horário de atendimento.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "O menu já existe, mas só funciona por completo depois que o horário de atendimento for configurado."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "10:20",
+   "src": "slack",
+   "t": "Inventário de chips: última chamada aos números sem dono",
+   "det": "Disparada mensagem avisando que os números sem resposta serão desativados; números restantes enviados ao EDSP para identificar se são deles.",
+   "tag": "Pendência",
+   "fr": "seg",
+   "marcio": false,
+   "info": "Último passo antes de cancelar as linhas corporativas que ninguém usa, reduzindo custo e risco."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "10:40",
+   "src": "slack",
+   "t": "Correção da fila única de SFS no aplicativo",
+   "det": "A unificação da fila \"Quero Rotas\" não tinha funcionado para os atendimentos vindos do aplicativo; corrigido às 10h30. Atendimentos anteriores ficaram na fila antiga e precisam ser atribuídos manualmente.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "Ajuste para que nenhum motorista fique sem resposta depois da troca de filas em SFS."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "10:47",
+   "src": "slack",
+   "t": "Painel único de faturamento enviado à Yara",
+   "det": "Primeira versão do BI consolidado (SFS, EDSP e Consolidado) enviada para validação; a Yara já pediu filtro que aceite várias opções ao mesmo tempo.",
+   "tag": "Entrega",
+   "fr": "dash",
+   "marcio": false,
+   "info": "O Financeiro passa a ter uma tela única com o faturamento de todas as operações; falta só a validação dos números."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "11:00",
+   "src": "slack",
+   "t": "Diferença da fatura de outubro foi para o faturamento da Jelou",
+   "det": "A gerente de conta da Jelou levou ao time de faturamento a diferença entre o relatório (242.716 mensagens de serviço) e a fatura (199.356).",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "A conferência da conta de outubro segue aberta até o faturamento da Jelou explicar a diferença."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "11:13",
+   "src": "slack",
+   "t": "A partir de hoje só os responsáveis criam modelos no Jelou",
+   "det": "Comunicado aos times: só as pessoas definidas criam modelos; Operações SFS deixa de criar e enviar campanhas (aguardando o suporte tirar o acesso). A trava no sistema ainda não está ativa.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "Organiza quem cria mensagens no WhatsApp para evitar modelos repetidos e envios fora do combinado."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "h": "12:53",
+   "src": "email",
+   "t": "Jelou aceita US$ 400 para o CSAT",
+   "det": "A Jelou confirmou a condição especial de US$ 400 (valor único) para o escopo combinado; a resposta foi que o OK final vem depois de confirmar com o Márcio.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Economia de US$ 560 no CSAT; falta o Márcio aprovar para a Jelou começar."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "12:58",
+   "src": "slack",
+   "t": "Jelou pergunta sobre faturas vencidas",
+   "det": "A gerente de conta perguntou se há algum problema com o pagamento de faturas vencidas; o Vinicius vai verificar internamente.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Pode haver fatura do Jelou em atraso; vale checar com o Financeiro para evitar bloqueio do serviço."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "13:33",
+   "src": "slack",
+   "t": "Comercial cobra prazo do aviso \"saiu para entrega\"",
+   "det": "O Comercial perguntou quanto tempo leva a configuração do aviso para o novo cliente; a ativação depende de o Financeiro definir como cobrar esses envios.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "O aviso ao cliente final está pronto para seguir, mas travado até definir a cobrança das mensagens."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1b1507bad29342",
+   "h": "14:06",
+   "src": "email",
+   "t": "Jelou propõe datas para a reunião sobre ligações via WhatsApp",
+   "det": "Opções: segunda 23/11 às 11h30 ou 15h, ou terça 24/11 às 15h.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Falta escolher a data; a reunião define escopo e custo antes de decidir o piloto de ligações."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "h": "14:31",
+   "src": "email",
+   "t": "Jelou: usuária de teste estava com os dois perfis ao mesmo tempo",
+   "det": "Segundo a Jelou, a usuária tinha \"Criador de modelos\" e \"Criador de campanhas\" juntos, por isso via os dois módulos.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Próximo passo é testar de novo com só um perfil para confirmar se a separação funciona."
   }
  ],
  "riscos": [
