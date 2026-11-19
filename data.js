@@ -1,14 +1,33 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-18T15:34";
-const TODAY = "2026-11-18";
+const SNAPSHOT = "2026-11-19T07:33";
+const TODAY = "2026-11-19";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-12-02",
+ "fim": "2026-12-03",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "BI-70",
+   "board": "BI",
+   "frente": "jelou",
+   "titulo": "Jelou · menu exclusivo para Boticário e Autoglass na fila de Alocação SFS",
+   "status": "todo",
+   "prio": "Medium",
+   "created": "2026-11-18",
+   "since": "2026-11-18",
+   "updated": "2026-11-18",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "Pedido de Operações SFS para criar, dentro da fila de Alocação SFS no Jelou, um menu que reúna só as operações de Boticário e Autoglass.",
+   "next": "desenhar o menu no fluxo da fila de Alocação SFS, testar e publicar",
+   "updates": [],
+   "info": "Facilita o acompanhamento das operações de Boticário e Autoglass, separando esses atendimentos dentro da fila de SFS."
+  },
   {
    "key": "BI-69",
    "board": "BI",
@@ -49,7 +68,7 @@ const DATA = {
    "proxy": false,
    "due": null,
    "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time (ex.: 1.000/dia em Ship From Store). A Jelou criou os perfis 'Criador de modelos' e 'Criador de campanhas', mas no teste nenhuma combinação separou as duas coisas; a Jelou está revisando. O limite diário é requisito novo e precisa ser tratado com a gerente de conta.",
-   "next": "aguardar a análise do time responsável da Jelou sobre os perfis; fechar com os líderes a divisão do limite diário (proposta: SFS 1.500, Food 250, Comunidade 250) e então ajustar na plataforma",
+   "next": "refazer o teste dos perfis com um usuário sem Super Admin/Admin, como a Jelou recomendou; fechar com os líderes a divisão do limite diário (proposta: SFS 1.500, Food 250, Comunidade 250) e então ajustar na plataforma",
    "updates": [
     {
      "d": "2026-11-17",
@@ -1368,6 +1387,20 @@ const DATA = {
   },
   {
    "d": "2026-11-04",
+   "s": "11:00",
+   "e": "11:30",
+   "t": "Fernanda / Vinicius",
+   "fr": "jelou",
+   "com": "Fernanda",
+   "marcio": false,
+   "destaque": true,
+   "info": "Alinhar com a Fernanda as dúvidas dos fluxos de atendimento do RH antes de publicar no Jelou.",
+   "rel": [
+    "PROD-288"
+   ]
+  },
+  {
+   "d": "2026-11-04",
    "s": "12:00",
    "e": "13:30",
    "t": "Jelou · Sesión 5",
@@ -1392,6 +1425,18 @@ const DATA = {
    "marcio": false,
    "destaque": true,
    "info": "Apresentação da auditoria interna da empresa.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-04",
+   "s": "15:30",
+   "e": "16:00",
+   "t": "Gabriel / Vinicius",
+   "fr": "ops",
+   "com": "Gabriel Goldner",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento de trabalho com o Gabriel Goldner.",
    "rel": []
   },
   {
@@ -1446,6 +1491,21 @@ const DATA = {
   },
   {
    "d": "2026-11-06",
+   "s": "13:30",
+   "e": "14:00",
+   "t": "BI · Financeiro",
+   "fr": "dash",
+   "com": "Financeiro",
+   "marcio": false,
+   "destaque": true,
+   "info": "Adiada a pedido do Vinicius para segunda (09/11), presencial; objetivo segue sendo ver se o faturamento SFS e EDSP cabe num único BI.",
+   "rel": [
+    "BI-61",
+    "BI-64"
+   ]
+  },
+  {
+   "d": "2026-11-06",
    "s": "16:00",
    "e": "18:00",
    "t": "Monthly Tech Meeting",
@@ -1469,66 +1529,16 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-11",
-   "s": "09:00",
-   "e": "09:45",
-   "t": "Weekly BI Meeting",
-   "fr": "dash",
-   "com": "Márcio",
-   "marcio": true,
-   "destaque": false,
-   "info": "Remarcada de 09/11 (17h) para 11/11 às 9h: reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-10",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
+   "d": "2026-11-09",
+   "s": "11:30",
+   "e": "12:00",
+   "t": "Dúvidas Jelou",
    "fr": "jelou",
-   "com": "Isabela",
+   "com": "Beatriz",
    "marcio": false,
    "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "info": "Sessão para tirar dúvidas de uso do Jelou com a Beatriz (remarcada de 05/11 para 09/11).",
    "rel": []
-  },
-  {
-   "d": "2026-11-11",
-   "s": "10:30",
-   "e": "11:00",
-   "t": "Daily · Jelou",
-   "fr": "jelou",
-   "com": "Isabela",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-11",
-   "s": "16:00",
-   "e": "17:00",
-   "t": "Weekly Product Meeting",
-   "fr": "ops",
-   "com": "Márcio + produto",
-   "marcio": true,
-   "destaque": false,
-   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-04",
-   "s": "11:00",
-   "e": "11:30",
-   "t": "Fernanda / Vinicius",
-   "fr": "jelou",
-   "com": "Fernanda",
-   "marcio": false,
-   "destaque": true,
-   "info": "Alinhar com a Fernanda as dúvidas dos fluxos de atendimento do RH antes de publicar no Jelou.",
-   "rel": [
-    "PROD-288"
-   ]
   },
   {
    "d": "2026-11-09",
@@ -1545,19 +1555,28 @@ const DATA = {
    ]
   },
   {
-   "d": "2026-11-06",
-   "s": "13:30",
-   "e": "14:00",
-   "t": "BI · Financeiro",
-   "fr": "dash",
-   "com": "Financeiro",
+   "d": "2026-11-09",
+   "s": "15:00",
+   "e": "16:00",
+   "t": "Alinhamento de cronograma",
+   "fr": "ops",
+   "com": "Gustavo",
    "marcio": false,
-   "destaque": true,
-   "info": "Adiada a pedido do Vinicius para segunda (09/11), presencial; objetivo segue sendo ver se o faturamento SFS e EDSP cabe num único BI.",
-   "rel": [
-    "BI-61",
-    "BI-64"
-   ]
+   "destaque": false,
+   "info": "Reunião para alinhar prazos e ordem das próximas entregas.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-10",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
   },
   {
    "d": "2026-11-10",
@@ -1574,51 +1593,27 @@ const DATA = {
    ]
   },
   {
-   "d": "2026-11-04",
-   "s": "15:30",
-   "e": "16:00",
-   "t": "Gabriel / Vinicius",
-   "fr": "ops",
-   "com": "Gabriel Goldner",
-   "marcio": false,
-   "destaque": false,
-   "info": "Alinhamento de trabalho com o Gabriel Goldner.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-09",
-   "s": "11:30",
-   "e": "12:00",
-   "t": "Dúvidas Jelou",
+   "d": "2026-11-10",
+   "s": "14:00",
+   "e": "14:30",
+   "t": "Shippify WhatsApp · Jelou",
    "fr": "jelou",
-   "com": "Beatriz",
+   "com": "Jelou",
    "marcio": false,
-   "destaque": false,
-   "info": "Sessão para tirar dúvidas de uso do Jelou com a Beatriz (remarcada de 05/11 para 09/11).",
+   "destaque": true,
+   "info": "Reunião com a Jelou sobre a migração das contas do WhatsApp do cartão de crédito para linha de crédito, e como fazer isso sem parar o atendimento.",
    "rel": []
   },
   {
-   "d": "2026-11-18",
-   "s": "16:00",
-   "e": "17:00",
-   "t": "Weekly Product Meeting",
-   "fr": "ops",
-   "com": "Márcio + produto",
+   "d": "2026-11-11",
+   "s": "09:00",
+   "e": "09:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
    "marcio": true,
    "destaque": false,
-   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-09",
-   "s": "15:00",
-   "e": "16:00",
-   "t": "Alinhamento de cronograma",
-   "fr": "ops",
-   "com": "Gustavo",
-   "marcio": false,
-   "destaque": false,
-   "info": "Reunião para alinhar prazos e ordem das próximas entregas.",
+   "info": "Remarcada de 09/11 (17h) para 11/11 às 9h: reunião semanal com o Márcio para revisar entregas, prioridades e bloqueios de BI.",
    "rel": []
   },
   {
@@ -1634,27 +1629,15 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-10",
-   "s": "14:00",
-   "e": "14:30",
-   "t": "Shippify WhatsApp · Jelou",
+   "d": "2026-11-11",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Daily · Jelou",
    "fr": "jelou",
-   "com": "Jelou",
+   "com": "Isabela",
    "marcio": false,
-   "destaque": true,
-   "info": "Reunião com a Jelou sobre a migração das contas do WhatsApp do cartão de crédito para linha de crédito, e como fazer isso sem parar o atendimento.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-25",
-   "s": "16:00",
-   "e": "17:00",
-   "t": "Weekly Product Meeting",
-   "fr": "ops",
-   "com": "Márcio + produto",
-   "marcio": true,
    "destaque": false,
-   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
    "rel": []
   },
   {
@@ -1670,31 +1653,19 @@ const DATA = {
    "rel": []
   },
   {
-   "d": "2026-11-19",
+   "d": "2026-11-11",
    "s": "16:00",
-   "e": "18:00",
-   "t": "Apresentação Datadog",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
    "fr": "ops",
-   "com": "Tech, QA e Datadog",
-   "marcio": false,
+   "com": "Márcio + produto",
+   "marcio": true,
    "destaque": false,
-   "info": "Apresentação da ferramenta de monitoramento Datadog para o time de tecnologia, para avaliar se ela ajuda a acompanhar falhas e desempenho dos sistemas.",
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
    "rel": []
   },
   {
    "d": "2026-11-12",
-   "s": "17:00",
-   "e": "17:45",
-   "t": "Planejamento Estratégico Ops",
-   "fr": "ops",
-   "com": "Líderes de cada área",
-   "marcio": false,
-   "destaque": false,
-   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-26",
    "s": "17:00",
    "e": "17:45",
    "t": "Planejamento Estratégico Ops",
@@ -1737,18 +1708,6 @@ const DATA = {
   },
   {
    "d": "2026-11-17",
-   "s": "14:00",
-   "e": "14:45",
-   "t": "Weekly BI Meeting",
-   "fr": "dash",
-   "com": "Márcio",
-   "marcio": true,
-   "destaque": false,
-   "info": "Remarcada de segunda (16/11, 17h) para terça às 14h; a reunião semanal com o Márcio passa a ser às terças, para revisar entregas, prioridades e bloqueios de BI.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-17",
    "s": "11:15",
    "e": "11:45",
    "t": "Envio WhatsApp - Webcontinental Reversa",
@@ -1757,6 +1716,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Alinhamento com o Comercial sobre o envio de mensagens de WhatsApp pelo Jelou para a operação de reversa (devoluções) da Webcontinental.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-17",
+   "s": "14:00",
+   "e": "14:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Remarcada de segunda (16/11, 17h) para terça às 14h; a reunião semanal com o Márcio passa a ser às terças, para revisar entregas, prioridades e bloqueios de BI.",
    "rel": []
   },
   {
@@ -1798,6 +1769,42 @@ const DATA = {
    ]
   },
   {
+   "d": "2026-11-18",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-19",
+   "s": "16:00",
+   "e": "18:00",
+   "t": "Apresentação Datadog",
+   "fr": "ops",
+   "com": "Tech, QA e Datadog",
+   "marcio": false,
+   "destaque": false,
+   "info": "Apresentação da ferramenta de monitoramento Datadog para o time de tecnologia, para avaliar se ela ajuda a acompanhar falhas e desempenho dos sistemas.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-24",
+   "s": "14:00",
+   "e": "14:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal com o Márcio, agora fixa às terças às 14h, para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
+  },
+  {
    "d": "2026-11-25",
    "s": "15:00",
    "e": "15:45",
@@ -1812,6 +1819,30 @@ const DATA = {
    ]
   },
   {
+   "d": "2026-11-25",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-26",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Planejamento Estratégico Ops",
+   "fr": "ops",
+   "com": "Líderes de cada área",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
+   "rel": []
+  },
+  {
    "d": "2026-12-02",
    "s": "16:00",
    "e": "17:00",
@@ -1822,57 +1853,21 @@ const DATA = {
    "destaque": false,
    "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
    "rel": []
+  },
+  {
+   "d": "2026-12-03",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Planejamento Estratégico Ops",
+   "fr": "ops",
+   "com": "Líderes de cada área",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
+   "rel": []
   }
  ],
  "comms": [
-  {
-   "d": "2026-11-04",
-   "h": "17:21",
-   "src": "slack",
-   "t": "BI · KAM (10/11): incluir link do Meet e nova participante",
-   "det": "O time de KAM pediu para adicionar o link da chamada no convite, pois mais uma pessoa da área vai participar.",
-   "tag": "Pedido",
-   "fr": "dash",
-   "marcio": false,
-   "link": "",
-   "info": "Ajuste simples no convite para a reunião de validação do dashboard de KAM."
-  },
-  {
-   "d": "2026-11-04",
-   "h": "16:24",
-   "src": "slack",
-   "t": "CSAT: abrir chamado para registrar atendente e canal",
-   "det": "Próximo passo do CSAT: pedir ao desenvolvimento que grave quem atendeu e por qual canal ao fechar o chat.",
-   "tag": "Pendência",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "",
-   "info": "Sem esse registro a pesquisa de satisfação não consegue medir a nota por atendente e canal (PROD-261)."
-  },
-  {
-   "d": "2026-11-04",
-   "h": "16:58",
-   "src": "slack",
-   "t": "Fila de SFS no Jelou: acesso ajustado para atendente",
-   "det": "Uma atendente não via a fila de SFS (só a de Food); o acesso foi corrigido para o número de Operações e validado.",
-   "tag": "Pedido",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "",
-   "info": "A atendente passa a responder os motoristas de SFS pelo canal certo."
-  },
-  {
-   "d": "2026-11-04",
-   "h": "22:59",
-   "src": "email",
-   "t": "Jelou envia o modelo de cobrança atual para comparação",
-   "det": "A Jelou mandou o documento com a forma de cobrança vigente, para comparar com o novo esquema antes da reunião de 05/11.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1a96ede657970b",
-   "info": "Base para avaliar se a nova proposta comercial da Jelou reduz ou aumenta o custo mensal."
-  },
   {
    "d": "2026-10-02",
    "h": "10:11",
@@ -1896,6 +1891,66 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Quantidade final de celulares para a operação, base da compra pedida ao Jonathan."
+  },
+  {
+   "d": "2026-10-05",
+   "h": "09:02",
+   "src": "email",
+   "t": "Declaração de adesão Jelou",
+   "det": "Angela (Jelou) enviou para Vinicius, Eduardo Braz e Márcio.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a10bf13891ee881",
+   "info": "Documento formal de adesão ao contrato da Jelou, que precisa de assinatura da Shippify."
+  },
+  {
+   "d": "2026-10-05",
+   "h": "10:12",
+   "src": "email",
+   "t": "Problema no armazenamento do CSAT",
+   "det": "Chamado aberto no suporte da Jelou (bloqueia PROD-261).",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a0fcef25c51ef04",
+   "info": "As respostas da pesquisa de satisfação não estão sendo gravadas. É o que bloqueia o PROD-261."
+  },
+  {
+   "d": "2026-10-05",
+   "h": "11:12",
+   "src": "email",
+   "t": "Termos em elaboração com o Jurídico",
+   "det": "Thread com Jurídico interno e escritório externo, Márcio em cópia.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a0c94792d45a2a8",
+   "info": "Termos de uso em revisão com o Jurídico interno e o escritório externo."
+  },
+  {
+   "d": "2026-10-05",
+   "h": "18:56",
+   "src": "email",
+   "t": "Erro de DDD (MG): retorno da Jelou",
+   "det": "Angela respondeu sobre o caso do BI-53.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a0e803bf3393fc4",
+   "info": "Resposta da Jelou sobre a correção do BI-53."
+  },
+  {
+   "d": "2026-10-06",
+   "h": "10:22",
+   "src": "email",
+   "t": "Canal e projeto conectados ao chat do aplicativo",
+   "det": "Solicitação enviada ao suporte da Jelou.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1115def5aaae78",
+   "info": "Pedido para ligar o chat do app ao projeto certo no Jelou."
   },
   {
    "d": "2026-10-06",
@@ -1932,6 +1987,18 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Entrega do BI-56 para quem acompanha o canal TOTVS."
+  },
+  {
+   "d": "2026-10-07",
+   "h": "18:43",
+   "src": "email",
+   "t": "Mudança na precificação da Meta",
+   "det": "Angela (Jelou) avisa impacto no custo de mensagens.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a11852862d44d07",
+   "info": "A Meta mudou o preço das mensagens de WhatsApp, o que aumenta o custo do Jelou."
   },
   {
    "d": "2026-10-08",
@@ -2019,6 +2086,18 @@ const DATA = {
   },
   {
    "d": "2026-10-20",
+   "h": "11:05",
+   "src": "email",
+   "t": "Consumo de mensagens de serviço até 15/10 e projeção",
+   "det": "Jelou antecipa o custo do mês.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a159a1d8b64e1b4",
+   "info": "Projeção da Jelou para o custo do mês, base para o plano de redução."
+  },
+  {
+   "d": "2026-10-20",
    "h": "12:07",
    "src": "slack",
    "t": "#tech-support: acessos para nova atendente (Jessica)",
@@ -2028,6 +2107,30 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Onboarding de nova atendente em 4 filas de CX."
+  },
+  {
+   "d": "2026-10-22",
+   "h": "09:00",
+   "src": "email",
+   "t": "Jelou envia análise dos fluxos que mais geram custo",
+   "det": "Na thread de cobrança com o Financeiro; Pamela pediu fatura ajustada.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "Mostra quais fluxos consomem mais mensagens: é onde cortar primeiro."
+  },
+  {
+   "d": "2026-10-22",
+   "h": "16:44",
+   "src": "email",
+   "t": "Compra de telefones e chips · líderes e analista Meli",
+   "det": "Alcione para o Márcio, Vinicius em cópia.",
+   "tag": "Aprovação",
+   "fr": "ops",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1372f9a46e9164",
+   "info": "Pedido de equipamentos para a operação Mercado Livre, aguardando o Márcio."
   },
   {
    "d": "2026-10-23",
@@ -2040,6 +2143,18 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Expansão do Jelou para a Torre de Controle (Middle Mile)."
+  },
+  {
+   "d": "2026-10-26",
+   "h": "09:28",
+   "src": "email",
+   "t": "Alteração no PMA",
+   "det": "Pedido enviado ao suporte da Jelou.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1782b7ebd4036b",
+   "info": "Ajuste solicitado à Jelou na configuração do PMA."
   },
   {
    "d": "2026-10-26",
@@ -2079,6 +2194,18 @@ const DATA = {
   },
   {
    "d": "2026-10-26",
+   "h": "15:34",
+   "src": "email",
+   "t": "Faturas Jelou 0067, 0068 e 0069 encaminhadas pelo Márcio",
+   "det": "Para conferência do consumo.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1797e48b2b2fdc",
+   "info": "Faturas para conferir o consumo cobrado pela Jelou."
+  },
+  {
+   "d": "2026-10-26",
    "h": "15:59",
    "src": "slack",
    "t": "Pedido: habilitar campanhas no Jelou para o Gustavo Faiad",
@@ -2088,6 +2215,30 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Permissão para disparar campanhas, concluída no BI-62."
+  },
+  {
+   "d": "2026-10-26",
+   "h": "16:10",
+   "src": "email",
+   "t": "Solicitação de 9 aparelhos · equipe B2B2C",
+   "det": "Enviado ao Jonathan, Márcio em cópia. Aguardando aprovação.",
+   "tag": "Aprovação",
+   "fr": "ops",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a10c3b7dc72ed36",
+   "info": "Pedido formal de celulares para o B2B2C, depende de aprovação."
+  },
+  {
+   "d": "2026-10-27",
+   "h": "11:00",
+   "src": "email",
+   "t": "TEC-2627 e TEC-2634 aguardando revisão do suporte",
+   "det": "Automação do Jira pede ação nos chamados.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a17da9b1efef38d",
+   "info": "Chamados no suporte de Tecnologia parados aguardando revisão."
   },
   {
    "d": "2026-10-27",
@@ -2112,6 +2263,18 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Regras de negócio que definem o número oficial de faturamento. Sem as respostas, o BI-64 não avança."
+  },
+  {
+   "d": "2026-10-27",
+   "h": "16:45",
+   "src": "email",
+   "t": "Jelou cobra pagamento de fatura em aberto",
+   "det": "Fatura 0069 paga; nova cobrança enviada ao Financeiro.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "Ainda há valor pendente com a Jelou mesmo após o pagamento da fatura 0069."
   },
   {
    "d": "2026-10-27",
@@ -2148,6 +2311,78 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Convites do Jelou expiram em 24h. Orientação para reenviar e abrir chamado."
+  },
+  {
+   "d": "2026-10-28",
+   "h": "10:58",
+   "src": "email",
+   "t": "Chamado Jelou: adicionar usuários",
+   "det": "Lucas Colhado abriu o chamado (Torre de Controle).",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a182cddd542af3b",
+   "info": "Chamado formal para liberar os usuários da Torre de Controle."
+  },
+  {
+   "d": "2026-10-28",
+   "h": "15:32",
+   "src": "email",
+   "t": "Chamado aberto: Instagram sem envio de mensagens",
+   "det": "Ticket #22512 aberto no suporte da Jelou, Márcio em cópia (BI-65).",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a183c95f96d9d88",
+   "info": "Atendimento pelo Instagram parado. Afeta contato com clientes e motoristas."
+  },
+  {
+   "d": "2026-10-28",
+   "h": "17:12",
+   "src": "email",
+   "t": "Sairys abre chamado sobre o widget Driver Brasil Web",
+   "det": "Dúvidas sobre o widget enviadas ao suporte da Jelou, Vinicius em cópia.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a18424590fc2449",
+   "info": "Dúvidas sobre o widget de atendimento do site, aberto pela Sairys no suporte da Jelou."
+  },
+  {
+   "d": "2026-10-28",
+   "h": "17:19",
+   "src": "email",
+   "t": "Curso Claude 101 concluído",
+   "det": "Capacitação da Anthropic Academy, base para os dashboards feitos no Claude.",
+   "tag": "Info",
+   "fr": "dash",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1842a91a425fd6",
+   "info": "Capacitação oficial da Anthropic sobre o uso do Claude."
+  },
+  {
+   "d": "2026-10-29",
+   "h": "10:00",
+   "src": "email",
+   "t": "Instagram e Facebook voltaram a funcionar",
+   "det": "Canais excluídos e reconectados; confirmação enviada à Jelou.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a183c95f96d9d88",
+   "info": "Problema do BI-65 resolvido em menos de 24h."
+  },
+  {
+   "d": "2026-10-29",
+   "h": "12:49",
+   "src": "email",
+   "t": "Nova cobrança da Jelou",
+   "det": "Lembrete de pagamento enviado à Pamela, com Financeiro e Márcio em cópia.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "A Jelou segue cobrando valor em aberto. O Financeiro precisa conferir as faturas."
   },
   {
    "d": "2026-10-29",
@@ -2211,6 +2446,18 @@ const DATA = {
   },
   {
    "d": "2026-10-30",
+   "h": "13:25",
+   "src": "email",
+   "t": "Jelou reforça cobrança com o Financeiro",
+   "det": "Lembrete de pagamento enviado à Camila, com Pamela, Tesouraria e Márcio em cópia.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "A Jelou segue cobrando valor em aberto. O Financeiro precisa conferir as faturas."
+  },
+  {
+   "d": "2026-10-30",
    "h": "14:04",
    "src": "slack",
    "t": "Pedido do Paulo Nascimento sobre falhas nas campanhas",
@@ -2220,6 +2467,18 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Origem do BI-67: a operação precisa entender por que tantas campanhas falham."
+  },
+  {
+   "d": "2026-10-30",
+   "h": "14:27",
+   "src": "email",
+   "t": "Pedido à Jelou: código de erro e controle de frequência",
+   "det": "Falha de 21,13% nas campanhas de outubro. Márcio e Paulo em cópia (BI-67).",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a18dd8b9febad4c",
+   "info": "Sem o código de erro não dá para saber se a falha é número inválido, bloqueio ou limite da Meta."
   },
   {
    "d": "2026-10-30",
@@ -2244,6 +2503,18 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Avanço do PROD-288: o atendimento do RH pelo Jelou está perto de entrar no ar."
+  },
+  {
+   "d": "2026-11-03",
+   "h": "11:06",
+   "src": "email",
+   "t": "Chamado TEC-2655 (relatório de campanhas) escalado",
+   "det": "Automação do Jira pede ação no chamado ligado ao BI-67.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a1bb73d43ce57",
+   "info": "Chamado interno do BI-67, aguardando retorno da Jelou."
   },
   {
    "d": "2026-11-03",
@@ -2306,280 +2577,28 @@ const DATA = {
    "info": "Pedido da Torre de Controle para evitar atendimento duplicado ao mesmo contato."
   },
   {
-   "d": "2026-10-05",
-   "h": "09:02",
-   "src": "email",
-   "t": "Declaração de adesão Jelou",
-   "det": "Angela (Jelou) enviou para Vinicius, Eduardo Braz e Márcio.",
-   "tag": "Aprovação",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a10bf13891ee881",
-   "info": "Documento formal de adesão ao contrato da Jelou, que precisa de assinatura da Shippify."
-  },
-  {
-   "d": "2026-10-05",
-   "h": "10:12",
-   "src": "email",
-   "t": "Problema no armazenamento do CSAT",
-   "det": "Chamado aberto no suporte da Jelou (bloqueia PROD-261).",
-   "tag": "Bloqueio",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a0fcef25c51ef04",
-   "info": "As respostas da pesquisa de satisfação não estão sendo gravadas. É o que bloqueia o PROD-261."
-  },
-  {
-   "d": "2026-10-05",
-   "h": "11:12",
-   "src": "email",
-   "t": "Termos em elaboração com o Jurídico",
-   "det": "Thread com Jurídico interno e escritório externo, Márcio em cópia.",
-   "tag": "Info",
-   "fr": "ops",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a0c94792d45a2a8",
-   "info": "Termos de uso em revisão com o Jurídico interno e o escritório externo."
-  },
-  {
-   "d": "2026-10-05",
-   "h": "18:56",
-   "src": "email",
-   "t": "Erro de DDD (MG): retorno da Jelou",
-   "det": "Angela respondeu sobre o caso do BI-53.",
-   "tag": "Info",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a0e803bf3393fc4",
-   "info": "Resposta da Jelou sobre a correção do BI-53."
-  },
-  {
-   "d": "2026-10-06",
-   "h": "10:22",
-   "src": "email",
-   "t": "Canal e projeto conectados ao chat do aplicativo",
-   "det": "Solicitação enviada ao suporte da Jelou.",
-   "tag": "Pedido",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1115def5aaae78",
-   "info": "Pedido para ligar o chat do app ao projeto certo no Jelou."
-  },
-  {
-   "d": "2026-10-07",
-   "h": "18:43",
-   "src": "email",
-   "t": "Mudança na precificação da Meta",
-   "det": "Angela (Jelou) avisa impacto no custo de mensagens.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a11852862d44d07",
-   "info": "A Meta mudou o preço das mensagens de WhatsApp, o que aumenta o custo do Jelou."
-  },
-  {
-   "d": "2026-10-20",
-   "h": "11:05",
-   "src": "email",
-   "t": "Consumo de mensagens de serviço até 15/10 e projeção",
-   "det": "Jelou antecipa o custo do mês.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a159a1d8b64e1b4",
-   "info": "Projeção da Jelou para o custo do mês, base para o plano de redução."
-  },
-  {
-   "d": "2026-10-22",
-   "h": "09:00",
-   "src": "email",
-   "t": "Jelou envia análise dos fluxos que mais geram custo",
-   "det": "Na thread de cobrança com o Financeiro; Pamela pediu fatura ajustada.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
-   "info": "Mostra quais fluxos consomem mais mensagens: é onde cortar primeiro."
-  },
-  {
-   "d": "2026-10-22",
-   "h": "16:44",
-   "src": "email",
-   "t": "Compra de telefones e chips · líderes e analista Meli",
-   "det": "Alcione para o Márcio, Vinicius em cópia.",
-   "tag": "Aprovação",
-   "fr": "ops",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1372f9a46e9164",
-   "info": "Pedido de equipamentos para a operação Mercado Livre, aguardando o Márcio."
-  },
-  {
-   "d": "2026-10-26",
-   "h": "09:28",
-   "src": "email",
-   "t": "Alteração no PMA",
-   "det": "Pedido enviado ao suporte da Jelou.",
-   "tag": "Pedido",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1782b7ebd4036b",
-   "info": "Ajuste solicitado à Jelou na configuração do PMA."
-  },
-  {
-   "d": "2026-10-26",
-   "h": "15:34",
-   "src": "email",
-   "t": "Faturas Jelou 0067, 0068 e 0069 encaminhadas pelo Márcio",
-   "det": "Para conferência do consumo.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1797e48b2b2fdc",
-   "info": "Faturas para conferir o consumo cobrado pela Jelou."
-  },
-  {
-   "d": "2026-10-26",
-   "h": "16:10",
-   "src": "email",
-   "t": "Solicitação de 9 aparelhos · equipe B2B2C",
-   "det": "Enviado ao Jonathan, Márcio em cópia. Aguardando aprovação.",
-   "tag": "Aprovação",
-   "fr": "ops",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a10c3b7dc72ed36",
-   "info": "Pedido formal de celulares para o B2B2C, depende de aprovação."
-  },
-  {
-   "d": "2026-10-27",
-   "h": "11:00",
-   "src": "email",
-   "t": "TEC-2627 e TEC-2634 aguardando revisão do suporte",
-   "det": "Automação do Jira pede ação nos chamados.",
-   "tag": "Pendência",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a17da9b1efef38d",
-   "info": "Chamados no suporte de Tecnologia parados aguardando revisão."
-  },
-  {
-   "d": "2026-10-27",
+   "d": "2026-11-03",
    "h": "16:45",
    "src": "email",
-   "t": "Jelou cobra pagamento de fatura em aberto",
-   "det": "Fatura 0069 paga; nova cobrança enviada ao Financeiro.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
-   "info": "Ainda há valor pendente com a Jelou mesmo após o pagamento da fatura 0069."
-  },
-  {
-   "d": "2026-10-28",
-   "h": "15:32",
-   "src": "email",
-   "t": "Chamado aberto: Instagram sem envio de mensagens",
-   "det": "Ticket #22512 aberto no suporte da Jelou, Márcio em cópia (BI-65).",
-   "tag": "Bloqueio",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a183c95f96d9d88",
-   "info": "Atendimento pelo Instagram parado. Afeta contato com clientes e motoristas."
-  },
-  {
-   "d": "2026-10-28",
-   "h": "17:12",
-   "src": "email",
-   "t": "Sairys abre chamado sobre o widget Driver Brasil Web",
-   "det": "Dúvidas sobre o widget enviadas ao suporte da Jelou, Vinicius em cópia.",
-   "tag": "Pedido",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a18424590fc2449",
-   "info": "Dúvidas sobre o widget de atendimento do site, aberto pela Sairys no suporte da Jelou."
-  },
-  {
-   "d": "2026-10-28",
-   "h": "17:19",
-   "src": "email",
-   "t": "Curso Claude 101 concluído",
-   "det": "Capacitação da Anthropic Academy, base para os dashboards feitos no Claude.",
-   "tag": "Info",
-   "fr": "dash",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1842a91a425fd6",
-   "info": "Capacitação oficial da Anthropic sobre o uso do Claude."
-  },
-  {
-   "d": "2026-10-29",
-   "h": "10:00",
-   "src": "email",
-   "t": "Instagram e Facebook voltaram a funcionar",
-   "det": "Canais excluídos e reconectados; confirmação enviada à Jelou.",
-   "tag": "Entrega",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a183c95f96d9d88",
-   "info": "Problema do BI-65 resolvido em menos de 24h."
-  },
-  {
-   "d": "2026-10-29",
-   "h": "12:49",
-   "src": "email",
-   "t": "Nova cobrança da Jelou",
-   "det": "Lembrete de pagamento enviado à Pamela, com Financeiro e Márcio em cópia.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
-   "info": "A Jelou segue cobrando valor em aberto. O Financeiro precisa conferir as faturas."
-  },
-  {
-   "d": "2026-10-30",
-   "h": "13:25",
-   "src": "email",
-   "t": "Jelou reforça cobrança com o Financeiro",
-   "det": "Lembrete de pagamento enviado à Camila, com Pamela, Tesouraria e Márcio em cópia.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
-   "info": "A Jelou segue cobrando valor em aberto. O Financeiro precisa conferir as faturas."
-  },
-  {
-   "d": "2026-10-30",
-   "h": "14:27",
-   "src": "email",
-   "t": "Pedido à Jelou: código de erro e controle de frequência",
-   "det": "Falha de 21,13% nas campanhas de outubro. Márcio e Paulo em cópia (BI-67).",
-   "tag": "Pedido",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a18dd8b9febad4c",
-   "info": "Sem o código de erro não dá para saber se a falha é número inválido, bloqueio ou limite da Meta."
-  },
-  {
-   "d": "2026-11-03",
-   "h": "11:06",
-   "src": "email",
-   "t": "Chamado TEC-2655 (relatório de campanhas) escalado",
-   "det": "Automação do Jira pede ação no chamado ligado ao BI-67.",
+   "t": "Chamado TEC-2667 (dúvidas do Jelou) escalado",
+   "det": "Chamado aberto com Operações, escalado para a equipe técnica e marcado como muito importante.",
    "tag": "Pendência",
    "fr": "jelou",
    "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1a1bb73d43ce57",
-   "info": "Chamado interno do BI-67, aguardando retorno da Jelou."
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
+   "info": "Dúvidas de Operações sobre o Jelou aguardando retorno da equipe técnica."
   },
   {
-   "d": "2026-10-28",
-   "h": "10:58",
-   "src": "email",
-   "t": "Chamado Jelou: adicionar usuários",
-   "det": "Lucas Colhado abriu o chamado (Torre de Controle).",
-   "tag": "Pedido",
-   "fr": "jelou",
+   "d": "2026-11-04",
+   "h": "09:34",
+   "src": "slack",
+   "t": "BI Marketplace: seguir internamente ou usar a Venddor",
+   "det": "Reunião marcada com o time de Marketplace para decidir o caminho do BI (BI-46).",
+   "tag": "Decisão",
+   "fr": "dash",
    "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a182cddd542af3b",
-   "info": "Chamado formal para liberar os usuários da Torre de Controle."
+   "link": "",
+   "info": "Evita construir um BI que a ferramenta da Venddor talvez já entregue."
   },
   {
    "d": "2026-11-04",
@@ -2604,18 +2623,6 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1a69282dcd1948",
    "info": "O limite é da Meta e soma todos os nossos canais; o controle precisa ser feito por nós ou pago como desenvolvimento à Jelou."
-  },
-  {
-   "d": "2026-11-04",
-   "h": "15:15",
-   "src": "slack",
-   "t": "Proposta de calendário único de disparos de WhatsApp",
-   "det": "Enviada a Operações: um calendário entre Marketing, Marketplace, Reclame Aqui e SFS, limpeza de listas, reenvio só após 24h e templates de utilidade para avisos de rota.",
-   "tag": "Pendência",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "",
-   "info": "Aguarda Operações decidir se o controle será interno ou se será pedido desenvolvimento pago à Jelou."
   },
   {
    "d": "2026-11-04",
@@ -2655,30 +2662,6 @@ const DATA = {
   },
   {
    "d": "2026-11-04",
-   "h": "14:58",
-   "src": "slack",
-   "t": "Proposta comercial da Jelou: comparativo de custos a caminho",
-   "det": "Angela vai enviar o que é cobrado hoje (SKUs e tarifas) e um comparativo com a nova proposta, para a reunião de 05/11 com o Márcio.",
-   "tag": "Custo",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "",
-   "info": "Base para entender usuários, workflows e campanhas cobrados antes de decidir a proposta."
-  },
-  {
-   "d": "2026-11-04",
-   "h": "09:34",
-   "src": "slack",
-   "t": "BI Marketplace: seguir internamente ou usar a Venddor",
-   "det": "Reunião marcada com o time de Marketplace para decidir o caminho do BI (BI-46).",
-   "tag": "Decisão",
-   "fr": "dash",
-   "marcio": false,
-   "link": "",
-   "info": "Evita construir um BI que a ferramenta da Venddor talvez já entregue."
-  },
-  {
-   "d": "2026-11-04",
    "h": "13:54",
    "src": "slack",
    "t": "BI · Financeiro remarcada para 06/11",
@@ -2688,6 +2671,18 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Os dashboards BI-61 e BI-64 seguem parados até essa conversa."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "14:58",
+   "src": "slack",
+   "t": "Proposta comercial da Jelou: comparativo de custos a caminho",
+   "det": "Angela vai enviar o que é cobrado hoje (SKUs e tarifas) e um comparativo com a nova proposta, para a reunião de 05/11 com o Márcio.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Base para entender usuários, workflows e campanhas cobrados antes de decidir a proposta."
   },
   {
    "d": "2026-11-04",
@@ -2702,16 +2697,64 @@ const DATA = {
    "info": "Afeta o reforço de segurança da API da Shippify pedido pelo time técnico."
   },
   {
-   "d": "2026-11-03",
-   "h": "16:45",
-   "src": "email",
-   "t": "Chamado TEC-2667 (dúvidas do Jelou) escalado",
-   "det": "Chamado aberto com Operações, escalado para a equipe técnica e marcado como muito importante.",
+   "d": "2026-11-04",
+   "h": "15:15",
+   "src": "slack",
+   "t": "Proposta de calendário único de disparos de WhatsApp",
+   "det": "Enviada a Operações: um calendário entre Marketing, Marketplace, Reclame Aqui e SFS, limpeza de listas, reenvio só após 24h e templates de utilidade para avisos de rota.",
    "tag": "Pendência",
    "fr": "jelou",
    "marcio": false,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1a2d897ee540d4",
-   "info": "Dúvidas de Operações sobre o Jelou aguardando retorno da equipe técnica."
+   "link": "",
+   "info": "Aguarda Operações decidir se o controle será interno ou se será pedido desenvolvimento pago à Jelou."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "16:24",
+   "src": "slack",
+   "t": "CSAT: abrir chamado para registrar atendente e canal",
+   "det": "Próximo passo do CSAT: pedir ao desenvolvimento que grave quem atendeu e por qual canal ao fechar o chat.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Sem esse registro a pesquisa de satisfação não consegue medir a nota por atendente e canal (PROD-261)."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "16:58",
+   "src": "slack",
+   "t": "Fila de SFS no Jelou: acesso ajustado para atendente",
+   "det": "Uma atendente não via a fila de SFS (só a de Food); o acesso foi corrigido para o número de Operações e validado.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "A atendente passa a responder os motoristas de SFS pelo canal certo."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "17:21",
+   "src": "slack",
+   "t": "BI · KAM (10/11): incluir link do Meet e nova participante",
+   "det": "O time de KAM pediu para adicionar o link da chamada no convite, pois mais uma pessoa da área vai participar.",
+   "tag": "Pedido",
+   "fr": "dash",
+   "marcio": false,
+   "link": "",
+   "info": "Ajuste simples no convite para a reunião de validação do dashboard de KAM."
+  },
+  {
+   "d": "2026-11-04",
+   "h": "22:59",
+   "src": "email",
+   "t": "Jelou envia o modelo de cobrança atual para comparação",
+   "det": "A Jelou mandou o documento com a forma de cobrança vigente, para comparar com o novo esquema antes da reunião de 05/11.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1a96ede657970b",
+   "info": "Base para avaliar se a nova proposta comercial da Jelou reduz ou aumenta o custo mensal."
   },
   {
    "d": "2026-11-04",
@@ -3123,18 +3166,6 @@ const DATA = {
   },
   {
    "d": "2026-11-11",
-   "h": "16:59",
-   "src": "slack",
-   "t": "Jelou: removida configuração de envio que apontava para um canal excluído",
-   "det": "A Jelou alertou erros no redirecionamento porque uma opção de envio ainda apontava para o canal \"Widget Brasil - CXTeam\", já excluído. O Vinicius removeu a configuração e a Jelou confirmou que está tudo certo.",
-   "tag": "Entrega",
-   "fr": "jelou",
-   "marcio": false,
-   "link": "",
-   "info": "Elimina um erro recorrente no Jelou e evita que atendimentos sejam direcionados para um canal que não existe mais."
-  },
-  {
-   "d": "2026-11-11",
    "h": "16:09",
    "src": "slack",
    "t": "Vinicius vai preparar documentação e cronograma para o projeto com a Giovanna",
@@ -3156,6 +3187,54 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Se aprovada, os entregadores da MELI passam a ver os valores na carteira mais rápido, reduzindo chamados no atendimento."
+  },
+  {
+   "d": "2026-11-11",
+   "h": "16:59",
+   "src": "slack",
+   "t": "Jelou: removida configuração de envio que apontava para um canal excluído",
+   "det": "A Jelou alertou erros no redirecionamento porque uma opção de envio ainda apontava para o canal \"Widget Brasil - CXTeam\", já excluído. O Vinicius removeu a configuração e a Jelou confirmou que está tudo certo.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Elimina um erro recorrente no Jelou e evita que atendimentos sejam direcionados para um canal que não existe mais."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "09:25",
+   "src": "slack",
+   "t": "Chips corporativos do Middle Mile: Vinicius vai confirmar o envio com o RH",
+   "det": "Resposta ao pedido de Operações de 3 chips para o time de Middle Mile: o Vinicius vai checar com o RH a entrega e retornar.",
+   "tag": "Pendência",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Sem os chips, o time de Middle Mile segue sem números próprios para o atendimento."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "11:52",
+   "src": "slack",
+   "t": "SRG: criado o primeiro card do levantamento de ferramentas usadas pelos times",
+   "det": "O Vinicius foi incluído no novo projeto do SRG no Jira. O primeiro card trata de um aplicativo de alerta de e-mails urgentes usado pelo time de Cobrança; as 127 contas de WhatsApp terão um card próprio, com os times envolvidos.",
+   "tag": "Pedido",
+   "fr": "seg",
+   "marcio": false,
+   "link": "",
+   "info": "Para cada ferramenta o Vinicius vai entender por que é usada, se é autorizada e se existe substituta, para decidir o que manter ou desligar."
+  },
+  {
+   "d": "2026-11-12",
+   "h": "12:13",
+   "src": "slack",
+   "t": "Datadog: envio de logs ainda não evoluiu",
+   "det": "O time de tecnologia ainda não conseguiu mandar ao Datadog só os logs necessários; mandar todos sairia muito caro. Pediu mais um prazo, pois isso também ajudará no desligamento de plataformas antigas.",
+   "tag": "Bloqueio",
+   "fr": "ops",
+   "marcio": false,
+   "link": "",
+   "info": "Os dados de monitoramento que o Vinicius precisa analisar continuam sem previsão até esse ajuste ser resolvido."
   },
   {
    "d": "2026-11-12",
@@ -3192,42 +3271,6 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Mensagens com tom promocional viram marketing, que é mais caro; revisar o texto dos modelos pode reduzir o custo sem cortar comunicações."
-  },
-  {
-   "d": "2026-11-12",
-   "h": "11:52",
-   "src": "slack",
-   "t": "SRG: criado o primeiro card do levantamento de ferramentas usadas pelos times",
-   "det": "O Vinicius foi incluído no novo projeto do SRG no Jira. O primeiro card trata de um aplicativo de alerta de e-mails urgentes usado pelo time de Cobrança; as 127 contas de WhatsApp terão um card próprio, com os times envolvidos.",
-   "tag": "Pedido",
-   "fr": "seg",
-   "marcio": false,
-   "link": "",
-   "info": "Para cada ferramenta o Vinicius vai entender por que é usada, se é autorizada e se existe substituta, para decidir o que manter ou desligar."
-  },
-  {
-   "d": "2026-11-12",
-   "h": "12:13",
-   "src": "slack",
-   "t": "Datadog: envio de logs ainda não evoluiu",
-   "det": "O time de tecnologia ainda não conseguiu mandar ao Datadog só os logs necessários; mandar todos sairia muito caro. Pediu mais um prazo, pois isso também ajudará no desligamento de plataformas antigas.",
-   "tag": "Bloqueio",
-   "fr": "ops",
-   "marcio": false,
-   "link": "",
-   "info": "Os dados de monitoramento que o Vinicius precisa analisar continuam sem previsão até esse ajuste ser resolvido."
-  },
-  {
-   "d": "2026-11-12",
-   "h": "09:25",
-   "src": "slack",
-   "t": "Chips corporativos do Middle Mile: Vinicius vai confirmar o envio com o RH",
-   "det": "Resposta ao pedido de Operações de 3 chips para o time de Middle Mile: o Vinicius vai checar com o RH a entrega e retornar.",
-   "tag": "Pendência",
-   "fr": "ops",
-   "marcio": false,
-   "link": "",
-   "info": "Sem os chips, o time de Middle Mile segue sem números próprios para o atendimento."
   },
   {
    "d": "2026-11-12",
@@ -3888,6 +3931,66 @@ const DATA = {
    "marcio": false,
    "link": "",
    "info": "Cada time passa a controlar seus próprios modelos e cota de envios, sem consumir o limite dos outros."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "16:06",
+   "src": "email",
+   "t": "Perfis de modelos x campanhas continuam falhando no teste",
+   "det": "A Jelou ajustou os perfis e pediu novo teste; no teste com só 'Criação de campanha' habilitado, o erro continuou. Retorno enviado à Jelou com evidências.",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "A separação entre quem cria modelos e quem só dispara campanhas ainda não funciona, então o controle de envios segue pendente (PROD-294)."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "16:57",
+   "src": "slack",
+   "t": "Inventário de chips: conferência dos números sem dono com os times",
+   "det": "Números sem responsável identificado estão sendo conferidos com cada time antes do cancelamento; um time pediu a 2ª via de um chip corporativo que ficou com ex-colaboradora, e o pedido vai para o Financeiro.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Continuação da limpeza dos chips: só são cancelados os números que nenhum time reconhece, e os chips ainda necessários são recuperados."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "17:32",
+   "src": "slack",
+   "t": "Dúvidas da fatura de outubro levadas à gerente de conta da Jelou",
+   "det": "Perguntado à gerente de conta da Jelou quem trata as dúvidas da fatura de outubro; ela pediu o detalhe da dúvida para encaminhar.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "",
+   "info": "Escalada da diferença entre relatório e fatura de outubro do Jelou (PROD-291), que o suporte fechou sem explicar."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "18:06",
+   "src": "email",
+   "t": "Jelou aponta que o usuário de teste tinha perfil Super Admin",
+   "det": "Segundo a Jelou, os perfis Super Admin e Admin liberam quase todos os módulos e mascaram o teste; a recomendação é testar com um usuário sem esses perfis.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Próximo passo é refazer o teste com um usuário comum para confirmar se os novos perfis funcionam."
+  },
+  {
+   "d": "2026-11-18",
+   "h": "18:07",
+   "src": "slack",
+   "t": "Pedido à Jelou: apagar mensagens do canal web sob demanda",
+   "det": "Time de produto pediu apoio para perguntar à Jelou se é possível apagar de vez mensagens guardadas na base deles (individualmente ou em lote) e se elas ficam em backup.",
+   "tag": "Pedido",
+   "fr": "seg",
+   "marcio": false,
+   "link": "",
+   "info": "Verifica se a Shippify consegue atender pedidos de exclusão de dados de usuários no Jelou, um ponto de privacidade (LGPD)."
   }
  ],
  "riscos": [
