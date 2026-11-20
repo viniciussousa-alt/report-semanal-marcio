@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-20T07:32";
+const SNAPSHOT = "2026-11-20T15:32";
 const TODAY = "2026-11-20";
 const DATA = {
  "inicio": "2026-09-28",
@@ -4279,6 +4279,30 @@ const DATA = {
    "fr": "jelou",
    "marcio": false,
    "info": "A correção das permissões de modelos x campanhas no Jelou segue sem validação até segunda-feira."
+  },
+  {
+   "d": "2026-11-20",
+   "h": "11:04",
+   "src": "email",
+   "t": "Chamado de unificação das filas do Jelou aguarda confirmação de encerramento",
+   "det": "Tecnologia marcou como resolvido o chamado que unificou as filas de SFS e ajustou acessos no Jelou; falta o Vinicius confirmar o fechamento.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1f9457957bbc56",
+   "info": "O ajuste já foi entregue; só falta dar o ok formal para o chamado sair da fila de Tecnologia."
+  },
+  {
+   "d": "2026-11-20",
+   "h": "11:49",
+   "src": "email",
+   "t": "Jelou fecha o chamado dos perfis de campanha em 12h sem retorno",
+   "det": "A Jelou lembrou que aguarda os novos testes (um perfil por vez, com evidências em vídeo) e avisou que encerra o chamado se não houver resposta.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Se o chamado for fechado, o pedido de separar quem cria modelos de quem dispara campanhas volta à estaca zero; vale responder antes do prazo."
   }
  ],
  "riscos": [
