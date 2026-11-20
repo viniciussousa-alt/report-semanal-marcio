@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-19T15:34";
-const TODAY = "2026-11-19";
+const SNAPSHOT = "2026-11-20T07:32";
+const TODAY = "2026-11-20";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-12-03",
+ "fim": "2026-12-04",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -1936,6 +1936,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
+   "rel": []
+  },
+  {
+   "d": "2026-12-04",
+   "s": "16:00",
+   "e": "18:00",
+   "t": "Monthly Tech Meeting",
+   "fr": "ops",
+   "com": "Tech",
+   "marcio": false,
+   "destaque": false,
+   "info": "Reunião mensal do time de Tecnologia com resultados e próximos passos.",
    "rel": []
   }
  ],
@@ -4243,6 +4255,30 @@ const DATA = {
    "fr": "jelou",
    "marcio": true,
    "info": "Próximo passo é testar de novo com só um perfil para confirmar se a separação funciona."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "16:27",
+   "src": "slack",
+   "t": "Inventário de chips concluído e enviado ao Financeiro",
+   "det": "Todos os números sem dono foram contatados; a planilha final indica quais linhas podem ser canceladas, quais devem ser mantidas e quais estão em CPF (sem reembolso, mas sem cancelamento). Próximo passo fica com Financeiro: revisar a fatura da operadora e definir um plano para os números do EDSP.",
+   "tag": "Entrega",
+   "fr": "seg",
+   "marcio": false,
+   "info": "Com a lista fechada, o Financeiro já pode cancelar as linhas corporativas que ninguém usa e reduzir o custo mensal com a operadora."
+  },
+  {
+   "d": "2026-11-19",
+   "link": "",
+   "h": "17:28",
+   "src": "slack",
+   "t": "Novo teste dos perfis de campanha no Jelou fica para segunda",
+   "det": "O teste com um usuário sem perfil de administrador exigiria desativar temporariamente o usuário de uma atendente que trabalha na sexta; como o Vinicius não trabalha nesse dia, o teste foi remarcado para segunda.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "A correção das permissões de modelos x campanhas no Jelou segue sem validação até segunda-feira."
   }
  ],
  "riscos": [
