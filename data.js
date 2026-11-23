@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-20T15:32";
-const TODAY = "2026-11-20";
+const SNAPSHOT = "2026-11-23T07:35";
+const TODAY = "2026-11-23";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-12-04",
@@ -4303,6 +4303,18 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
    "info": "Se o chamado for fechado, o pedido de separar quem cria modelos de quem dispara campanhas volta à estaca zero; vale responder antes do prazo."
+  },
+  {
+   "d": "2026-11-20",
+   "h": "15:55",
+   "src": "slack",
+   "t": "Atendimento sugere fechar várias conversas de uma vez no Jelou",
+   "det": "A equipe de atendimento pediu a opção de selecionar mais de uma conversa e encerrá-las juntas no monitor do Jelou.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Hoje cada conversa é fechada uma a uma; encerrar em lote pouparia tempo dos atendentes nos dias de muito volume."
   }
  ],
  "riscos": [
