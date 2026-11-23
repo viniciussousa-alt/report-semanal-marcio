@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-23T07:35";
+const SNAPSHOT = "2026-11-23T15:30";
 const TODAY = "2026-11-23";
 const DATA = {
  "inicio": "2026-09-28",
@@ -10,22 +10,82 @@ const DATA = {
  },
  "jira": [
   {
+   "key": "BI-72",
+   "board": "BI",
+   "frente": "jelou",
+   "titulo": "Jelou · pedido do atendimento para ligar aos entregadores pela plataforma",
+   "status": "doing",
+   "prio": "Medium",
+   "created": "2026-11-23",
+   "since": "2026-11-23",
+   "updated": "2026-11-23",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "O atendimento operacional pediu no #tech-support uma função de ligação no Jelou para falar direto com os entregadores. O tema já é avaliado no PROD-293 (ligações de WhatsApp via Jelou).",
+   "next": "acompanhar pelo PROD-293; dar o retorno ao atendimento depois da reunião com a Jelou em 25/11",
+   "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "14:38",
+     "t": "Retorno dado ao atendimento: a ideia já está em avaliação, com atenção ao custo alto que a Meta cobra pelas ligações."
+    },
+    {
+     "d": "2026-11-23",
+     "h": "14:10",
+     "t": "Pedido vinculado ao PROD-293, onde a proposta de ligações da Jelou está em análise."
+    }
+   ],
+   "info": "Mostra que a necessidade de ligar para os entregadores vem da própria operação; a decisão depende do custo das ligações."
+  },
+  {
+   "key": "BI-71",
+   "board": "BI",
+   "frente": "jelou",
+   "titulo": "Jelou · reativar filas de Suporte Financeiro e Aprovação de Cadastro",
+   "status": "done",
+   "prio": "Medium",
+   "created": "2026-11-20",
+   "since": "2026-11-23",
+   "updated": "2026-11-23",
+   "horas": 0.25,
+   "done": "2026-11-23",
+   "proxy": false,
+   "due": null,
+   "ctx": "No feriado de 20/11 a área tentou pausar a fila de Suporte Financeiro e acabou excluindo as filas de Suporte Financeiro e Cadastro por engano. As duas foram reativadas.",
+   "next": "—",
+   "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "10:19",
+     "t": "Filas de Suporte Financeiro e Aprovação de Cadastro reativadas. Orientado que mudanças em filas sejam pedidas com antecedência ao time de Tecnologia, porque elas afetam o WhatsApp e o widget."
+    }
+   ],
+   "info": "Devolveu o atendimento de financeiro e de cadastro aos motoristas, que tinha parado após as filas serem apagadas sem querer."
+  },
+  {
    "key": "BI-70",
    "board": "BI",
    "frente": "jelou",
    "titulo": "Jelou · menu exclusivo para Boticário e Autoglass na fila de Alocação SFS",
-   "status": "blocked",
+   "status": "done",
    "prio": "Medium",
    "created": "2026-11-18",
-   "since": "2026-11-19",
-   "updated": "2026-11-19",
+   "since": "2026-11-23",
+   "updated": "2026-11-23",
    "horas": 0.25,
-   "done": null,
-   "proxy": false,
+   "done": "2026-11-23",
+   "proxy": true,
    "due": null,
    "ctx": "Opções O Boticário e Autoglass incluídas no menu de WhatsApp da fila de Alocação SFS, com uma equipe própria (\"Pilotos\") para atender essas operações.",
-   "next": "receber de Operações SFS o horário de atendimento dessas operações, configurar na equipe e testar o menu",
+   "next": "—",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "13:59",
+     "t": "Concluído: filas criadas e o menu da fila de Alocação SFS (O Boticário e Autoglass, equipe \"Pilotos\") funcionando corretamente."
+    },
     {
      "d": "2026-11-19",
      "h": "09:33",
@@ -68,14 +128,19 @@ const DATA = {
    "prio": "High",
    "created": "2026-11-16",
    "since": "2026-11-17",
-   "updated": "2026-11-19",
+   "updated": "2026-11-23",
    "horas": 0.5,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time. A Jelou criou os perfis \"Criador de modelos\" e \"Criador de campanhas\", mas o teste falhou tanto com usuário administrador quanto com usuário comum. Enquanto a trava não funciona, a regra vale por combinado entre os times.",
-   "next": "repetir o teste deixando a usuária de teste só com o perfil \"Criador de campanhas\", como a Jelou apontou; fechar com os líderes a divisão do limite diário e tratar a trava com a gerente de conta",
+   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time. A Jelou criou os perfis \"Criador de modelos\" e \"Criador de campanhas\", mas um usuário só com o perfil de campanhas continua conseguindo criar modelos. O caso foi reaberto em 23/11 com prints e um usuário de teste. Enquanto a trava não funciona, a regra vale por combinado entre os times.",
+   "next": "aguardar o retorno da Jelou no novo chamado (prazo de até 24h úteis) e repetir o teste quando corrigirem",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "12:14",
+     "t": "O chamado anterior foi encerrado pela Jelou por falta de resposta (o teste não pôde ser feito no feriado de 20/11). Caso reenviado com um usuário de teste que só tem o perfil \"Criador de campanhas\" e mesmo assim cria modelos; a Jelou abriu um novo chamado."
+    },
     {
      "d": "2026-11-19",
      "h": "14:31",
@@ -119,18 +184,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · ligações de WhatsApp entre atendente e motorista (análise da proposta)",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Medium",
    "created": "2026-11-16",
-   "since": "2026-11-17",
-   "updated": "2026-11-19",
+   "since": "2026-11-23",
+   "updated": "2026-11-23",
    "horas": 1.75,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "A Jelou respondeu as dúvidas e enviou a proposta: usa os números atuais, o motorista precisa autorizar as ligações, até 100 ligações atendidas por dia por motorista, funciona só no navegador. Custo: implantação única de US$ 1.600 + US$ 0,028 por minuto; prazo de cerca de 1 mês e meio após o aceite; dá para fazer piloto com um número e um time. Em 17/11 foram enviadas dúvidas sobre custo, limites, ligações recebidas e gravações; o card aguarda a resposta da Jelou.",
-   "next": "escolher uma das datas propostas pela Jelou (23/11 às 11h30 ou 15h, ou 24/11 às 15h), confirmar com o Márcio e levar as dúvidas de custo e limites para a reunião",
+   "next": "reunião com a Jelou em 25/11 às 15h para tirar as dúvidas de custo, limites e gravações; depois levar a decisão ao Márcio",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "14:39",
+     "t": "Reunião com a Jelou marcada para quarta 25/11 às 15h para tratar das ligações; card voltou para andamento. Um novo pedido do atendimento (BI-72) para ligar aos entregadores pelo Jelou passou a ser acompanhado aqui."
+    },
     {
      "d": "2026-11-19",
      "h": "14:06",
@@ -343,11 +413,11 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard KAM OTD/SLA · Cobasi e PetLove (artefato)",
-   "status": "blocked",
+   "status": "doing",
    "prio": "Medium",
    "created": "2026-10-27",
-   "since": "2026-10-27",
-   "updated": "2026-11-10",
+   "since": "2026-11-23",
+   "updated": "2026-11-23",
    "horas": 5.5,
    "done": null,
    "proxy": false,
@@ -637,14 +707,19 @@ const DATA = {
    "prio": "High",
    "created": "2026-08-11",
    "since": "2026-08-25",
-   "updated": "2026-11-09",
+   "updated": "2026-11-23",
    "horas": 6,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Pedido de compra dos aparelhos (nº 001545) travado por erro de aprovação no TOTVS. Cadastro do aprovador está correto; caso foi levado aos consultores externos do TOTVS.",
-   "next": "acompanhar o chamado do TOTVS; depois da aprovação, comprar e entregar aparelhos e chips ao B2B2C",
+   "ctx": "Planilha da auditoria de números (cancelar / manter / números em CPF) entregue ao time de Facilities e Financeiro, que segue com a operadora. Compra dos aparelhos (pedido 001545) destravada no TOTVS e em fase de nota fiscal e boleto.",
+   "next": "aguardar a chegada dos aparelhos e entregar aparelhos e chips ao time B2B2C",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "13:59",
+     "t": "Erro de aprovação no TOTVS resolvido: o pedido de compra dos aparelhos seguiu para nota fiscal e boleto. Planilha da auditoria (cancelar, manter e números em CPF) entregue em 19/11; os próximos passos com a operadora ficaram com a Pamela."
+    },
     {
      "d": "2026-11-09",
      "h": "11:03",
@@ -691,14 +766,19 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-11-16",
-   "updated": "2026-11-19",
+   "updated": "2026-11-23",
    "horas": 7.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960; a Shippify pediu US$ 400 e a Jelou aceitou esse valor em 19/11.",
-   "next": "Márcio dar o OK final para os US$ 400 e combinar com a Jelou as datas dos testes com os 6 operadores",
+   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960 e aceitou US$ 400 (valor único) em 19/11; em 23/11 a Shippify pediu pagamento em janeiro e a proposta formalizada.",
+   "next": "receber a proposta formal da Jelou, dar o OK final com o Márcio e combinar a data dos testes com os 6 operadores",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "15:09",
+     "t": "Antes do OK final, pedido à Jelou: pagamento dos US$ 400 em janeiro de 2027 e proposta formal com escopo, valor e condição de pagamento."
+    },
     {
      "d": "2026-11-19",
      "h": "12:53",
@@ -1851,6 +1931,18 @@ const DATA = {
    "rel": []
   },
   {
+   "d": "2026-11-23",
+   "s": "15:00",
+   "e": "15:45",
+   "t": "Daily · Jelou",
+   "fr": "jelou",
+   "com": "Isabela",
+   "marcio": false,
+   "destaque": false,
+   "info": "Alinhamento diário com a Isabela sobre atendimento, filas e incidentes do Jelou.",
+   "rel": []
+  },
+  {
    "d": "2026-11-24",
    "s": "10:00",
    "e": "11:00",
@@ -1877,17 +1969,42 @@ const DATA = {
    "rel": []
   },
   {
+   "d": "2026-11-24",
+   "s": "15:00",
+   "e": "16:00",
+   "t": "Vinicius / Gustavo",
+   "fr": "ops",
+   "com": "Gustavo (Tecnologia)",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa individual marcada pelo Gustavo, do time de Tecnologia, para alinhar andamento e próximos passos.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-25",
+   "s": "10:30",
+   "e": "11:00",
+   "t": "Alinhamento Cobrança Jelou · Webcontinental",
+   "fr": "jelou",
+   "com": "Comercial e Financeiro",
+   "marcio": false,
+   "destaque": false,
+   "info": "Define como cobrar da Webcontinental os envios de WhatsApp feitos pelo Jelou na operação de reversa.",
+   "rel": []
+  },
+  {
    "d": "2026-11-25",
    "s": "15:00",
    "e": "15:45",
-   "t": "Extensão e-mail cobranca@shippify.co",
-   "fr": "seg",
-   "com": "Financeiro, Tecnologia",
+   "t": "Jelou · ligações de WhatsApp via atendimento",
+   "fr": "jelou",
+   "com": "Jelou",
    "marcio": false,
-   "destaque": false,
-   "info": "Conversa sobre a extensão criada pelo Financeiro para alertar e-mails urgentes da conta de Cobrança, para ver como torná-la segura e oficial.",
+   "destaque": true,
+   "info": "Reunião com a Jelou para tirar dúvidas de custo, limites e gravações da proposta de ligações entre atendente e motorista.",
    "rel": [
-    "SRGDT-1"
+    "PROD-293",
+    "BI-72"
    ]
   },
   {
@@ -1901,6 +2018,20 @@ const DATA = {
    "destaque": false,
    "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
    "rel": []
+  },
+  {
+   "d": "2026-11-26",
+   "s": "15:00",
+   "e": "15:45",
+   "t": "Extensão e-mail cobranca@shippify.co",
+   "fr": "seg",
+   "com": "Financeiro, Tecnologia",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa sobre a extensão criada pelo Financeiro para alertar e-mails urgentes da conta de Cobrança, para ver como torná-la segura e oficial.",
+   "rel": [
+    "SRGDT-1"
+   ]
   },
   {
    "d": "2026-11-26",
@@ -4315,6 +4446,102 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Hoje cada conversa é fechada uma a uma; encerrar em lote pouparia tempo dos atendentes nos dias de muito volume."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "12:14",
+   "src": "email",
+   "t": "Caso dos perfis de modelos x campanhas reaberto na Jelou",
+   "det": "O chamado antigo foi fechado por falta de resposta; o caso foi reenviado com um usuário de teste e prints mostrando que o perfil só de campanhas ainda cria modelos. A Jelou abriu um novo chamado.",
+   "tag": "Bloqueio",
+   "fr": "jelou",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "A separação entre quem cria modelos e quem dispara campanhas continua sem funcionar; o pedido não voltou à estaca zero."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "13:54",
+   "src": "slack",
+   "t": "Análise de campanhas de 16 a 22/11 enviada",
+   "det": "Relatório semanal de envios de campanhas do Jelou compartilhado com o Márcio e os líderes, com custo estimado como se todas as mensagens fossem de Marketing.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "Mostra quanto cada time disparou na semana e quanto isso pode custar no pior cenário."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "14:02",
+   "src": "slack",
+   "t": "Reunião sobre ligações de WhatsApp marcada com a Jelou",
+   "det": "Escolhida a data de quarta, 25/11, às 15h, entre as opções enviadas pela Jelou.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Destrava a análise da proposta de ligações entre atendente e motorista."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "14:07",
+   "src": "slack",
+   "t": "Jelou admite erro no relatório de consumo de outubro",
+   "det": "O faturamento da Jelou confirmou que o suporte enviou o relatório errado e indicou onde baixar os consumos na plataforma; foi pedido vídeo ou prints porque o caminho não ficou claro.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "A diferença na fatura de outubro pode vir desse relatório errado; com os dados corretos dá para conferir a cobrança."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "14:28",
+   "src": "slack",
+   "t": "Acumulado de novembro com custo estimado por time enviado ao Márcio",
+   "det": "Consolidado do mês de campanhas do Jelou, com o custo estimado de cada time, a pedido do Márcio.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "Permite ao Márcio ver quais times mais pesam no custo do Jelou em novembro."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "14:34",
+   "src": "email",
+   "t": "Jelou recusa parcelar fatura vencida e pede pagamento até 30/11",
+   "det": "O Financeiro propôs pagar a fatura em aberto em duas parcelas (11 e 24/12); a Jelou não aceitou e pediu o valor total até 30/11, para não somar com a próxima fatura. Vinicius e Márcio vão tratar com a Jelou.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "Se a fatura não for paga até o fim do mês, ela se soma à de dezembro e o valor em aberto com a Jelou cresce."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "14:38",
+   "src": "slack",
+   "t": "Atendimento recebe retorno sobre ligações para entregadores",
+   "det": "No #tech-support foi respondido que a ideia já está em avaliação, considerando o custo alto que a Meta cobra pelas ligações.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "A operação sabe que o pedido está sendo avaliado e que a decisão depende do custo."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "15:09",
+   "src": "email",
+   "t": "Pedido à Jelou: CSAT com pagamento em janeiro e proposta formal",
+   "det": "Antes do OK final, foi pedido que o pagamento dos US$ 400 fique para janeiro de 2027 e que a Jelou envie a proposta formal com escopo, valor e condição de pagamento.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "info": "O desenvolvimento do CSAT só começa depois que a proposta formal chegar e for aprovada."
   }
  ],
  "riscos": [
