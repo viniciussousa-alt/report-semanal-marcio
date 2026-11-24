@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-23T15:32";
-const TODAY = "2026-11-23";
+const SNAPSHOT = "2026-11-24T07:32";
+const TODAY = "2026-11-24";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-12-04",
@@ -134,8 +134,13 @@ const DATA = {
    "proxy": false,
    "due": null,
    "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time. A Jelou criou os perfis \"Criador de modelos\" e \"Criador de campanhas\", mas um usuário só com o perfil de campanhas continua conseguindo criar modelos. O caso foi reaberto em 23/11 com prints e um usuário de teste. Enquanto a trava não funciona, a regra vale por combinado entre os times.",
-   "next": "aguardar o retorno da Jelou no novo chamado (prazo de até 24h úteis) e repetir o teste quando corrigirem",
+   "next": "validar hoje cedo com o usuário de teste (sair, limpar cache e entrar de novo) e responder à Jelou antes que o chamado seja encerrado",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "20:00",
+     "t": "Jelou informou que ajustou as permissões do perfil \"Criador de campanhas\" e pediu nova validação em até 12 horas (antes, sair da conta e limpar o cache do navegador); sem retorno, o chamado será encerrado."
+    },
     {
      "d": "2026-11-23",
      "h": "12:14",
@@ -239,8 +244,13 @@ const DATA = {
    "proxy": false,
    "due": null,
    "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (serviço 242 mil no relatório x 199 mil cobrados; marketing ~212 mil x ~173 mil). A Jelou disse que a cobrança está correta e fechou o chamado 22821 sem explicar a diferença de volume.",
-   "next": "aguardar o retorno do faturamento da Jelou sobre a diferença de volume de outubro e montar o dashboard de envios por número/time para o Márcio",
+   "next": "baixar os relatórios de consumo corretos na plataforma e refazer a conferência da fatura de outubro",
    "updates": [
+    {
+     "d": "2026-11-23",
+     "h": "16:19",
+     "t": "A Jelou enviou o material mostrando onde baixar os relatórios de consumo na plataforma (marketing/utilidade, licenças e serviço), depois de o faturamento deles admitir que o suporte tinha mandado o relatório errado."
+    },
     {
      "d": "2026-11-19",
      "h": "11:00",
@@ -4542,6 +4552,30 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
    "info": "O desenvolvimento do CSAT só começa depois que a proposta formal chegar e for aprovada."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "16:19",
+   "src": "slack",
+   "t": "Jelou envia o passo a passo para baixar os relatórios de consumo",
+   "det": "A gerente de conta mandou o material pedido mostrando onde ficam, na plataforma, os relatórios de consumo usados na fatura.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Com os relatórios certos, dá para refazer a conferência da fatura de outubro com os números oficiais."
+  },
+  {
+   "d": "2026-11-23",
+   "h": "20:00",
+   "src": "email",
+   "t": "Jelou corrige o perfil \"Criador de campanhas\" e pede validação em 12h",
+   "det": "A Jelou ajustou as permissões para que quem só tem o perfil de campanhas não consiga criar modelos. Pediu para testar (saindo da conta e limpando o cache) e responder em até 12 horas, senão fecha o chamado.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "Se o teste der certo, só quem tiver permissão poderá criar modelos, o que ajuda a controlar o que é disparado no WhatsApp."
   }
  ],
  "riscos": [
