@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-24T09:54";
+const SNAPSHOT = "2026-11-24T12:13";
 const TODAY = "2026-11-24";
 const DATA = {
  "inicio": "2026-09-28",
@@ -10,29 +10,94 @@ const DATA = {
  },
  "jira": [
   {
-   "key": "PROD-296",
-   "board": "PROD",
-   "frente": "jelou",
-   "titulo": "Jelou · agrupamento de mensagens de serviço para reduzir custo",
-   "status": "blocked",
+   "key": "SRGDT-3",
+   "board": "SRGDT",
+   "frente": "seg",
+   "titulo": "SRG · vincular e-mail corporativo e telefone de todos os colaboradores no Midpoint",
+   "status": "todo",
    "prio": "Medium",
    "created": "2026-11-24",
    "since": "2026-11-24",
    "updated": "2026-11-24",
-   "horas": 0.5,
+   "horas": 0,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "A Jelou avisou que a plataforma agora agrupa mensagens de serviço, mas não ficou claro como usar isso no monitoramento ou no painel de atendimento. Foi pedido à Jelou um vídeo com o passo a passo (chamado 23034).",
-   "next": "aguardar o vídeo da Jelou (prazo de até 24h úteis), testar em um canal e medir o efeito no custo",
+   "ctx": "Cadastrar no Midpoint, para a empresa toda, o e-mail corporativo e o número de telefone em uso de cada colaborador ativo, a partir de uma planilha base validada com os gestores de cada time. A planilha fica com acesso restrito ao time de SRG por conter dados pessoais.",
+   "next": "levantar a lista de colaboradores ativos com o RH e montar a planilha base",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "10:31",
+     "t": "Card criado no backlog com escopo, passo a passo e critérios de aceite."
+    }
+   ],
+   "info": "Saber qual número e qual e-mail pertencem a cada pessoa facilita controlar e retirar acessos quando alguém muda de time ou sai da empresa."
+  },
+  {
+   "key": "PROD-297",
+   "board": "PROD",
+   "frente": "jelou",
+   "titulo": "Jelou · perfil para criar campanhas e ver o relatório, sem criar modelos",
+   "status": "todo",
+   "prio": "Medium",
+   "created": "2026-11-24",
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "A separação entre criar modelos e criar campanhas funcionou, mas quem perdeu a permissão de criar modelos também perdeu o acesso ao relatório de campanhas. O perfil que libera o relatório volta a permitir criar modelos, o que não pode acontecer. Foi pedido à Jelou um perfil que crie campanhas e veja o relatório, sem criar modelos, ou uma alternativa.",
+   "next": "aguardar a resposta da Jelou; enquanto isso, os times informam a quantidade de envios manualmente",
+   "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "11:22",
+     "t": "Times avisados de que a visualização do relatório de campanhas fica pendente até a Jelou responder; por enquanto passam a quantidade de envios manualmente."
+    },
+    {
+     "d": "2026-11-24",
+     "h": "11:21",
+     "t": "E-mail enviado à Jelou, com o Márcio e a gerente de conta em cópia, pedindo o novo perfil de acesso."
+    }
+   ],
+   "info": "Os times precisam ver o resultado das próprias campanhas sem ganhar de volta a permissão de criar modelos."
+  },
+  {
+   "key": "PROD-296",
+   "board": "PROD",
+   "frente": "jelou",
+   "titulo": "Jelou · agrupamento de mensagens de serviço para reduzir custo",
+   "status": "done",
+   "prio": "Medium",
+   "created": "2026-11-24",
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
+   "horas": 1.5,
+   "done": "2026-11-24",
+   "proxy": true,
+   "due": null,
+   "ctx": "A Jelou passou a agrupar mensagens de serviço: textos seguidos que o atendente manda na mesma conversa chegam ao entregador como uma única mensagem. A Jelou explicou onde ativar (Monitoramento > Configurações > Agrupamento de mensagens, com tempo de espera de 1 a 20 segundos). A configuração vale para a empresa toda e só afeta mensagens de atendentes, não as do bot.",
+   "next": "acompanhar nas próximas faturas a queda no número de mensagens de serviço cobradas",
+   "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "11:55",
+     "t": "Agrupamento ativado e testado: funcionou corretamente. Card encerrado."
+    },
+    {
+     "d": "2026-11-24",
+     "h": "11:21",
+     "t": "A Jelou explicou como o recurso funciona e onde ativá-lo no Monitoramento."
+    },
     {
      "d": "2026-11-24",
      "h": "09:53",
      "t": "E-mail enviado ao suporte da Jelou, com o Márcio e a gerente de conta em cópia, pedindo vídeo do procedimento; a Jelou abriu o chamado 23034."
     }
    ],
-   "info": "Se o agrupamento funcionar, várias mensagens viram uma só cobrança, o que pode baixar o custo de mensagens de serviço do Jelou."
+   "info": "Com menos mensagens cobradas por conversa, o custo de mensagens de serviço do Jelou tende a cair sem mudar o atendimento."
   },
   {
    "key": "BI-72",
@@ -2004,20 +2069,6 @@ const DATA = {
   },
   {
    "d": "2026-11-24",
-   "s": "10:00",
-   "e": "11:00",
-   "t": "2ª rodada · validação do atendimento com IA",
-   "fr": "jelou",
-   "com": "Marketing e Comunidade",
-   "marcio": false,
-   "destaque": true,
-   "info": "Segunda rodada de testes para validar os ajustes feitos no atendimento com IA para motoristas antes de liberar para todos.",
-   "rel": [
-    "PROD-273"
-   ]
-  },
-  {
-   "d": "2026-11-24",
    "s": "14:00",
    "e": "14:45",
    "t": "Weekly BI Meeting",
@@ -2041,6 +2092,20 @@ const DATA = {
    "rel": []
   },
   {
+   "d": "2026-11-24",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "2ª rodada · validação do atendimento com IA",
+   "fr": "jelou",
+   "com": "Marketing e Comunidade",
+   "marcio": false,
+   "destaque": true,
+   "info": "Segunda rodada de testes do atendimento com IA para motoristas, remarcada para a tarde, antes de liberar para todos.",
+   "rel": [
+    "PROD-273"
+   ]
+  },
+  {
    "d": "2026-11-25",
    "s": "10:30",
    "e": "11:00",
@@ -2049,7 +2114,19 @@ const DATA = {
    "com": "Comercial e Financeiro",
    "marcio": false,
    "destaque": false,
-   "info": "Define como cobrar da Webcontinental os envios de WhatsApp feitos pelo Jelou na operação de reversa.",
+   "info": "Define como cobrar da Webcontinental os envios de WhatsApp feitos pelo Jelou na reversa. Coincide com a rodada de roadmap, e foi pedida a remarcação para 26/11.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-25",
+   "s": "10:30",
+   "e": "12:00",
+   "t": "Rodada 1 · Roadmap 2027",
+   "fr": "ops",
+   "com": "Líderes técnicos e produto",
+   "marcio": true,
+   "destaque": true,
+   "info": "Primeira rodada para tirar dúvidas do roadmap de 2027; até 26/11 o grupo entrega ao Márcio um prazo macro de cada projeto.",
    "rel": []
   },
   {
@@ -2066,6 +2143,18 @@ const DATA = {
     "PROD-293",
     "BI-72"
    ]
+  },
+  {
+   "d": "2026-11-25",
+   "s": "15:30",
+   "e": "17:00",
+   "t": "Rodada 2 · Roadmap 2027",
+   "fr": "ops",
+   "com": "Líderes técnicos e produto",
+   "marcio": true,
+   "destaque": true,
+   "info": "Segunda rodada do roadmap de 2027; coincide com a reunião da Jelou sobre ligações e com a Weekly de Produto.",
+   "rel": []
   },
   {
    "d": "2026-11-25",
@@ -2092,18 +2181,6 @@ const DATA = {
    "rel": [
     "SRGDT-1"
    ]
-  },
-  {
-   "d": "2026-11-26",
-   "s": "17:00",
-   "e": "17:45",
-   "t": "Planejamento Estratégico Ops",
-   "fr": "ops",
-   "com": "Líderes de cada área",
-   "marcio": false,
-   "destaque": false,
-   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
-   "rel": []
   },
   {
    "d": "2026-12-02",
@@ -4674,6 +4751,42 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a20d9c1a234b011",
    "info": "É uma chance de reduzir o custo de mensagens de serviço sem mudar o atendimento."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "11:21",
+   "src": "email",
+   "t": "Pedido à Jelou: perfil que cria campanhas e vê o relatório, sem criar modelos",
+   "det": "Quem perdeu a permissão de criar modelos também deixou de ver o relatório de campanhas. Pedido um perfil novo ou uma alternativa (PROD-297).",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a20deadb06bcef0",
+   "info": "Garante que os times acompanhem as próprias campanhas sem voltar a criar modelos."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "11:55",
+   "src": "email",
+   "t": "Agrupamento de mensagens de serviço ativado no Jelou",
+   "det": "A Jelou explicou o recurso e onde ativá-lo; o teste funcionou e o PROD-296 foi encerrado no mesmo dia.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a20d9c1a234b011",
+   "info": "Mensagens seguidas do atendente viram uma só, o que reduz o número de mensagens de serviço cobradas."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "11:52",
+   "src": "slack",
+   "t": "Rodadas de roadmap 2027 marcadas a pedido do Márcio",
+   "det": "Duas rodadas em 25/11 para tirar dúvidas do roadmap; a versão oficial com prazos macro de cada projeto sai em 26/11.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": true,
+   "link": null,
+   "info": "Os prazos das frentes de BI e Jelou vão entrar no roadmap oficial que o Márcio recebe na quinta."
   }
  ],
  "riscos": [
