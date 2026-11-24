@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-24T09:38";
+const SNAPSHOT = "2026-11-24T09:54";
 const TODAY = "2026-11-24";
 const DATA = {
  "inicio": "2026-09-28",
@@ -9,6 +9,31 @@ const DATA = {
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "PROD-296",
+   "board": "PROD",
+   "frente": "jelou",
+   "titulo": "Jelou · agrupamento de mensagens de serviço para reduzir custo",
+   "status": "blocked",
+   "prio": "Medium",
+   "created": "2026-11-24",
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
+   "horas": 0.5,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "A Jelou avisou que a plataforma agora agrupa mensagens de serviço, mas não ficou claro como usar isso no monitoramento ou no painel de atendimento. Foi pedido à Jelou um vídeo com o passo a passo (chamado 23034).",
+   "next": "aguardar o vídeo da Jelou (prazo de até 24h úteis), testar em um canal e medir o efeito no custo",
+   "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "09:53",
+     "t": "E-mail enviado ao suporte da Jelou, com o Márcio e a gerente de conta em cópia, pedindo vídeo do procedimento; a Jelou abriu o chamado 23034."
+    }
+   ],
+   "info": "Se o agrupamento funcionar, várias mensagens viram uma só cobrança, o que pode baixar o custo de mensagens de serviço do Jelou."
+  },
   {
    "key": "BI-72",
    "board": "BI",
@@ -4637,6 +4662,18 @@ const DATA = {
    "marcio": true,
    "link": null,
    "info": "A cobrança de outubro está certa, e agora há um caminho conhecido para conferir as próximas faturas."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "09:53",
+   "src": "email",
+   "t": "Pedido à Jelou: como usar o agrupamento de mensagens de serviço",
+   "det": "A Jelou anunciou que agrupa mensagens de serviço, mas o recurso não foi encontrado no monitoramento nem no painel de atendimento. Pedido um vídeo com o passo a passo (chamado 23034, PROD-296).",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a20d9c1a234b011",
+   "info": "É uma chance de reduzir o custo de mensagens de serviço sem mudar o atendimento."
   }
  ],
  "riscos": [
