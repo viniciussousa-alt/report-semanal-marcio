@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-24T07:32";
+const SNAPSHOT = "2026-11-24T09:38";
 const TODAY = "2026-11-24";
 const DATA = {
  "inicio": "2026-09-28",
@@ -124,18 +124,33 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · permissões separadas para modelos e campanhas + limite diário de envios",
-   "status": "blocked",
+   "status": "done",
    "prio": "High",
    "created": "2026-11-16",
-   "since": "2026-11-17",
-   "updated": "2026-11-23",
-   "horas": 0.5,
-   "done": null,
-   "proxy": false,
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
+   "horas": 1,
+   "done": "2026-11-24",
+   "proxy": true,
    "due": null,
-   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time. A Jelou criou os perfis \"Criador de modelos\" e \"Criador de campanhas\", mas um usuário só com o perfil de campanhas continua conseguindo criar modelos. O caso foi reaberto em 23/11 com prints e um usuário de teste. Enquanto a trava não funciona, a regra vale por combinado entre os times.",
-   "next": "validar hoje cedo com o usuário de teste (sair, limpar cache e entrar de novo) e responder à Jelou antes que o chamado seja encerrado",
+   "ctx": "Pedido à Jelou para que algumas pessoas só possam enviar campanhas (sem criar modelos) e para travar um limite de envios por dia em cada número/time. Depois de várias rodadas de teste, a Jelou corrigiu o perfil \"Criador de campanhas\" em 23/11 e a separação foi validada em 24/11. O limite diário de envios não existe hoje na plataforma e é tratado à parte com a gerente de conta.",
+   "next": "trava de limite diário de envios segue à parte com a gerente de conta da Jelou",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "09:24",
+     "t": "Confirmação enviada à Jelou e card encerrado."
+    },
+    {
+     "d": "2026-11-24",
+     "h": "09:22",
+     "t": "Teste com o usuário de teste aprovado: com o perfil \"Criador de campanhas\" ele envia campanhas, mas não consegue criar modelos."
+    },
+    {
+     "d": "2026-11-24",
+     "h": "08:55",
+     "t": "Acesso de criação de modelos retirado de quem não deve criar modelos; os líderes dos times foram avisados."
+    },
     {
      "d": "2026-11-23",
      "h": "20:00",
@@ -234,18 +249,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · relatórios de campanhas por categoria (marketing x serviço) e conferência da fatura de outubro",
-   "status": "blocked",
+   "status": "done",
    "prio": "Medium",
    "created": "2026-11-13",
-   "since": "2026-11-13",
-   "updated": "2026-11-19",
-   "horas": 1.25,
-   "done": null,
-   "proxy": false,
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
+   "horas": 2,
+   "done": "2026-11-24",
+   "proxy": true,
    "due": null,
-   "ctx": "A Jelou enviou os disparos de outubro e novembro separados por marketing e serviço, mas os totais do relatório não batem com a fatura de outubro (serviço 242 mil no relatório x 199 mil cobrados; marketing ~212 mil x ~173 mil). A Jelou disse que a cobrança está correta e fechou o chamado 22821 sem explicar a diferença de volume.",
-   "next": "baixar os relatórios de consumo corretos na plataforma e refazer a conferência da fatura de outubro",
+   "ctx": "Os totais do relatório enviado pelo suporte da Jelou não batiam com a fatura de outubro (serviço 242 mil x 199 mil cobrados). O faturamento da Jelou confirmou que o suporte mandou o relatório errado. Com os relatórios corretos baixados da plataforma, os números bateram com a fatura.",
+   "next": "usar os relatórios da plataforma para conferir as próximas faturas e seguir com o dashboard de envios por número/time",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "09:37",
+     "t": "Relatórios corretos baixados da plataforma: os números bateram com a fatura de outubro, que está correta. Card encerrado."
+    },
     {
      "d": "2026-11-23",
      "h": "16:19",
@@ -673,11 +693,11 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · reestruturação de fluxos (fase 2): limpeza, estrutura e testes com IA",
-   "status": "doing",
+   "status": "todo",
    "prio": "Medium",
    "created": "2026-10-05",
-   "since": "2026-11-16",
-   "updated": "2026-11-16",
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
    "horas": 9.25,
    "done": null,
    "proxy": false,
@@ -685,6 +705,11 @@ const DATA = {
    "ctx": "Atendimento com IA para motoristas funcionando, inclusive a passagem para um atendente humano (ajuste feito pela Jelou no chamado 22714). Falta o Marketing validar o tom das respostas.",
    "next": "definir na reunião de hoje como seguir com o atendimento com IA e ajustar os prompts",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "09:37",
+     "t": "Card voltou para a fila de pendentes (etapa de UX), sem atividade em andamento no momento."
+    },
     {
      "d": "2026-11-16",
      "h": "15:05",
@@ -4576,6 +4601,42 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
    "info": "Se o teste der certo, só quem tiver permissão poderá criar modelos, o que ajuda a controlar o que é disparado no WhatsApp."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "08:55",
+   "src": "slack",
+   "t": "Acesso para criar modelos retirado de quem não deve criar",
+   "det": "Com a correção da Jelou, foi retirada a permissão de criar modelos de quem só deve enviar campanhas; o time de atendimento já estava ciente.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Só as pessoas autorizadas passam a criar modelos de mensagem no WhatsApp, o que ajuda a controlar o que é disparado."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "09:24",
+   "src": "email",
+   "t": "Separação de permissões validada e confirmada à Jelou",
+   "det": "Teste aprovado: o perfil \"Criador de campanhas\" envia campanhas e não cria modelos. Retorno enviado à Jelou e PROD-294 encerrado; o limite diário de envios segue à parte.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e56340b87055d",
+   "info": "O controle de quem cria modelos no Jelou agora funciona pela própria plataforma, não só por combinado entre os times."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "09:37",
+   "src": "slack",
+   "t": "Fatura de outubro da Jelou conferida: está correta",
+   "det": "Com os relatórios certos baixados da plataforma, os números bateram com a fatura. A diferença vinha do relatório errado enviado pelo suporte. PROD-291 encerrado.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "A cobrança de outubro está certa, e agora há um caminho conhecido para conferir as próximas faturas."
   }
  ],
  "riscos": [
