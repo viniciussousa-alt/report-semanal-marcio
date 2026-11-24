@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-24T12:13";
+const SNAPSHOT = "2026-11-24T15:33";
 const TODAY = "2026-11-24";
 const DATA = {
  "inicio": "2026-09-28",
@@ -39,18 +39,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · perfil para criar campanhas e ver o relatório, sem criar modelos",
-   "status": "todo",
+   "status": "done",
    "prio": "Medium",
    "created": "2026-11-24",
    "since": "2026-11-24",
    "updated": "2026-11-24",
-   "horas": 0,
-   "done": null,
+   "horas": 1,
+   "done": "2026-11-24",
    "proxy": false,
    "due": null,
-   "ctx": "A separação entre criar modelos e criar campanhas funcionou, mas quem perdeu a permissão de criar modelos também perdeu o acesso ao relatório de campanhas. O perfil que libera o relatório volta a permitir criar modelos, o que não pode acontecer. Foi pedido à Jelou um perfil que crie campanhas e veja o relatório, sem criar modelos, ou uma alternativa.",
-   "next": "aguardar a resposta da Jelou; enquanto isso, os times informam a quantidade de envios manualmente",
+   "ctx": "A separação entre criar modelos e criar campanhas funcionou, mas quem perdeu a permissão de criar modelos também perdeu o acesso ao relatório de campanhas. A Jelou criou um perfil novo, em teste, que cria campanhas e vê o relatório, sem criar modelos; o teste foi aprovado no mesmo dia.",
+   "next": "atribuir o novo perfil a quem dispara campanhas, retirar o perfil antigo, dar um nome definitivo ao perfil e atualizar o manual de acessos",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "14:38",
+     "t": "Jelou criou o perfil \"Gerente Campañas prueba\" (cria campanhas e vê o relatório, sem criar modelos); teste feito e aprovado, card concluído."
+    },
     {
      "d": "2026-11-24",
      "h": "11:22",
@@ -307,6 +312,11 @@ const DATA = {
    "next": "reunião com a Jelou em 25/11 às 15h para tirar as dúvidas de custo, limites e gravações; depois levar a decisão ao Márcio",
    "updates": [
     {
+     "d": "2026-11-24",
+     "h": "13:20",
+     "t": "A Jelou perguntou para quando a Shippify prevê definir, comercialmente, as ligações entre atendente e motorista."
+    },
+    {
      "d": "2026-11-23",
      "h": "14:39",
      "t": "Reunião com a Jelou marcada para quarta 25/11 às 15h para tratar das ligações; card voltou para andamento. Um novo pedido do atendimento (BI-72) para ligar aos entregadores pelo Jelou passou a ser acompanhado aqui."
@@ -533,11 +543,11 @@ const DATA = {
    "board": "BI",
    "frente": "dash",
    "titulo": "Dashboard KAM OTD/SLA · Cobasi e PetLove (artefato)",
-   "status": "doing",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-10-27",
-   "since": "2026-11-23",
-   "updated": "2026-11-23",
+   "since": "2026-11-24",
+   "updated": "2026-11-24",
    "horas": 5.5,
    "done": null,
    "proxy": false,
@@ -545,6 +555,11 @@ const DATA = {
    "ctx": "Dashboard novo com base automática: relatório \"Claude KAM\" atualiza todo dia uma planilha única de Cobasi e PetLove. OTD de 01 a 10/11: Cobasi 92,6% e PetLove 96,3%.",
    "next": "coluna Source no relatório (TEC-2695, com o time técnico) para tirar entregas clonadas da PetLove; confirmar regras pendentes com o KAM",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "14:33",
+     "t": "Card voltou para bloqueado: segue dependendo da coluna Source no relatório (TEC-2695) e da confirmação das regras pendentes com o KAM."
+    },
     {
      "d": "2026-11-10",
      "h": "10:55",
@@ -891,14 +906,19 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-11-16",
-   "updated": "2026-11-23",
+   "updated": "2026-11-24",
    "horas": 7.75,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960 e aceitou US$ 400 (valor único) em 19/11; em 23/11 a Shippify pediu pagamento em janeiro e a proposta formalizada.",
-   "next": "receber a proposta formal da Jelou, dar o OK final com o Márcio e combinar a data dos testes com os 6 operadores",
+   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960 e aceitou US$ 400 (valor único) em 19/11; em 24/11 enviou a proposta formal e aceitou receber o pagamento da implantação nos primeiros 10 dias de janeiro.",
+   "next": "revisar a proposta formal, dar o OK final com o Márcio e combinar a data dos testes com os 6 operadores",
    "updates": [
+    {
+     "d": "2026-11-24",
+     "h": "10:53",
+     "t": "Jelou enviou a proposta formal (técnica e comercial) e aceitou o pagamento da implantação nos primeiros 10 dias de janeiro; aguarda a confirmação da Shippify para começar."
+    },
     {
      "d": "2026-11-23",
      "h": "15:09",
@@ -2081,18 +2101,6 @@ const DATA = {
   },
   {
    "d": "2026-11-24",
-   "s": "15:00",
-   "e": "16:00",
-   "t": "Vinicius / Gustavo",
-   "fr": "ops",
-   "com": "Gustavo (Tecnologia)",
-   "marcio": false,
-   "destaque": false,
-   "info": "Conversa individual marcada pelo Gustavo, do time de Tecnologia, para alinhar andamento e próximos passos.",
-   "rel": []
-  },
-  {
-   "d": "2026-11-24",
    "s": "16:00",
    "e": "17:00",
    "t": "2ª rodada · validação do atendimento com IA",
@@ -2107,27 +2115,29 @@ const DATA = {
   },
   {
    "d": "2026-11-25",
-   "s": "10:30",
+   "s": "10:00",
    "e": "11:00",
-   "t": "Alinhamento Cobrança Jelou · Webcontinental",
-   "fr": "jelou",
-   "com": "Comercial e Financeiro",
-   "marcio": false,
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
    "destaque": false,
-   "info": "Define como cobrar da Webcontinental os envios de WhatsApp feitos pelo Jelou na reversa. Coincide com a rodada de roadmap, e foi pedida a remarcação para 26/11.",
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização. Nesta semana foi antecipada para quarta às 10h.",
    "rel": []
   },
   {
    "d": "2026-11-25",
-   "s": "10:30",
-   "e": "12:00",
-   "t": "Rodada 1 · Roadmap 2027",
-   "fr": "ops",
-   "com": "Líderes técnicos e produto",
-   "marcio": true,
-   "destaque": true,
-   "info": "Primeira rodada para tirar dúvidas do roadmap de 2027; até 26/11 o grupo entrega ao Márcio um prazo macro de cada projeto.",
-   "rel": []
+   "s": "14:00",
+   "e": "15:00",
+   "t": "Shippify Data · catch up",
+   "fr": "seg",
+   "com": "Tecnologia (dados e acessos)",
+   "marcio": false,
+   "destaque": false,
+   "info": "Substitui a conversa de hoje com o Gustavo: alinhamento com o time de Tecnologia, incluindo a apresentação do Midpoint já com acesso para o Vinicius.",
+   "rel": [
+    "SRGDT-3"
+   ]
   },
   {
    "d": "2026-11-25",
@@ -2148,24 +2158,24 @@ const DATA = {
    "d": "2026-11-25",
    "s": "15:30",
    "e": "17:00",
-   "t": "Rodada 2 · Roadmap 2027",
+   "t": "Apresentação · Roadmap 2027",
    "fr": "ops",
    "com": "Líderes técnicos e produto",
    "marcio": true,
    "destaque": true,
-   "info": "Segunda rodada do roadmap de 2027; coincide com a reunião da Jelou sobre ligações e com a Weekly de Produto.",
+   "info": "Apresentação do roadmap de 2027 para líderes técnicos e produto; até 26/11 o grupo entrega ao Márcio um prazo macro de cada projeto. Coincide com a reunião da Jelou sobre ligações.",
    "rel": []
   },
   {
-   "d": "2026-11-25",
-   "s": "16:00",
-   "e": "17:00",
-   "t": "Weekly Product Meeting",
-   "fr": "ops",
-   "com": "Márcio + produto",
-   "marcio": true,
+   "d": "2026-11-26",
+   "s": "11:45",
+   "e": "12:15",
+   "t": "Alinhamento Cobrança Jelou · Webcontinental",
+   "fr": "jelou",
+   "com": "Comercial e Financeiro",
+   "marcio": false,
    "destaque": false,
-   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "info": "Define como cobrar da Webcontinental os envios de WhatsApp feitos pelo Jelou na reversa. Remarcada para quinta, a pedido do Vinicius, para não coincidir com o roadmap.",
    "rel": []
   },
   {
@@ -4787,6 +4797,54 @@ const DATA = {
    "marcio": true,
    "link": null,
    "info": "Os prazos das frentes de BI e Jelou vão entrar no roadmap oficial que o Márcio recebe na quinta."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "10:53",
+   "src": "email",
+   "t": "Jelou envia a proposta formal do CSAT e aceita pagamento em janeiro",
+   "det": "Proposta técnica e comercial do CSAT (US$ 400, valor único) enviada; a implantação pode ser paga nos primeiros 10 dias de janeiro. A Jelou aguarda a confirmação para começar.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "info": "Falta só o OK da Shippify para a Jelou começar a montar a pesquisa de satisfação nos 6 times."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "13:04",
+   "src": "slack",
+   "t": "Conversa com o Gustavo adiada para 25/11 às 14h",
+   "det": "O Gustavo pediu para adiar a conversa de hoje para amanhã, para apresentar o Midpoint já com acesso liberado.",
+   "tag": "Info",
+   "fr": "seg",
+   "marcio": false,
+   "link": null,
+   "info": "O alinhamento sobre o Midpoint acontece amanhã, já com o acesso pronto para uso."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "13:20",
+   "src": "slack",
+   "t": "Jelou pergunta o prazo para decidir as ligações entre atendente e motorista",
+   "det": "A gerente de conta da Jelou quer saber quando a Shippify prevê implantar ou fechar comercialmente as ligações via WhatsApp.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "A Jelou espera uma data de decisão; o tema será tratado na reunião de 25/11 às 15h."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "14:35",
+   "src": "email",
+   "t": "Novo perfil de campanhas do Jelou testado e aprovado",
+   "det": "A Jelou criou um perfil que cria campanhas e vê o relatório, sem criar modelos; o teste deu certo e o PROD-297 foi encerrado.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a20deadb06bcef0",
+   "info": "Os times voltam a ver o resultado das próprias campanhas sem ganhar a permissão de criar modelos."
   }
  ],
  "riscos": [
