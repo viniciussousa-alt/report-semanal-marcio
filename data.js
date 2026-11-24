@@ -149,7 +149,7 @@ const DATA = {
     {
      "d": "2026-11-24",
      "h": "08:55",
-     "t": "Acesso de criação de modelos retirado de quem não deve criar modelos; os líderes dos times foram avisados."
+     "t": "Acesso de criação de modelos retirado de quem não deve criar modelos, com aviso aos times."
     },
     {
      "d": "2026-11-23",
@@ -4607,7 +4607,7 @@ const DATA = {
    "h": "08:55",
    "src": "slack",
    "t": "Acesso para criar modelos retirado de quem não deve criar",
-   "det": "Com a correção da Jelou, foi retirada a permissão de criar modelos de quem só deve enviar campanhas; o time de atendimento já estava ciente.",
+   "det": "Com a correção da Jelou, foi retirada a permissão de criar modelos de quem só deve enviar campanhas; o primeiro time avisado confirmou que todos estão cientes.",
    "tag": "Decisão",
    "fr": "jelou",
    "marcio": false,
