@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-25T07:33";
+const SNAPSHOT = "2026-11-25T15:40";
 const TODAY = "2026-11-25";
 const DATA = {
  "inicio": "2026-09-28",
@@ -303,13 +303,13 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-11-16",
    "since": "2026-11-23",
-   "updated": "2026-11-23",
+   "updated": "2026-11-25",
    "horas": 1.75,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "A Jelou respondeu as dúvidas e enviou a proposta: usa os números atuais, o motorista precisa autorizar as ligações, até 100 ligações atendidas por dia por motorista, funciona só no navegador. Custo: implantação única de US$ 1.600 + US$ 0,028 por minuto; prazo de cerca de 1 mês e meio após o aceite; dá para fazer piloto com um número e um time. Em 17/11 foram enviadas dúvidas sobre custo, limites, ligações recebidas e gravações; o card aguarda a resposta da Jelou.",
-   "next": "reunião com a Jelou em 25/11 às 15h para tirar as dúvidas de custo, limites e gravações; depois levar a decisão ao Márcio",
+   "next": "reunião com a Jelou remarcada para 27/11 às 11h para tirar as dúvidas de custo, limites e gravações; depois levar a decisão ao Márcio",
    "updates": [
     {
      "d": "2026-11-24",
@@ -547,14 +547,19 @@ const DATA = {
    "prio": "Medium",
    "created": "2026-10-27",
    "since": "2026-11-24",
-   "updated": "2026-11-24",
-   "horas": 5.5,
+   "updated": "2026-11-25",
+   "horas": 6,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Dashboard novo com base automática: relatório \"Claude KAM\" atualiza todo dia uma planilha única de Cobasi e PetLove. OTD de 01 a 10/11: Cobasi 92,6% e PetLove 96,3%.",
-   "next": "coluna Source no relatório (TEC-2695, com o time técnico) para tirar entregas clonadas da PetLove; confirmar regras pendentes com o KAM",
+   "next": "alinhar com o time técnico os detalhes da coluna Source e acompanhar quando ela entra em sprint",
    "updates": [
+    {
+     "d": "2026-11-25",
+     "h": "08:43",
+     "t": "Time técnico confirmou que a coluna Source não entra na sprint atual; card segue bloqueado. Pedido um alinhamento para detalhar a necessidade."
+    },
     {
      "d": "2026-11-24",
      "h": "14:33",
@@ -798,18 +803,23 @@ const DATA = {
    "board": "PROD",
    "frente": "jelou",
    "titulo": "Jelou · reestruturação de fluxos (fase 2): limpeza, estrutura e testes com IA",
-   "status": "todo",
+   "status": "blocked",
    "prio": "Medium",
    "created": "2026-10-05",
-   "since": "2026-11-24",
-   "updated": "2026-11-24",
-   "horas": 9.25,
+   "since": "2026-11-25",
+   "updated": "2026-11-25",
+   "horas": 10.25,
    "done": null,
    "proxy": false,
    "due": null,
    "ctx": "Atendimento com IA para motoristas funcionando, inclusive a passagem para um atendente humano (ajuste feito pela Jelou no chamado 22714). Falta o Marketing validar o tom das respostas.",
-   "next": "definir na reunião de hoje como seguir com o atendimento com IA e ajustar os prompts",
+   "next": "definir com a Jelou se os fluxos de atendimento precisam mudar para passar a usar a IA",
    "updates": [
+    {
+     "d": "2026-11-25",
+     "h": "08:40",
+     "t": "Validação com o Marketing concluída: a IA responde bem às principais dúvidas dos motoristas. Falta definir se os fluxos atuais precisam mudar para passar a usar a IA."
+    },
     {
      "d": "2026-11-24",
      "h": "09:37",
@@ -2141,21 +2151,6 @@ const DATA = {
   },
   {
    "d": "2026-11-25",
-   "s": "15:00",
-   "e": "15:45",
-   "t": "Jelou · ligações de WhatsApp via atendimento",
-   "fr": "jelou",
-   "com": "Jelou",
-   "marcio": false,
-   "destaque": true,
-   "info": "Reunião com a Jelou para tirar dúvidas de custo, limites e gravações da proposta de ligações entre atendente e motorista.",
-   "rel": [
-    "PROD-293",
-    "BI-72"
-   ]
-  },
-  {
-   "d": "2026-11-25",
    "s": "15:30",
    "e": "17:00",
    "t": "Apresentação · Roadmap 2027",
@@ -2163,7 +2158,7 @@ const DATA = {
    "com": "Líderes técnicos e produto",
    "marcio": true,
    "destaque": true,
-   "info": "Apresentação do roadmap de 2027 para líderes técnicos e produto; até 26/11 o grupo entrega ao Márcio um prazo macro de cada projeto. Coincide com a reunião da Jelou sobre ligações.",
+   "info": "Apresentação do roadmap de 2027 para líderes técnicos e produto; até 26/11 o grupo entrega ao Márcio um prazo macro de cada projeto.",
    "rel": []
   },
   {
@@ -2191,6 +2186,80 @@ const DATA = {
    "rel": [
     "SRGDT-1"
    ]
+  },
+  {
+   "d": "2026-11-26",
+   "s": "15:30",
+   "e": "17:00",
+   "t": "Estimativa 1 · Roadmap 2027",
+   "fr": "ops",
+   "com": "Líderes técnicos e produto",
+   "marcio": true,
+   "destaque": true,
+   "info": "Primeira sessão para estimar o prazo de cada projeto do roadmap 2027; coincide em parte com a conversa sobre a extensão de e-mail da Cobrança (15h).",
+   "rel": []
+  },
+  {
+   "d": "2026-11-27",
+   "s": "11:00",
+   "e": "11:45",
+   "t": "Jelou · ligações de WhatsApp via atendimento",
+   "fr": "jelou",
+   "com": "Jelou",
+   "marcio": false,
+   "destaque": true,
+   "info": "Reunião remarcada de 25/11: tirar com a Jelou as dúvidas de custo, limites e gravações da proposta de ligações entre atendente e motorista.",
+   "rel": [
+    "PROD-293"
+   ]
+  },
+  {
+   "d": "2026-11-27",
+   "s": "15:30",
+   "e": "17:00",
+   "t": "Estimativa 2 · Roadmap 2027",
+   "fr": "ops",
+   "com": "Líderes técnicos e produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Segunda sessão de estimativa dos projetos do roadmap 2027, para fechar os prazos que vão ao Márcio.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-30",
+   "s": "10:30",
+   "e": "11:30",
+   "t": "Jelou · alinhamento com o RH",
+   "fr": "jelou",
+   "com": "RH",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa com o RH sobre o uso do Jelou pela área.",
+   "rel": []
+  },
+  {
+   "d": "2026-12-01",
+   "s": "11:00",
+   "e": "12:00",
+   "t": "Canais de contato ativo dos galpões",
+   "fr": "ops",
+   "com": "Operações, Tecnologia, Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Definir por quais canais e números da empresa a Shippify vai contatar ativamente as equipes dos galpões.",
+   "rel": []
+  },
+  {
+   "d": "2026-12-01",
+   "s": "14:00",
+   "e": "14:45",
+   "t": "Weekly BI Meeting",
+   "fr": "dash",
+   "com": "Márcio",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal com o Márcio, fixa às terças às 14h, para revisar entregas, prioridades e bloqueios de BI.",
+   "rel": []
   },
   {
    "d": "2026-12-02",
@@ -4776,6 +4845,18 @@ const DATA = {
   },
   {
    "d": "2026-11-24",
+   "h": "10:53",
+   "src": "email",
+   "t": "Jelou envia a proposta formal do CSAT e aceita pagamento em janeiro",
+   "det": "Proposta técnica e comercial do CSAT (US$ 400, valor único) enviada; a implantação pode ser paga nos primeiros 10 dias de janeiro. A Jelou aguarda a confirmação para começar.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
+   "info": "Falta só o OK da Shippify para a Jelou começar a montar a pesquisa de satisfação nos 6 times."
+  },
+  {
+   "d": "2026-11-24",
    "h": "11:21",
    "src": "email",
    "t": "Pedido à Jelou: perfil que cria campanhas e vê o relatório, sem criar modelos",
@@ -4785,18 +4866,6 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a20deadb06bcef0",
    "info": "Garante que os times acompanhem as próprias campanhas sem voltar a criar modelos."
-  },
-  {
-   "d": "2026-11-24",
-   "h": "11:55",
-   "src": "email",
-   "t": "Agrupamento de mensagens de serviço ativado no Jelou",
-   "det": "A Jelou explicou o recurso e onde ativá-lo; o teste funcionou e o PROD-296 foi encerrado no mesmo dia.",
-   "tag": "Entrega",
-   "fr": "jelou",
-   "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a20d9c1a234b011",
-   "info": "Mensagens seguidas do atendente viram uma só, o que reduz o número de mensagens de serviço cobradas."
   },
   {
    "d": "2026-11-24",
@@ -4812,15 +4881,15 @@ const DATA = {
   },
   {
    "d": "2026-11-24",
-   "h": "10:53",
+   "h": "11:55",
    "src": "email",
-   "t": "Jelou envia a proposta formal do CSAT e aceita pagamento em janeiro",
-   "det": "Proposta técnica e comercial do CSAT (US$ 400, valor único) enviada; a implantação pode ser paga nos primeiros 10 dias de janeiro. A Jelou aguarda a confirmação para começar.",
-   "tag": "Aprovação",
+   "t": "Agrupamento de mensagens de serviço ativado no Jelou",
+   "det": "A Jelou explicou o recurso e onde ativá-lo; o teste funcionou e o PROD-296 foi encerrado no mesmo dia.",
+   "tag": "Entrega",
    "fr": "jelou",
    "marcio": true,
-   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0",
-   "info": "Falta só o OK da Shippify para a Jelou começar a montar a pesquisa de satisfação nos 6 times."
+   "link": "https://mail.google.com/mail/u/0/#all/1a20d9c1a234b011",
+   "info": "Mensagens seguidas do atendente viram uma só, o que reduz o número de mensagens de serviço cobradas."
   },
   {
    "d": "2026-11-24",
@@ -4941,6 +5010,102 @@ const DATA = {
    "marcio": false,
    "link": "https://mail.google.com/mail/u/0/#all/1a20f7a0b84964e0",
    "info": "Para limitar dados guardados no Jelou, o caminho é configurar a plataforma para não gravar as respostas, não apagar depois."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "08:46",
+   "src": "slack",
+   "t": "Coluna Source fica fora da sprint atual",
+   "det": "O time técnico confirmou que a inclusão da coluna Source no relatório não entra nesta sprint; foi pedido um alinhamento para detalhar a necessidade.",
+   "tag": "Bloqueio",
+   "fr": "dash",
+   "marcio": false,
+   "link": null,
+   "info": "Sem essa coluna, o OTD da PetLove continua sem poder excluir entregas clonadas, e o dashboard do KAM fica parado."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "09:13",
+   "src": "slack",
+   "t": "Fatura de outubro da Jelou fica com o Financeiro",
+   "det": "O Márcio orientou que o Financeiro combine diretamente com a Jelou o pagamento da fatura de outubro e escale se precisar de apoio.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "O Vinicius deixa de conduzir a cobrança da fatura; entra só se o Financeiro pedir ajuda."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "09:15",
+   "src": "slack",
+   "t": "Márcio pede validar custo da Jelou por API e por fluxo",
+   "det": "Para o épico de Middle Mile, o Márcio pediu confirmar se hoje a Shippify paga algo por chamada de API ou por execução de fluxo automático na Jelou.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "A resposta mostra se usar o Jelou em novas automações do Middle Mile aumenta a conta."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "09:28",
+   "src": "slack",
+   "t": "Pedido dos termos assinados dos chips corporativos",
+   "det": "Solicitados ao time administrativo os termos de responsabilidade dos chips corporativos assinados nesta semana.",
+   "tag": "Pedido",
+   "fr": "seg",
+   "marcio": false,
+   "link": null,
+   "info": "Os termos assinados comprovam quem ficou com cada chip da empresa e ajudam no controle de acessos."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "10:32",
+   "src": "slack",
+   "t": "Reunião sobre ligações com a Jelou remarcada para 27/11",
+   "det": "A Jelou pediu para antecipar a sessão de hoje; como o dia estava tomado pelo planejamento de 2027, ficou para sexta, 27/11, às 11h.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "A decisão sobre ligações entre atendente e motorista atrasa dois dias."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "11:07",
+   "src": "slack",
+   "t": "Jelou confirma: hoje não há cobrança por API nem por fluxo",
+   "det": "A fatura atual cobra só o plano de atendimento (23 licenças), sessões de canais fora do WhatsApp, conversas iniciadas pelo motorista e os custos da Meta. Na nova proposta, 15.000 execuções de fluxo por mês estão incluídas e o excedente é cobrado. Resposta repassada ao time de Middle Mile.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "No modelo atual, automações não aumentam a fatura; se a nova proposta for aceita, passam a contar acima de 15 mil execuções por mês."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "13:29",
+   "src": "slack",
+   "t": "Jelou pergunta quando a proposta de contrato será aceita",
+   "det": "Hoje a Shippify usa a Jelou sem contrato formal. A previsão informada foi janeiro/2027, ainda a confirmar com o Márcio.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Formalizar o contrato depende de uma decisão do Márcio; sem ela, a relação segue sem contrato assinado."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "14:44",
+   "src": "slack",
+   "t": "Operações pede acesso a documento e números das estações",
+   "det": "Acesso liberado ao documento solicitado pelo time de Operações, que também perguntou quais números da empresa estão com colaboradores das estações; tema da reunião de 01/12.",
+   "tag": "Pedido",
+   "fr": "seg",
+   "marcio": false,
+   "link": null,
+   "info": "Prepara a definição de quais números corporativos serão usados para contatar os galpões."
   }
  ],
  "riscos": [
