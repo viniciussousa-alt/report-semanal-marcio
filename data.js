@@ -1,9 +1,9 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-24T15:33";
-const TODAY = "2026-11-24";
+const SNAPSHOT = "2026-11-25T07:33";
+const TODAY = "2026-11-25";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-12-04",
+ "fim": "2026-12-09",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
@@ -2226,6 +2226,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Reunião mensal do time de Tecnologia com resultados e próximos passos.",
+   "rel": []
+  },
+  {
+   "d": "2026-12-09",
+   "s": "16:00",
+   "e": "17:00",
+   "t": "Weekly Product Meeting",
+   "fr": "ops",
+   "com": "Márcio + produto",
+   "marcio": true,
+   "destaque": false,
+   "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
    "rel": []
   }
  ],
@@ -4845,6 +4857,90 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a20deadb06bcef0",
    "info": "Os times voltam a ver o resultado das próprias campanhas sem ganhar a permissão de criar modelos."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "15:33",
+   "src": "slack",
+   "t": "Resposta à Jelou: ainda não há prazo para decidir as ligações",
+   "det": "Foi explicado à gerente de conta da Jelou que a decisão depende de entender como as ligações funcionam e quanto vão custar; combinado avaliar se cabe no orçamento e como controlar o gasto.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "As ligações via WhatsApp só avançam depois de a Shippify ver custo e controle de gasto; o tema segue na reunião de 25/11 às 15h."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "15:56",
+   "src": "slack",
+   "t": "Retirada dos chips corporativos remarcada para 25/11",
+   "det": "A operação não conseguiu buscar os chips no dia 24 por causa de uma demanda da Amazon; a retirada ficou para a manhã de 25/11 com o Vinicius. O time também pediu um chip extra para o atendimento.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Os números de WhatsApp corporativos chegam à operação um dia depois do previsto, e pode ser preciso separar mais um chip."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "17:35",
+   "src": "email",
+   "t": "Coluna Source (TEC-2695) em avaliação para a sprint atual",
+   "det": "O suporte técnico está confirmando se o ajuste no relatório entra na sprint atual; aguardando retorno do time de tecnologia.",
+   "tag": "Bloqueio",
+   "fr": "dash",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1c68d147e32e11",
+   "info": "O dashboard que depende dessa coluna (BI-63) continua parado até a tecnologia encaixar o ajuste na sprint."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "17:41",
+   "src": "email",
+   "t": "Jelou cobra resposta sobre a fatura de outubro",
+   "det": "A Jelou não aceitou parcelar a fatura de outubro e propôs o pagamento integral até 30/11; o setor de cobrança deles voltou a pedir retorno.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321",
+   "info": "Sem resposta, a fatura de outubro pode se somar à de novembro; é preciso decidir até 30/11 como pagar."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "17:52",
+   "src": "slack",
+   "t": "Decisão sobre o pagamento da fatura de outubro da Jelou pedida ao Márcio",
+   "det": "Vinicius pediu ao Márcio para tratarem no dia 25/11 a resposta à Jelou, que recusou o parcelamento.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "link": null,
+   "info": "A resposta à Jelou depende de uma decisão do Márcio sobre pagar a fatura de uma vez até 30/11."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "19:04",
+   "src": "slack",
+   "t": "Custos extras da Jelou por uso de automações levantados",
+   "det": "Acima do limite do plano, cada execução de fluxo automático custa US$ 0,019; as funções internas têm 1 milhão de execuções por mês incluídas e US$ 2,50 por milhão excedente.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Ajuda a prever se o uso de automações no Jelou pode aumentar a fatura além das mensagens."
+  },
+  {
+   "d": "2026-11-24",
+   "h": "19:51",
+   "src": "email",
+   "t": "Jelou não permite apagar o histórico de conversas",
+   "det": "A Jelou informou que não há como apagar mensagens de forma definitiva; o histórico fica guardado até 1 ano. É possível avaliar, com a gerente de conta, deixar de gravar as respostas dos usuários.",
+   "tag": "Info",
+   "fr": "seg",
+   "marcio": false,
+   "link": "https://mail.google.com/mail/u/0/#all/1a20f7a0b84964e0",
+   "info": "Para limitar dados guardados no Jelou, o caminho é configurar a plataforma para não gravar as respostas, não apagar depois."
   }
  ],
  "riscos": [
