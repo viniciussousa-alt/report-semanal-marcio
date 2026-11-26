@@ -1,14 +1,44 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-25T15:40";
-const TODAY = "2026-11-25";
+const SNAPSHOT = "2026-11-26T07:32";
+const TODAY = "2026-11-26";
 const DATA = {
  "inicio": "2026-09-28",
- "fim": "2026-12-09",
+ "fim": "2026-12-10",
  "ferias": {
   "ini": "2026-10-13",
   "fim": "2026-10-25"
  },
  "jira": [
+  {
+   "key": "BI-73",
+   "board": "BI",
+   "frente": "jelou",
+   "titulo": "Jelou · registrar o resultado dos atendimentos de captação de entregadores",
+   "status": "todo",
+   "prio": "High",
+   "created": "2026-11-25",
+   "since": "2026-11-25",
+   "updated": "2026-11-25",
+   "horas": 0,
+   "done": null,
+   "proxy": false,
+   "due": null,
+   "ctx": "O time de Comunidade pediu 17 novas marcações para registrar o resultado das conversas de captação de entregadores (ex.: modalidade não atende, sem CNPJ/MEI, desistência), que hoje não aparecem no relatório de conversas. A sugestão de usar campos do CRM foi descartada porque não sai em relatório; a proposta agora é usar as Etiquetas do Jelou, que já têm coluna própria no relatório.",
+   "next": "aguardar o time de Comunidade confirmar se segue com as etiquetas (que ficam salvas no contato do motorista) e então cadastrar os 17 itens",
+   "updates": [
+    {
+     "d": "2026-11-25",
+     "h": "16:28",
+     "t": "Confirmado que a coluna Etiquetas sai no relatório; alertado que a etiqueta fica salva no contato do motorista e aparece nos próximos atendimentos. Aguardando o time decidir."
+    },
+    {
+     "d": "2026-11-25",
+     "h": "16:15",
+     "t": "Card criado a partir do pedido no #tech-support, com o histórico da conversa e a nova proposta de usar Etiquetas."
+    }
+   ],
+   "info": "Permite ao time de Comunidade medir, por relatório, quantos entregadores abordados seguiram ou desistiram e por quê, sem planilha paralela."
+  },
   {
    "key": "SRGDT-3",
    "board": "SRGDT",
@@ -2307,6 +2337,18 @@ const DATA = {
    "marcio": true,
    "destaque": false,
    "info": "Reunião semanal do time de Produto com o Márcio: status das frentes e priorização.",
+   "rel": []
+  },
+  {
+   "d": "2026-12-10",
+   "s": "17:00",
+   "e": "17:45",
+   "t": "Planejamento Estratégico Ops",
+   "fr": "ops",
+   "com": "Líderes de cada área",
+   "marcio": false,
+   "destaque": false,
+   "info": "Encontro semanal com um representante de cada área para planejar a operação em datas especiais e fins de semana.",
    "rel": []
   }
  ],
@@ -5106,6 +5148,54 @@ const DATA = {
    "marcio": false,
    "link": null,
    "info": "Prepara a definição de quais números corporativos serão usados para contatar os galpões."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "15:52",
+   "src": "slack",
+   "t": "Comunidade pede registrar o resultado da captação de entregadores",
+   "det": "Pedido de 17 novas marcações no Jelou para registrar por que o entregador abordado não seguiu (modalidade, falta de CNPJ/MEI, desistência). Sugerido usar campos do CRM; o time respondeu que precisa do dado em relatório e propôs usar Etiquetas.",
+   "tag": "Pedido",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "Sem esse registro, o time não consegue mostrar por relatório o resultado das ações de captação."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "16:28",
+   "src": "slack",
+   "t": "Etiquetas do Jelou viáveis para medir a captação; time precisa confirmar",
+   "det": "Confirmado que a coluna Etiquetas sai no relatório de conversas. Ponto de atenção: a etiqueta fica no contato do motorista e aparece nos próximos atendimentos dele, de qualquer operação.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "link": null,
+   "info": "A configuração só começa depois que o time aceitar que a etiqueta acompanha o motorista nos próximos atendimentos."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "17:01",
+   "src": "email",
+   "t": "Material do Roadmap 2027 compartilhado com o time",
+   "det": "Enviada a apresentação com as possíveis iniciativas e prioridades de produto para 2027, base para as rodadas de estimativa de 26 e 27/11.",
+   "tag": "Info",
+   "fr": "ops",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a2144d0210449fd",
+   "info": "É o documento de referência para estimar o esforço das iniciativas de 2027 nesta semana."
+  },
+  {
+   "d": "2026-11-25",
+   "h": "17:04",
+   "src": "email",
+   "t": "Novo usuário liberado no Jelou após falha no convite",
+   "det": "O convite de acesso de uma nova atendente expirou antes de ser aceito; foi aberto chamado com a Jelou, que liberou o acesso no mesmo dia.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": true,
+   "link": "https://mail.google.com/mail/u/0/#all/1a2143e6ebcf2fa5",
+   "info": "A nova pessoa já consegue entrar no Jelou e atender, sem esperar outro convite."
   }
  ],
  "riscos": [
