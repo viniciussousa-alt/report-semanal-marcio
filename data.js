@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-26T07:32";
+const SNAPSHOT = "2026-11-26T15:40";
 const TODAY = "2026-11-26";
 const DATA = {
  "inicio": "2026-09-28",
@@ -14,18 +14,28 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Jelou · registrar o resultado dos atendimentos de captação de entregadores",
-   "status": "todo",
+   "status": "blocked",
    "prio": "High",
    "created": "2026-11-25",
-   "since": "2026-11-25",
-   "updated": "2026-11-25",
+   "since": "2026-11-26",
+   "updated": "2026-11-26",
    "horas": 0,
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "O time de Comunidade pediu 17 novas marcações para registrar o resultado das conversas de captação de entregadores (ex.: modalidade não atende, sem CNPJ/MEI, desistência), que hoje não aparecem no relatório de conversas. A sugestão de usar campos do CRM foi descartada porque não sai em relatório; a proposta agora é usar as Etiquetas do Jelou, que já têm coluna própria no relatório.",
-   "next": "aguardar o time de Comunidade confirmar se segue com as etiquetas (que ficam salvas no contato do motorista) e então cadastrar os 17 itens",
+   "ctx": "O time de Comunidade pediu 17 novas marcações para registrar o resultado das conversas de captação de entregadores (ex.: modalidade não atende, sem CNPJ/MEI, desistência). Ficou decidido usar as Etiquetas do Jelou, que saem em coluna própria no relatório de conversas; o time aprovou, ciente de que a etiqueta fica salva no contato do motorista.",
+   "next": "cadastrar as 17 etiquetas com os nomes já ajustados ao limite de 25 caracteres, validar no relatório de conversas e entregar até 27/11 (prazo proposto ao time)",
    "updates": [
+    {
+     "d": "2026-11-26",
+     "h": "14:50",
+     "t": "Time ajustou os nomes na planilha; proposto prazo de entrega para amanhã, 27/11."
+    },
+    {
+     "d": "2026-11-26",
+     "h": "11:22",
+     "t": "Comunidade aprovou o uso de Etiquetas. Pedido ajuste dos nomes que passam do limite de 25 caracteres antes de definir prazo; card marcado como bloqueado aguardando o ajuste."
+    },
     {
      "d": "2026-11-25",
      "h": "16:28",
@@ -2212,7 +2222,7 @@ const DATA = {
    "com": "Financeiro, Tecnologia",
    "marcio": false,
    "destaque": false,
-   "info": "Conversa sobre a extensão criada pelo Financeiro para alertar e-mails urgentes da conta de Cobrança, para ver como torná-la segura e oficial.",
+   "info": "Conversa sobre a extensão criada pelo Financeiro para alertar e-mails urgentes da conta de Cobrança, para entender o uso do e-mail e do ChatGPT e definir uma forma segura e oficial de substituir. Antecipada para cerca de 14h40 a pedido do Financeiro.",
    "rel": [
     "SRGDT-1"
    ]
@@ -2228,6 +2238,20 @@ const DATA = {
    "destaque": true,
    "info": "Primeira sessão para estimar o prazo de cada projeto do roadmap 2027; coincide em parte com a conversa sobre a extensão de e-mail da Cobrança (15h).",
    "rel": []
+  },
+  {
+   "d": "2026-11-26",
+   "s": "17:00",
+   "e": "17:30",
+   "t": "Márcio / Vinicius",
+   "fr": "jelou",
+   "com": "Márcio e Vinicius",
+   "marcio": true,
+   "destaque": true,
+   "info": "Conversa pedida pelo Márcio para fechar dois assuntos cobrados pela Jelou (aprovação do CSAT e pagamento da fatura de outubro sem parcelamento) e passar novos pedidos.",
+   "rel": [
+    "PROD-261"
+   ]
   },
   {
    "d": "2026-11-27",
@@ -2265,6 +2289,18 @@ const DATA = {
    "marcio": false,
    "destaque": false,
    "info": "Conversa com o RH sobre o uso do Jelou pela área.",
+   "rel": []
+  },
+  {
+   "d": "2026-11-30",
+   "s": "14:00",
+   "e": "15:00",
+   "t": "Weekly Data <> SRG",
+   "fr": "dash",
+   "com": "Time SRG e dados",
+   "marcio": false,
+   "destaque": false,
+   "info": "Novo encontro semanal com o time SRG para acompanhar dados e ferramentas, incluindo a volta do Metabase.",
    "rel": []
   },
   {
@@ -5196,6 +5232,126 @@ const DATA = {
    "marcio": true,
    "link": "https://mail.google.com/mail/u/0/#all/1a2143e6ebcf2fa5",
    "info": "A nova pessoa já consegue entrar no Jelou e atender, sem esperar outro convite."
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "10:19",
+   "t": "Acesso ao Metabase encerrado; retorno previsto até segunda",
+   "det": "O período de teste do Metabase acabou e o acesso foi cortado. O time SRG está buscando mais tempo de teste para deixá-lo funcionando de novo até 30/11 e decidir a melhor forma de apresentar os dados.",
+   "tag": "Bloqueio",
+   "fr": "dash",
+   "marcio": false,
+   "info": "Até lá, as consultas e painéis que dependem do Metabase ficam parados.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "10:42",
+   "t": "Sem acesso à Dash: senha expirada e código de recuperação não chega",
+   "det": "Aberto pedido no #tech-support (TEC-2753). À tarde foi possível entrar no sistema, mas ainda não trocar a senha.",
+   "tag": "Bloqueio",
+   "fr": "seg",
+   "marcio": false,
+   "info": "Enquanto a senha não for trocada, o acesso à Dash pode cair de novo e atrasar relatórios que saem de lá.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "11:08",
+   "t": "Liderança de Operações perdeu permissões de administrador no Monday",
+   "det": "Sem a permissão, não consegue configurar o próprio quadro nem impedir que o time mude datas de entrega das tarefas. Encaminhado ao responsável pela ferramenta; o Monday informou que foi um erro e corrige hoje.",
+   "tag": "Pedido",
+   "fr": "seg",
+   "marcio": false,
+   "info": "Sem essa permissão, atrasos nas tarefas do time podem passar despercebidos porque as datas são alteradas.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "11:18",
+   "t": "BI consolidado: confirmar se os ajustes são só nos filtros",
+   "det": "Pergunta à área de faturamento se o retorno sobre o painel consolidado se limita à mudança de filtros ou se há outros ajustes.",
+   "tag": "Pendência",
+   "fr": "dash",
+   "marcio": false,
+   "info": "Define o tamanho do retrabalho no painel de faturamento antes de começar os ajustes.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "11:22",
+   "t": "Captação no Jelou: nomes das etiquetas passam de 25 caracteres",
+   "det": "O time de Comunidade aprovou o uso de Etiquetas. Antes de definir prazo, foi pedido que os nomes da planilha sejam encurtados para caber no limite de 25 caracteres.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "A configuração só pode começar quando os nomes couberem no limite do Jelou.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "12:09",
+   "t": "Financeiro pede ajustes no Painel de Faturamento",
+   "det": "Ao filtrar o ano inteiro, os clientes com faturas vencidas não aparecem. Sugestões: tirar o Prazo Médio de Recebimento, incluir uma parte de extravios, mostrar o valor da nota fiscal e comparar o faturado com o valor recebido, com gráfico no estilo do já usado para a Amazon. Vinicius vai ajustar e avisar.",
+   "tag": "Pedido",
+   "fr": "dash",
+   "marcio": false,
+   "info": "Deixa o painel mais útil para o Financeiro acompanhar o que foi cobrado contra o que de fato entrou no caixa.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "12:17",
+   "t": "Respostas a campanhas de marketing contam como mensagem de serviço",
+   "det": "Confirmado ao Comercial: a primeira mensagem da campanha é cobrada como marketing ou utilidade; a resposta padrão enviada depois que o cliente retorna conta como serviço.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "Ajuda a prever o custo das campanhas no WhatsApp, já que cada categoria de mensagem tem preço diferente.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "13:30",
+   "t": "Primeiros termos assinados dos chips corporativos recebidos",
+   "det": "Operações começou a enviar os termos de responsabilidade assinados e vai mandar os demais conforme coletar.",
+   "tag": "Pendência",
+   "fr": "seg",
+   "marcio": false,
+   "info": "Os termos formalizam quem responde por cada chip; falta receber os restantes.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "14:38",
+   "t": "CSAT e fatura de outubro da Jelou levados ao Márcio",
+   "det": "A Jelou cobrou a aprovação da proposta de desenvolvimento do CSAT e informou que a fatura de outubro não poderá ser parcelada. Márcio respondeu que já alinhou os dois pontos e marcou conversa às 17h para passar novos pedidos.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "A aprovação do Márcio destrava o início do CSAT; a fatura de outubro deve ser paga à vista pelo Financeiro.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "14:50",
+   "t": "Captação no Jelou: 17 etiquetas com entrega prevista para 27/11",
+   "det": "O time de Comunidade ajustou os nomes na planilha e foi proposto concluir o cadastro das etiquetas amanhã.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "A partir de 27/11 o time de Comunidade passa a medir, pelo relatório, por que os entregadores abordados seguem ou desistem.",
+   "link": null
   }
  ],
  "riscos": [
