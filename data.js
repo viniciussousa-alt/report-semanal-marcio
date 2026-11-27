@@ -1,5 +1,5 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-27T07:35";
+const SNAPSHOT = "2026-11-27T15:35";
 const TODAY = "2026-11-27";
 const DATA = {
  "inicio": "2026-09-28",
@@ -14,18 +14,23 @@ const DATA = {
    "board": "BI",
    "frente": "jelou",
    "titulo": "Jelou · registrar o resultado dos atendimentos de captação de entregadores",
-   "status": "blocked",
+   "status": "done",
    "prio": "High",
    "created": "2026-11-25",
-   "since": "2026-11-26",
-   "updated": "2026-11-26",
-   "horas": 0,
-   "done": null,
+   "since": "2026-11-27",
+   "updated": "2026-11-27",
+   "horas": 1,
+   "done": "2026-11-27",
    "proxy": false,
    "due": null,
-   "ctx": "O time de Comunidade pediu 17 novas marcações para registrar o resultado das conversas de captação de entregadores (ex.: modalidade não atende, sem CNPJ/MEI, desistência). Ficou decidido usar as Etiquetas do Jelou, que saem em coluna própria no relatório de conversas; o time aprovou, ciente de que a etiqueta fica salva no contato do motorista.",
-   "next": "cadastrar as 17 etiquetas com os nomes já ajustados ao limite de 25 caracteres, validar no relatório de conversas e entregar até 27/11 (prazo proposto ao time)",
+   "ctx": "O time de Comunidade pediu 17 novas marcações para registrar o resultado das conversas de captação de entregadores (ex.: modalidade não atende, sem CNPJ/MEI, desistência). Foram usadas as Etiquetas do Jelou, que saem em coluna própria no relatório; as 17 etiquetas foram cadastradas no número da Comunidade em 27/11 e conferidas no relatório \"Casos\".",
+   "next": "acompanhar o uso das etiquetas pelo time de Comunidade e avaliar levar o modelo a outros números",
    "updates": [
+    {
+     "d": "2026-11-27",
+     "h": "09:21",
+     "t": "17 etiquetas de captação cadastradas no número da Comunidade e testadas no relatório \"Casos\"; time avisado e card concluído no prazo combinado."
+    },
     {
      "d": "2026-11-26",
      "h": "14:50",
@@ -956,7 +961,7 @@ const DATA = {
    "prio": "Low",
    "created": "2026-09-14",
    "since": "2026-11-16",
-   "updated": "2026-11-24",
+   "updated": "2026-11-27",
    "horas": 7.75,
    "done": null,
    "proxy": false,
@@ -964,6 +969,11 @@ const DATA = {
    "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960 e aceitou US$ 400 (valor único), com pagamento da implantação nos primeiros 10 dias de janeiro. Em 26/11 o Márcio aprovou, por e-mail à Jelou, o desenvolvimento e as condições de pagamento.",
    "next": "combinar com a Jelou o início do desenvolvimento e a data dos testes com os 6 operadores",
    "updates": [
+    {
+     "d": "2026-11-27",
+     "h": "09:23",
+     "t": "Card atualizado com a aprovação do Márcio (26/11) ao desenvolvimento e às condições de pagamento; falta combinar com a Jelou o início e as datas dos testes."
+    },
     {
      "d": "2026-11-24",
      "h": "10:53",
@@ -2251,6 +2261,20 @@ const DATA = {
    "info": "Conversa pedida pelo Márcio para fechar dois assuntos cobrados pela Jelou (aprovação do CSAT e pagamento da fatura de outubro sem parcelamento) e passar novos pedidos.",
    "rel": [
     "PROD-261"
+   ]
+  },
+  {
+   "d": "2026-11-27",
+   "s": "10:30",
+   "e": "10:45",
+   "t": "Painel de Faturamento · ajustes do Financeiro",
+   "fr": "dash",
+   "com": "Financeiro",
+   "marcio": false,
+   "destaque": false,
+   "info": "Conversa rápida com o Financeiro para entender os ajustes pedidos no painel (valor recebido x faturado, extravios, vencidos), antes de mexer nele.",
+   "rel": [
+    "BI-64"
    ]
   },
   {
@@ -5376,6 +5400,78 @@ const DATA = {
    "marcio": true,
    "info": "Com a aprovação, a Jelou pode começar a montar a pesquisa de satisfação nos 6 times; o próximo passo é marcar os testes com os operadores.",
    "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0"
+  },
+  {
+   "d": "2026-11-27",
+   "src": "slack",
+   "h": "09:22",
+   "t": "Etiquetas de captação entregues no número da Comunidade",
+   "det": "As 17 etiquetas pedidas pelo time de Comunidade foram cadastradas e já aparecem, conversa a conversa, no relatório \"Casos\" do Jelou. Também foi mostrado ao time onde adicionar a etiqueta na conversa.",
+   "tag": "Entrega",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "A partir de agora o time de Comunidade consegue tirar do relatório quantos entregadores abordados seguiram ou desistiram e por quê.",
+   "link": null
+  },
+  {
+   "d": "2026-11-27",
+   "src": "slack",
+   "h": "10:23",
+   "t": "Fatura do Jelou de novembro já passa do teto de R$ 50 mil",
+   "det": "Pelo controle de envios, só as mensagens somam cerca de R$ 47 mil; com plataforma, logins e sessões o mês já chega a cerca de R$ 56 mil. O Financeiro pediu para Marketing e Marketplace cancelarem os envios previstos até o fim do mês.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Novembro deve fechar acima do limite de R$ 50 mil por mês combinado para o Jelou; o foco agora é segurar os envios nos últimos dias.",
+   "link": null
+  },
+  {
+   "d": "2026-11-27",
+   "src": "email",
+   "h": "10:45",
+   "t": "Jelou cobra confirmação de pagamento de fatura",
+   "det": "O setor de cobrança da Jelou pediu resposta sobre o pagamento de uma fatura em aberto, com o Financeiro e o Márcio em cópia.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "A resposta e o pagamento ficam com o Financeiro; atraso pode gerar novas cobranças da Jelou.",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1637ba8599f321"
+  },
+  {
+   "d": "2026-11-27",
+   "src": "slack",
+   "h": "11:38",
+   "t": "Proposta para dezembro: limite mensal de 75 mil envios no Jelou",
+   "det": "Em vez de um limite diário por time, a proposta é um limite mensal de 75 mil envios para a empresa, dividido entre os times, para que usem mais em dias de urgência e menos nos demais. O Financeiro sugeriu manter também uma estimativa diária só como sinal de alerta.",
+   "tag": "Pendência",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Se aprovado, dá mais flexibilidade aos times e um teto claro de gasto no mês; ainda aguarda o OK dos envolvidos.",
+   "link": null
+  },
+  {
+   "d": "2026-11-27",
+   "src": "slack",
+   "h": "11:39",
+   "t": "Prévia do custo do Jelou enviada ao Márcio",
+   "det": "Após alinhamento com a Jelou, foi enviada a prévia do custo do mês, explicando cada cobrança: sessões de motoristas que chamam pelo WhatsApp, Instagram e Facebook; sessões pelo aplicativo; e atendentes que usam o painel de atendimento. O valor oficial vai na segunda. O Márcio aprovou a visão.",
+   "tag": "Custo",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "O Márcio passa a entender de onde vem cada parte da fatura do Jelou antes de ela chegar.",
+   "link": null
+  },
+  {
+   "d": "2026-11-27",
+   "src": "email",
+   "h": "12:13",
+   "t": "Relatório de chamados de novembro pedido à Jelou",
+   "det": "Pedido à Jelou o relatório dos chamados abertos em novembro, considerando só os 3 responsáveis autorizados da Shippify, e que qualquer pedido feito por outra pessoa seja avisado. A Jelou enviou o relatório e confirmou que só esses chamados foram considerados.",
+   "tag": "Info",
+   "fr": "jelou",
+   "marcio": false,
+   "info": "Ajuda a controlar quem abre chamados com a Jelou em nome da Shippify e o que está sendo pedido.",
+   "link": "https://mail.google.com/mail/u/0/#all/1a21d8ebcc60a17c"
   }
  ],
  "riscos": [
