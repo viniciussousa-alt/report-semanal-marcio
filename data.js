@@ -1,6 +1,6 @@
 // Gerado automaticamente pela atualização agendada. Não editar à mão.
-const SNAPSHOT = "2026-11-26T15:40";
-const TODAY = "2026-11-26";
+const SNAPSHOT = "2026-11-27T07:35";
+const TODAY = "2026-11-27";
 const DATA = {
  "inicio": "2026-09-28",
  "fim": "2026-12-10",
@@ -961,8 +961,8 @@ const DATA = {
    "done": null,
    "proxy": false,
    "due": null,
-   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960 e aceitou US$ 400 (valor único) em 19/11; em 24/11 enviou a proposta formal e aceitou receber o pagamento da implantação nos primeiros 10 dias de janeiro.",
-   "next": "revisar a proposta formal, dar o OK final com o Márcio e combinar a data dos testes com os 6 operadores",
+   "ctx": "Escopo do CSAT fechado com a Jelou: pesquisa em 6 times (Comunidade, Food, Ship From Store, Backoffice, Reclame Aqui e Atendimento), gravando área, canal, atendente, nota, resolução e comentário. A Jelou orçou US$ 960 e aceitou US$ 400 (valor único), com pagamento da implantação nos primeiros 10 dias de janeiro. Em 26/11 o Márcio aprovou, por e-mail à Jelou, o desenvolvimento e as condições de pagamento.",
+   "next": "combinar com a Jelou o início do desenvolvimento e a data dos testes com os 6 operadores",
    "updates": [
     {
      "d": "2026-11-24",
@@ -5352,6 +5352,30 @@ const DATA = {
    "marcio": false,
    "info": "A partir de 27/11 o time de Comunidade passa a medir, pelo relatório, por que os entregadores abordados seguem ou desistem.",
    "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "slack",
+   "h": "17:11",
+   "t": "Custos do Jelou: report por e-mail toda segunda e página de fatura prevista",
+   "det": "Anotado no alinhamento com o Márcio: enviar toda segunda, por e-mail, os custos de serviço e de marketing do Jelou (com cópia para a liderança); o relatório de custos ganha uma última página no formato da fatura da Jelou com a fatura prevista e a quantidade de mensagens de serviço por time, com acumulado do mês.",
+   "tag": "Decisão",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "A liderança passa a ver toda semana quanto o Jelou deve custar no mês, antes de a fatura chegar.",
+   "link": null
+  },
+  {
+   "d": "2026-11-26",
+   "src": "email",
+   "h": "17:48",
+   "t": "Márcio aprova o desenvolvimento do CSAT na Jelou",
+   "det": "Em resposta à proposta formal da Jelou, o Márcio aprovou o desenvolvimento do CSAT (US$ 400, valor único) e o pagamento da implantação nos primeiros 10 dias de janeiro.",
+   "tag": "Aprovação",
+   "fr": "jelou",
+   "marcio": true,
+   "info": "Com a aprovação, a Jelou pode começar a montar a pesquisa de satisfação nos 6 times; o próximo passo é marcar os testes com os operadores.",
+   "link": "https://mail.google.com/mail/u/0/#all/1a1e55cab5a75ea0"
   }
  ],
  "riscos": [
